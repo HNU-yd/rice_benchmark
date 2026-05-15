@@ -57,11 +57,15 @@ sources:
         name: "Nipponbare IRGSP-1.0 reference genome"
         access: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001433935.1/"
         verification_status: "partially_verified"
+      - source_id: "SRC_REF_IRGSP_FASTA_003"
+        name: "Nipponbare IRGSP-1.0 reference genome, RefSeq assembly"
+        access: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001433935.1/"
+        verification_status: "partially_verified"
       - source_id: "SRC_REF_IRGSP_FASTA_002"
         name: "Os-Nipponbare-Reference-IRGSP-1.0"
         access: "https://rapdb.dna.affrc.go.jp/"
         verification_status: "needs_manual_review"
-    notes: "用于 reference_window sequence extraction、variant coordinate context 和 Task 2 reference-conditioned 输入；Phase 2 必须固定主 FASTA 和 chromosome naming。"
+    notes: "用于 reference_window sequence extraction、variant coordinate context 和 Task 2 reference-conditioned 输入；Phase 2B 前必须确认 GCF/GCA source choice、主 FASTA、chromosome naming 和 checksum。"
 
   gene_annotation:
     priority: P1

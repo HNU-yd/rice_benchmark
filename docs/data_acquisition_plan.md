@@ -38,3 +38,19 @@ Phase 2 只有在 `source_inventory.tsv` 人工审阅后才能开始。
 所有下载文件必须进入 `manifest/download_manifest.tsv` 和 `checksum_table.tsv`。
 
 Phase 1 的风险说明见 `docs/data_download_risk_notes.md`。当前 source inventory 的主体说明见 `docs/data_source_inventory.md`。
+
+## Phase 2A 下载前核验
+
+Phase 2A 只做 raw data download preflight，不下载大文件。
+
+Phase 2A 产生：
+
+- `manifest/preflight_verified_sources.tsv`
+- `manifest/download_manifest.tsv`
+- `manifest/checksum_table.tsv`
+- `docs/download_plan.md`
+- `docs/raw_data_layout.md`
+- `docs/preflight_source_review.md`
+- `reports/download_preflight/preflight_report.md`
+
+Phase 2B 只有在 `manual_confirmation_required.tsv` 和 `preflight_verified_sources.tsv` 人工审阅后才能开始。

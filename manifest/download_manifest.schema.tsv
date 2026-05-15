@@ -1,0 +1,18 @@
+column_name	required	allowed_values	description	example
+download_id	yes	free_text	下载记录唯一 ID	DL_REF_IRGSP_001
+source_id	yes	free_text	对应 source_inventory.tsv 中的 source_id	SRC_REF_IRGSP_FASTA_003
+data_category	yes	accession_metadata|snp_genotype|indel_genotype|reference_genome|gene_annotation|trait_table|weak_evidence	数据类别	reference_genome
+file_role	yes	free_text	文件角色，例如 reference_fasta、snp_genotype_archive 或 trait_phenotype_table	reference_fasta
+original_filename	yes	free_text	原始文件名；未确认写 to_be_confirmed	to_be_confirmed
+local_path	yes	free_text	后续 raw data 目标目录或文件路径	data/raw/reference/
+download_url_or_access_method	yes	free_text	URL、S3 path、database export 或 manual method	https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001433935.1/
+access_method_type	yes	s3|https|ftp|database|manual|paper_supplement|unknown	访问方式	https
+download_command	yes	free_text	计划下载命令或 dry-run 描述；Phase 2A 不执行真实下载	DRY_RUN: confirm exact NCBI datasets package before download
+download_status	yes	planned|downloading|downloaded|failed|skipped	下载状态；Phase 2A 只能写 planned	planned
+file_size_bytes	no	integer_or_blank	文件大小；planned 记录可留空	
+checksum_sha256	no	sha256_or_blank	sha256；planned 记录必须留空	
+download_started_at	no	iso8601_or_blank	下载开始时间；planned 记录留空	
+download_finished_at	no	iso8601_or_blank	下载结束时间；planned 记录留空	
+source_version	no	free_text	来源版本；未确认写 to_be_confirmed	to_be_confirmed
+reference_build	no	free_text	参考基因组版本；不适用写 not_applicable	IRGSP-1.0
+notes	no	free_text	备注	Planned only; no file downloaded

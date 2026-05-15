@@ -39,15 +39,15 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 1 data source inventory。
+当前阶段：Phase 2A raw data download preflight。
 
-当前目标：确认 3K Rice benchmark 所需数据源，不下载数据，不写 schema，不训练模型。
+当前目标：根据 Phase 1 的 source inventory 做下载前核验、manifest 表头和 dry-run 下载脚本准备，不下载 raw data，不写数据 schema，不训练模型。
 
-当前产物包括 `manifest/source_inventory.tsv`、`manifest/source_inventory.schema.tsv`、`docs/data_source_inventory.md` 和 `docs/data_download_risk_notes.md`。
+当前产物包括 `manifest/source_inventory.tsv`、`manifest/preflight_verified_sources.tsv`、`manifest/download_manifest.tsv`、`manifest/checksum_table.tsv`、`docs/download_plan.md`、`docs/raw_data_layout.md` 和 `reports/download_preflight/preflight_report.md`。
 
-下一阶段：Phase 2 raw data download, checksum, and manifest registration。
+下一阶段：Phase 2B confirmed raw data download, checksum, and manifest registration。
 
-当前 Phase 1 不包含 raw data 下载、schema 实现、benchmark construction、model implementation 或 evaluator implementation。
+当前 Phase 2A 不包含 raw data 下载、schema 实现、benchmark construction、model implementation 或 evaluator implementation。
 
 ## 目录概览
 

@@ -1,0 +1,11 @@
+column_name	required	allowed_values	description	example
+file_id	yes	free_text	文件唯一 ID	FILE_REF_IRGSP_001
+download_id	yes	free_text	对应 download_manifest.tsv 中的 download_id	DL_REF_IRGSP_001
+source_id	yes	free_text	对应 source_inventory.tsv 中的 source_id	SRC_REF_IRGSP_FASTA_003
+local_path	yes	free_text	本地文件路径	data/raw/reference/IRGSP-1.0.fasta.gz
+checksum_algorithm	yes	sha256	校验算法	sha256
+checksum_value	no	sha256_or_blank	校验值；未计算前留空	
+file_size_bytes	no	integer_or_blank	文件大小；未计算前留空	
+computed_at	no	iso8601_or_blank	计算时间；未计算前留空	
+verification_status	yes	planned|verified|failed|not_computed	校验状态	not_computed
+notes	no	free_text	备注	Computed after Phase 2B download

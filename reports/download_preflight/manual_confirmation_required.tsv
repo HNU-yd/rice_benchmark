@@ -1,0 +1,9 @@
+source_id	data_category	priority	issue	why_it_matters	manual_check	blocking_phase2b	notes
+SRC_3K_ACCESSION_METADATA_001	accession_metadata	P0	SNP-Seek offline / mirror validation	accession metadata 是 genotype、trait 和 split 对齐的主键来源	确认原站或 mirror 的 export 方法、字段、版本和访问时间	yes	不能只凭 landing page HTTP 200 判断可下载
+SRC_3K_SNP_GENOTYPE_001	snp_genotype	P0	SNP genotype exact file list	SNP genotype 文件列表、分块方式和 checksum 未冻结会破坏可复现性	执行 listing 后人工确认 file names、release、file size、sample list 和 chromosome partitioning	yes	aws CLI 当前不可用，Phase 2B 前需补做 listing
+SRC_3K_INDEL_GENOTYPE_001	indel_genotype	P0	indel genotype exact file path	indel 是 v1 必需范围，不能只做 SNP	确认 exact bulk path、release、VCF/HDF5 格式、ref/alt allele 和 accession-level genotype	yes	SNP-Seek short indel 来源仍需人工定位
+SRC_REF_IRGSP_FASTA_003	reference_genome	P0	reference genome GCF/GCA source choice	reference build 决定 reference_window、variant coordinate 和 annotation 对齐	确认 GCF_001433935.1 与 GCA_001433935.1 的下载入口、FASTA package、chromosome naming 和 checksum	yes	GCA 原记录已保留但不作为低风险直接下载入口
+SRC_TRAIT_TABLE_003	trait_table	P0	trait table accession overlap	trait_state 需要与 genotype accession 有足够 overlap	确认 accession ID、trait unit、重复测量、环境信息、missing rate 和 overlap	yes	trait table 不能用于 phenotype prediction
+SRC_WEAK_GWAS_001	weak_evidence	P0	weak evidence leakage control	GWAS lead SNPs 可能与 benchmark trait/panel 重叠并造成 evidence leakage	建立文献筛选规则，记录 publication、trait、panel、coordinate build 和 leakage flag	yes	没有具体文件 URL 前不进入自动下载
+SRC_WEAK_QTL_001	weak_evidence	P0	QTL coordinate build	QTL intervals 可能使用不同 reference build 或遗传图位置	确认 coordinate type、reference build、trait-specific evidence 和 remapping 需求	yes	只能作为 weak localization evidence
+SRC_WEAK_KNOWN_GENES_001	weak_evidence	P0	known gene database ID mapping	known gene 数据库可能使用 RAP/MSU/NCBI 不同 gene ID	确认数据库来源、gene ID system、coordinate build、trait mapping 和交叉映射规则	yes	不能写成 causal ground truth
