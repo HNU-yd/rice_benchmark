@@ -21,23 +21,24 @@ Phase 2A 已读取：
 
 ## 3. 可以进入 Phase 2B 的候选项
 
-当前没有直接标记为 `phase2b_ready = yes` 的来源。
+Phase 2B-0 后，只有 `SRC_REF_IRGSP_FASTA_003` 被标记为 `phase2b_ready = yes`。
 
-可进入 Phase 2B 下载脚本准备，但需要人工确认后再下载的候选包括：
+可进入 Phase 2C 的候选项见 `reports/download_preflight/phase2c_download_candidates.tsv`，目前仅包含 NCBI RefSeq `GCF_001433935.1_IRGSP-1.0` 的 FASTA 和 GFF3。
 
-- `SRC_3K_SNP_GENOTYPE_001`
-- `SRC_3K_INDEL_GENOTYPE_002`
-- `SRC_REF_IRGSP_FASTA_003`
-- `SRC_TRAIT_TABLE_001`
-- `SRC_WEAK_QTL_001`
+SNP、indel、trait 和 weak evidence 当前不能进入真实下载候选。
 
 ## 4. 不能进入 Phase 2B 的候选项
 
-当前不能直接进入 Phase 2B 下载的候选包括：
+当前不能直接进入 Phase 2C 下载的候选包括：
 
+- `SRC_3K_ACCESSION_METADATA_001`：只有 landing page，没有 exact metadata export。
+- `SRC_3K_SNP_GENOTYPE_001`：只有 S3 prefix，当前环境无 aws CLI，exact file list 未确认。
 - `SRC_3K_INDEL_GENOTYPE_001`：exact indel bulk path 未确认。
+- `SRC_3K_INDEL_GENOTYPE_002`：只有 S3 VCF prefix，exact file names 和 indel representation 未确认。
+- `SRC_TRAIT_TABLE_001`：只有 landing page。
 - `SRC_TRAIT_TABLE_003`：直接数据文件 URL 未做下载前人工确认。
 - `SRC_WEAK_KNOWN_GENES_001`：没有具体 export path。
+- `SRC_WEAK_QTL_001`：只有 metadata page，没有 exact QTL export。
 - `SRC_WEAK_GWAS_001`：没有具体文件 URL，且 leakage 风险高。
 - `SRC_EXCLUDED_PAV_SV_001`：明确 excluded_for_v1。
 
@@ -60,7 +61,11 @@ Phase 2A 已读取：
 
 Phase 2A 已将其风险说明改为：GCA 页面可能被移除或重定向，Phase 2B 下载前应优先检查 GCF_001433935.1 / IRGSP-1.0 assembly entry。
 
-新增 `SRC_REF_IRGSP_FASTA_003` 作为候选确认来源，但仍需人工确认 exact FASTA package、checksum 和 chromosome naming。
+`SRC_REF_IRGSP_FASTA_003` 已确认 exact FTP directory：
+
+`https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/433/935/GCF_001433935.1_IRGSP-1.0/`
+
+FASTA、GFF3 和 `md5checksums.txt` 的 HEAD 检查均返回 HTTP 200。Phase 2C 仍必须先 dry-run，下载后计算 sha256，并检查 chromosome naming。
 
 ## 7. indel genotype source 风险
 
@@ -86,4 +91,3 @@ weak evidence 下载和整理必须记录 provenance。
 GWAS/QTL/known genes 只能作为 `weak localization evidence`，不能写成 `causal ground truth`。
 
 对 literature-curated GWAS lead SNPs，当前建议 `defer`，直到建立人工文献筛选规则、panel overlap 检查和 leakage flag。
-

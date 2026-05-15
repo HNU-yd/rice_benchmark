@@ -140,3 +140,15 @@ Phase 2B 前必须人工确认：
 - QTL coordinate build。
 - known gene database ID mapping。
 
+## Phase 2B-0 核验结果
+
+Phase 2B-0 对 P0 source 做了 exact file list / URL / S3 path 级核验。
+
+已进入 `phase2c_download_candidates.tsv` 的候选项只有：
+
+- `DL_REF_IRGSP_001`：`GCF_001433935.1_IRGSP-1.0_genomic.fna.gz`
+- `DL_REF_IRGSP_GFF_001`：`GCF_001433935.1_IRGSP-1.0_genomic.gff.gz`
+
+仍 unresolved 的 P0 source 包括 accession metadata、SNP genotype、indel genotype、trait table、known genes、QTL 和 GWAS weak evidence。
+
+Phase 2C 下载只允许使用 `phase2c_download_candidates.tsv` 中列出的候选项。下载前仍要 dry-run。下载后必须计算 sha256 并更新 `checksum_table.tsv`。

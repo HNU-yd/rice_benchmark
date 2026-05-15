@@ -2,7 +2,7 @@ sources:
   accession_metadata:
     priority: P0
     required: true
-    status: "partially_verified"
+    status: "unresolved"
     download_status: "not_downloaded"
     candidate_sources:
       - source_id: "SRC_3K_ACCESSION_METADATA_001"
@@ -13,12 +13,12 @@ sources:
         name: "3K Rice S3 / SNP-Seek mirror file inventory"
         access: "https://42basepairs.com/browse/s3/3kricegenome/snpseek-dl"
         verification_status: "partially_verified"
-    notes: "用于 accession_table、ID mapping、subpopulation、country/region 和 split；SNP-Seek 原入口当前需要 mirror 或恢复后复核。"
+    notes: "用于 accession_table、ID mapping、subpopulation、country/region 和 split；当前只有 SNP-Seek landing page，没有 exact metadata export URL。"
 
   snp_genotype:
     priority: P0
     required: true
-    status: "partially_verified"
+    status: "needs_manual_confirmation"
     download_status: "not_downloaded"
     candidate_sources:
       - source_id: "SRC_3K_SNP_GENOTYPE_001"
@@ -29,12 +29,12 @@ sources:
         name: "3K Core SNP PLINK dataset"
         access: "https://42basepairs.com/browse/s3/3kricegenome/snpseek-dl?file=3K_coreSNP-v2.1.plink.tar.gz&preview="
         verification_status: "partially_verified"
-    notes: "用于 SNP variant_table、snp_table 和 genotype_table；Phase 2 前必须确认 release、checksum、chromosome partitioning 和 accession list。"
+    notes: "用于 SNP variant_table、snp_table 和 genotype_table；当前只有 S3 prefix，aws CLI 不可用，仍需 exact file list、release、checksum、chromosome partitioning 和 accession list。"
 
   indel_genotype:
     priority: P0
     required: true
-    status: "partially_verified"
+    status: "needs_manual_confirmation"
     download_status: "not_downloaded"
     candidate_sources:
       - source_id: "SRC_3K_INDEL_GENOTYPE_001"
@@ -45,12 +45,12 @@ sources:
         name: "3K RG accession-level VCF files"
         access: "s3://3kricegenome/VCF/"
         verification_status: "partially_verified"
-    notes: "用于 indel_table、joint SNP+indel benchmark 和 Task 2 hidden genotype evaluation；exact bulk path、ref/alt 表示和 accession 对齐必须人工复核。"
+    notes: "用于 indel_table、joint SNP+indel benchmark 和 Task 2 hidden genotype evaluation；exact bulk path、ref/alt 表示、insertion/deletion 表示和 accession 对齐仍未确认。"
 
   reference_genome:
     priority: P0
     required: true
-    status: "partially_verified"
+    status: "ready_for_phase2c_download"
     download_status: "not_downloaded"
     candidate_sources:
       - source_id: "SRC_REF_IRGSP_FASTA_001"
@@ -59,13 +59,13 @@ sources:
         verification_status: "partially_verified"
       - source_id: "SRC_REF_IRGSP_FASTA_003"
         name: "Nipponbare IRGSP-1.0 reference genome, RefSeq assembly"
-        access: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001433935.1/"
+        access: "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/001/433/935/GCF_001433935.1_IRGSP-1.0/"
         verification_status: "partially_verified"
       - source_id: "SRC_REF_IRGSP_FASTA_002"
         name: "Os-Nipponbare-Reference-IRGSP-1.0"
         access: "https://rapdb.dna.affrc.go.jp/"
         verification_status: "needs_manual_review"
-    notes: "用于 reference_window sequence extraction、variant coordinate context 和 Task 2 reference-conditioned 输入；Phase 2B 前必须确认 GCF/GCA source choice、主 FASTA、chromosome naming 和 checksum。"
+    notes: "用于 reference_window sequence extraction、variant coordinate context 和 Task 2 reference-conditioned 输入；SRC_REF_IRGSP_FASTA_003 的 FASTA/GFF3 exact URL 已通过 HEAD 检查，可进入 Phase 2C dry-run 下载候选。"
 
   gene_annotation:
     priority: P1
@@ -90,7 +90,7 @@ sources:
   trait_table:
     priority: P0
     required: true
-    status: "partially_verified"
+    status: "unresolved"
     download_status: "not_downloaded"
     candidate_sources:
       - source_id: "SRC_TRAIT_TABLE_001"
@@ -105,12 +105,12 @@ sources:
         name: "3kRG phenotype spreadsheet"
         access: "https://s3-ap-southeast-1.amazonaws.com/oryzasnp-atcg-irri-org/3kRG-phenotypes/3kRG_PhenotypeData_v20170411.xlsx"
         verification_status: "needs_manual_review"
-    notes: "只用于构建 trait_state，不作为 phenotype prediction target；Phase 2 前必须确认 accession overlap、trait units、重复测量和环境信息。"
+    notes: "只用于构建 trait_state，不作为 phenotype prediction target；当前 SNP-Seek 只有 landing page，3kRG XLSX HEAD 返回 403，仍需确认 accession overlap、trait units、重复测量和环境信息。"
 
   weak_evidence:
     priority: P0
     required: true
-    status: "needs_manual_review"
+    status: "defer"
     download_status: "not_downloaded"
     candidate_sources:
       - source_id: "SRC_WEAK_KNOWN_GENES_001"
@@ -141,4 +141,4 @@ sources:
         name: "3K rice SV/PAV/pan-genome resources"
         access: "https://cgm.sjtu.edu.cn/3kricedb/about.php"
         verification_status: "excluded_for_v1"
-    notes: "只能作为 weak localization evidence，不能作为 causal ground truth；SV/PAV/CNV、pan-genome 和 multi-reference 内容必须 excluded_for_v1。"
+    notes: "只能作为 weak localization evidence，不能作为 causal ground truth；当前没有 exact weak evidence file/export，GWAS 文献证据需先建立 leakage control，SV/PAV/CNV、pan-genome 和 multi-reference 内容必须 excluded_for_v1。"

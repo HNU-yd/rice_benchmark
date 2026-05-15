@@ -39,15 +39,15 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 2A raw data download preflight。
+当前阶段：Phase 2B-0 P0 download source confirmation。
 
-当前目标：根据 Phase 1 的 source inventory 做下载前核验、manifest 表头和 dry-run 下载脚本准备，不下载 raw data，不写数据 schema，不训练模型。
+当前目标：确认 P0 数据源 exact file list / URL / S3 path，不下载大文件，不写数据 schema，不训练模型。
 
-当前产物包括 `manifest/source_inventory.tsv`、`manifest/preflight_verified_sources.tsv`、`manifest/download_manifest.tsv`、`manifest/checksum_table.tsv`、`docs/download_plan.md`、`docs/raw_data_layout.md` 和 `reports/download_preflight/preflight_report.md`。
+当前产物包括 `manifest/preflight_verified_sources.tsv`、`manifest/download_manifest.tsv`、`reports/download_preflight/p0_confirmed_download_sources.md`、`reports/download_preflight/phase2c_download_candidates.tsv` 和 `reports/download_preflight/p0_unresolved_sources.tsv`。
 
-下一阶段：Phase 2B confirmed raw data download, checksum, and manifest registration。
+下一阶段：Phase 2C confirmed raw data download and checksum。
 
-当前 Phase 2A 不包含 raw data 下载、schema 实现、benchmark construction、model implementation 或 evaluator implementation。
+当前 Phase 2B-0 不包含 raw data 下载、schema 实现、benchmark construction、model implementation 或 evaluator implementation。
 
 ## 目录概览
 
