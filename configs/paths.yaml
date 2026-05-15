@@ -1,0 +1,17 @@
+project:
+  name: rice_trait_locus_benchmark
+  version: phase0
+
+paths:
+  root: "."
+  data_raw: "data/raw"
+  data_interim: "data/interim"
+  data_processed: "data/processed"
+  manifest: "manifest"
+  reports: "reports"
+  logs: "logs"
+
+notes:
+  - "This file is a template created in Phase 0."
+  - "Do not assume these directories contain data yet."
+

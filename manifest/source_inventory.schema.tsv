@@ -1,0 +1,21 @@
+column_name	required	allowed_values	description	example
+source_id	yes	free_text	数据源唯一 ID，建议使用 SRC_ 前缀并包含类别信息	SRC_3K_ACCESSION_METADATA_001
+data_category	yes	accession_metadata|snp_genotype|indel_genotype|reference_genome|gene_annotation|trait_table|weak_evidence	数据类别，Phase 1 至少覆盖 7 类必需数据源	snp_genotype
+dataset_name	yes	free_text	候选数据集名称	3K Rice SNP-Seek base/filtered/core SNP sets
+species	yes	free_text	物种或工具性数据说明；主数据应为 Oryza sativa	Oryza sativa
+reference_build	yes	free_text	参考基因组版本；未知写 unknown，不适用写 not_applicable	Nipponbare / IRGSP-1.0
+variant_type	yes	SNP|indel|SNP+indel|none|mixed|not_applicable|SV/PAV/CNV	数据源涉及的变异类型	SNP
+expected_format	yes	free_text	预期格式；未知写 unknown，不要编造	VCF
+expected_size	yes	free_text	预期大小；未知写 unknown，不要编造	unknown
+candidate_source_name	yes	free_text	候选来源名称	AWS Open Data Registry 3000 Rice Genomes
+download_url_or_access_method	yes	free_text	URL、S3 path、网页入口或访问方法；不能确认写 to_be_verified	s3://3kricegenome/
+access_method_type	yes	s3|https|ftp|database|manual|paper_supplement|unknown	访问方式类型	s3
+priority	yes	P0|P1|P2	优先级；P0 必须确认，P1 重要但可后补，P2 supplementary 可后补	P0
+required_for_task	yes	Task1|Task2|Task1+Task2|evaluation|explanation|manifest_only	后续任务用途	Task1
+used_for_table	yes	free_text	后续可能进入的 benchmark 表，多个表用分号分隔	variant_table;genotype_table
+verification_status	yes	verified|partially_verified|needs_manual_review|unavailable|excluded_for_v1	Phase 1 核验状态	partially_verified
+download_status	yes	not_downloaded	Phase 1 不能下载数据，必须全部为 not_downloaded	not_downloaded
+risk_level	yes	low|medium|high	下载或使用风险等级	high
+risk_notes	yes	free_text	风险说明，例如 URL mirror、ID mismatch、reference build mismatch	Original source offline; mirror requires checksum validation
+exclude_from_v1	yes	yes|no	是否排除出第一版 benchmark；SV/PAV/CNV/pan-genome/multi-reference 必须 yes	no
+notes	no	free_text	简要备注	用于 accession_table 和 split construction

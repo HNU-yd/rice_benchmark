@@ -1,0 +1,140 @@
+sources:
+  accession_metadata:
+    priority: P0
+    required: true
+    status: "partially_verified"
+    download_status: "not_downloaded"
+    candidate_sources:
+      - source_id: "SRC_3K_ACCESSION_METADATA_001"
+        name: "SNP-Seek 3K variety/passport metadata"
+        access: "https://snp-seek.irri.org/"
+        verification_status: "partially_verified"
+      - source_id: "SRC_3K_ACCESSION_METADATA_002"
+        name: "3K Rice S3 / SNP-Seek mirror file inventory"
+        access: "https://42basepairs.com/browse/s3/3kricegenome/snpseek-dl"
+        verification_status: "partially_verified"
+    notes: "用于 accession_table、ID mapping、subpopulation、country/region 和 split；SNP-Seek 原入口当前需要 mirror 或恢复后复核。"
+
+  snp_genotype:
+    priority: P0
+    required: true
+    status: "partially_verified"
+    download_status: "not_downloaded"
+    candidate_sources:
+      - source_id: "SRC_3K_SNP_GENOTYPE_001"
+        name: "3K Rice SNP-Seek base/filtered/core SNP sets"
+        access: "s3://3kricegenome/snpseek-dl/3krg-base-filt-core-v0.7/"
+        verification_status: "partially_verified"
+      - source_id: "SRC_3K_SNP_GENOTYPE_002"
+        name: "3K Core SNP PLINK dataset"
+        access: "https://42basepairs.com/browse/s3/3kricegenome/snpseek-dl?file=3K_coreSNP-v2.1.plink.tar.gz&preview="
+        verification_status: "partially_verified"
+    notes: "用于 SNP variant_table、snp_table 和 genotype_table；Phase 2 前必须确认 release、checksum、chromosome partitioning 和 accession list。"
+
+  indel_genotype:
+    priority: P0
+    required: true
+    status: "partially_verified"
+    download_status: "not_downloaded"
+    candidate_sources:
+      - source_id: "SRC_3K_INDEL_GENOTYPE_001"
+        name: "SNP-Seek short indel genotype dataset"
+        access: "https://snp-seek.irri.org/"
+        verification_status: "partially_verified"
+      - source_id: "SRC_3K_INDEL_GENOTYPE_002"
+        name: "3K RG accession-level VCF files"
+        access: "s3://3kricegenome/VCF/"
+        verification_status: "partially_verified"
+    notes: "用于 indel_table、joint SNP+indel benchmark 和 Task 2 hidden genotype evaluation；exact bulk path、ref/alt 表示和 accession 对齐必须人工复核。"
+
+  reference_genome:
+    priority: P0
+    required: true
+    status: "partially_verified"
+    download_status: "not_downloaded"
+    candidate_sources:
+      - source_id: "SRC_REF_IRGSP_FASTA_001"
+        name: "Nipponbare IRGSP-1.0 reference genome"
+        access: "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001433935.1/"
+        verification_status: "partially_verified"
+      - source_id: "SRC_REF_IRGSP_FASTA_002"
+        name: "Os-Nipponbare-Reference-IRGSP-1.0"
+        access: "https://rapdb.dna.affrc.go.jp/"
+        verification_status: "needs_manual_review"
+    notes: "用于 reference_window sequence extraction、variant coordinate context 和 Task 2 reference-conditioned 输入；Phase 2 必须固定主 FASTA 和 chromosome naming。"
+
+  gene_annotation:
+    priority: P1
+    required: true
+    status: "partially_verified"
+    download_status: "not_downloaded"
+    candidate_sources:
+      - source_id: "SRC_GENE_ANNOTATION_001"
+        name: "NCBI Oryza sativa Japonica Group Annotation Release 102"
+        access: "https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Oryza_sativa_Japonica_Group/102/"
+        verification_status: "partially_verified"
+      - source_id: "SRC_GENE_ANNOTATION_002"
+        name: "RAP-DB IRGSP-1.0 gene annotation"
+        access: "to_be_verified"
+        verification_status: "needs_manual_review"
+      - source_id: "SRC_GENE_ANNOTATION_003"
+        name: "Ensembl Plants Oryza sativa IRGSP-1.0 annotation"
+        access: "https://plants.ensembl.org/Oryza_sativa/Info/Index"
+        verification_status: "partially_verified"
+    notes: "用于 gene_annotation_table、candidate_gene_ranking_table、nearest known gene baseline 和 matched decoy matching features；后续必须处理 RAP/MSU/NCBI ID mapping。"
+
+  trait_table:
+    priority: P0
+    required: true
+    status: "partially_verified"
+    download_status: "not_downloaded"
+    candidate_sources:
+      - source_id: "SRC_TRAIT_TABLE_001"
+        name: "SNP-Seek / IRGCIS 3K passport and phenotype data"
+        access: "https://snp-seek.irri.org/"
+        verification_status: "partially_verified"
+      - source_id: "SRC_TRAIT_TABLE_002"
+        name: "MBKbase Rice3K phenotype records"
+        access: "https://www.mbkbase.org/rice/phenotype"
+        verification_status: "partially_verified"
+      - source_id: "SRC_TRAIT_TABLE_003"
+        name: "3kRG phenotype spreadsheet"
+        access: "https://s3-ap-southeast-1.amazonaws.com/oryzasnp-atcg-irri-org/3kRG-phenotypes/3kRG_PhenotypeData_v20170411.xlsx"
+        verification_status: "needs_manual_review"
+    notes: "只用于构建 trait_state，不作为 phenotype prediction target；Phase 2 前必须确认 accession overlap、trait units、重复测量和环境信息。"
+
+  weak_evidence:
+    priority: P0
+    required: true
+    status: "needs_manual_review"
+    download_status: "not_downloaded"
+    candidate_sources:
+      - source_id: "SRC_WEAK_KNOWN_GENES_001"
+        name: "Rice known trait genes / cloned genes"
+        access: "to_be_verified"
+        verification_status: "needs_manual_review"
+      - source_id: "SRC_WEAK_QTL_001"
+        name: "Q-TARO representative rice QTLs"
+        access: "https://dbarchive.biosciencedbc.jp/en/qtaro/desc.html"
+        verification_status: "partially_verified"
+      - source_id: "SRC_WEAK_GWAS_001"
+        name: "Literature-curated 3K Rice GWAS lead SNPs"
+        access: "to_be_verified"
+        verification_status: "needs_manual_review"
+      - source_id: "SRC_WEAK_RICEVARMAP_001"
+        name: "RiceVarMap v2.0 GWAS and variation annotation"
+        access: "https://riceqtl.ncpgr.cn/"
+        verification_status: "partially_verified"
+      - source_id: "SRC_WEAK_LD_001"
+        name: "LD blocks / credible intervals from 3K trait studies"
+        access: "to_be_verified"
+        verification_status: "needs_manual_review"
+      - source_id: "SRC_WEAK_PATHWAY_001"
+        name: "Gramene / Oryzabase trait-gene and pathway annotations"
+        access: "https://www.gramene.org/"
+        verification_status: "needs_manual_review"
+      - source_id: "SRC_EXCLUDED_PAV_SV_001"
+        name: "3K rice SV/PAV/pan-genome resources"
+        access: "https://cgm.sjtu.edu.cn/3kricedb/about.php"
+        verification_status: "excluded_for_v1"
+    notes: "只能作为 weak localization evidence，不能作为 causal ground truth；SV/PAV/CNV、pan-genome 和 multi-reference 内容必须 excluded_for_v1。"

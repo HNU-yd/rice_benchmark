@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+conda-meta/
+*.egg-info/
+
+# Data
+data/raw/
+data/interim/
+data/processed/
+data/external/
+*.vcf
+*.vcf.gz
+*.bcf
+*.bcf.csi
+*.tbi
+*.fasta
+*.fa
+*.fna
+*.fastq
+*.fq
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.h5
+*.hdf5
+*.parquet
+
+# Large model / embedding files
+checkpoints/
+models/
+weights/
+embeddings/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+
+# Reports and logs
+logs/
+tmp/
+temp/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
