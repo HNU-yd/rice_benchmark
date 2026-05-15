@@ -1,21 +1,23 @@
 # Raw Data 目录规划
 
-本文档只规划后续 raw data 目录结构。Phase 2A 不创建 `data/raw/`，不下载 raw data，不提交 raw data 文件。
+本文档记录 raw data 目录结构。Phase 2D 已创建 `data/raw/` 并下载公开可访问的 3K Rice benchmark 相关 raw data，但 `data/raw/` 不提交到 git。
 
 ## 规划结构
 
 ```text
 data/raw/
   reference/
+  annotation/
+  accessions/
   variants/
     snp/
     indel/
-    joint_vcf/
-  accessions/
+    mixed/
   traits/
-  annotation/
   evidence/
-  aws_listing/
+  metadata/
+  checksums/
+  listings/
 ```
 
 ## 目录用途
@@ -36,7 +38,11 @@ data/raw/
 
 `data/raw/evidence/` 用于存放 GWAS、QTL、known genes、LD blocks、credible intervals 和 trait-gene annotation raw evidence。所有 evidence 只能作为 `weak localization evidence`。
 
-`data/raw/aws_listing/` 用于存放后续 Phase 2B 生成的小型 AWS listing metadata。不得存放 VCF/BCF/BAM/CRAM 等 raw genotype 文件。
+`data/raw/metadata/` 用于存放 download page、manifest、README、license、population structure matrix 等 source metadata。不得把这些文件直接当作已清洗的 accession table。
+
+`data/raw/checksums/` 用于存放 source-provided checksum 或 md5 文件。
+
+`data/raw/listings/` 用于存放 AWS listing metadata。不得存放 VCF/BCF/BAM/CRAM 等 raw genotype 文件。
 
 ## 不允许放入 raw data 目录的内容
 
@@ -58,6 +64,13 @@ data/raw/
 - `manifest/*.schema.tsv`
 - `reports/download_preflight/*.tsv`
 - `reports/download_preflight/*.md`
+- `reports/fast_download/*.tsv`
+- `reports/fast_download/*.md`
 - 下载脚本模板
 - 文档
 
+## Phase 2D 当前落盘概况
+
+当前 `data/raw` 总大小约 3.6G。主要内容包括 IRGSP-1.0 FASTA/GFF3、3K Rice SNP genotype、indel genotype、phenotype table、accession metadata archive、Qmatrix、README/license/manifest 和 AWS listing 文件。
+
+raw data inventory 阶段必须先检查 accession / SNP / indel / trait / reference build 对齐关系，再决定后续 schema 和 benchmark table。

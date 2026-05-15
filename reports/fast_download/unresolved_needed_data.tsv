@@ -1,0 +1,4 @@
+data_category	needed_data	reason_unresolved	suggested_next_step
+weak_evidence	known trait genes / cloned genes	no exact downloadable table identified in fast listing	manual database export review for OGRO/Oryzabase/Q-TARO
+weak_evidence	GWAS lead SNPs / significant SNPs	no exact 3K Rice GWAS lead SNP table identified	manual literature curation with leakage control
+accession_metadata	curated accession metadata with accession_id fields	RICE_RP / manifest files may contain metadata but require later inventory	inspect downloaded metadata archives without assuming schema

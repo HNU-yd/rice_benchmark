@@ -1,0 +1,9 @@
+listing_id	path	status	n_lines	output_file	notes
+aws_3kricegenome_root	s3://3kricegenome/	success	36	data/raw/listings/aws_3kricegenome_root.txt	truncated_to_first_5000_lines_if_needed
+aws_3kricegenome_snpseek_dl	s3://3kricegenome/snpseek-dl/	success	21	data/raw/listings/aws_3kricegenome_snpseek_dl.txt	truncated_to_first_5000_lines_if_needed
+aws_3kricegenome_vcf	s3://3kricegenome/VCF/	failed	0	data/raw/listings/aws_3kricegenome_vcf.txt	no_files_listed_or_access_failed
+aws_3kricegenome_reduced	s3://3kricegenome/reduced/	success	36	data/raw/listings/aws_3kricegenome_reduced.txt	truncated_to_first_5000_lines_if_needed
+aws_3kricegenome_reduced_recursive	s3://3kricegenome/reduced/	success	36	data/raw/listings/aws_3kricegenome_reduced_recursive.txt	truncated_to_first_5000_lines_if_needed
+aws_3kricegenome_snpseek_dl_recursive	s3://3kricegenome/snpseek-dl/	success	143	data/raw/listings/aws_3kricegenome_snpseek_dl_recursive.txt	truncated_to_first_5000_lines_if_needed
+aws_3kricegenome_snpseek_dl_phenotype	s3://3kricegenome/snpseek-dl/phenotype/	success	2	data/raw/listings/aws_3kricegenome_snpseek_dl_phenotype.txt	truncated_to_first_5000_lines_if_needed
+aws_3kricegenome_snpseek_dl_core	s3://3kricegenome/snpseek-dl/3krg-base-filt-core-v0.7/	success	17	data/raw/listings/aws_3kricegenome_snpseek_dl_core.txt	truncated_to_first_5000_lines_if_needed

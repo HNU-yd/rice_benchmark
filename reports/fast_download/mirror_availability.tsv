@@ -1,0 +1,6 @@
+source	check_type	status	detail
+AWS Open Data 3K Rice	aws s3 ls	success	root、snpseek-dl、reduced、phenotype、core prefix listing 成功；VCF prefix listing 返回空/失败
+42basepairs root	curl HTTP status	200	https://42basepairs.com/browse/s3/3kricegenome
+42basepairs reduced	curl HTTP status	200	https://42basepairs.com/browse/s3/3kricegenome/reduced
+SNP-Seek mirror snpseekv3	curl HTTP status	200	https://snpseekv3.duckdns.org/
+SNP-Seek mirror brs-snpseek	curl HTTP status	200	https://brs-snpseek.duckdns.org/

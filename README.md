@@ -39,22 +39,22 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 2B-0 P0 download source confirmation。
+当前阶段：Phase 2D fast download available data。
 
-当前目标：确认 P0 数据源 exact file list / URL / S3 path，不下载大文件，不写数据 schema，不训练模型。
+当前目标：快速下载公开可访问的 3K Rice benchmark 相关 raw data，并补齐 download manifest、checksum 和下载报告。不写数据 schema，不构建 benchmark table，不训练模型。
 
-当前产物包括 `manifest/preflight_verified_sources.tsv`、`manifest/download_manifest.tsv`、`reports/download_preflight/p0_confirmed_download_sources.md`、`reports/download_preflight/phase2c_download_candidates.tsv` 和 `reports/download_preflight/p0_unresolved_sources.tsv`。
+当前产物包括 `reports/fast_download/auto_download_candidates.tsv`、`reports/fast_download/downloaded_files.tsv`、`reports/fast_download/checksum_summary.tsv`、`reports/fast_download/fast_download_report.md`、`manifest/download_manifest.tsv` 和 `manifest/checksum_table.tsv`。
 
-下一阶段：Phase 2C confirmed raw data download and checksum。
+下一阶段：raw data inventory，对已下载文件做 accession / SNP / indel / trait / reference build 对齐检查。
 
-当前 Phase 2B-0 不包含 raw data 下载、schema 实现、benchmark construction、model implementation 或 evaluator implementation。
+当前 Phase 2D 不包含 schema 实现、benchmark construction、model implementation、evaluator implementation 或 Evo2 相关实现。`data/raw/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 
 - `AGENTS.md`：Codex 任务需要遵守的仓库级科研与工程规则。
 - `configs/`：paths 和 source categories 的配置模板。
 - `docs/`：项目范围、数据获取计划、benchmark 范围、Codex workflow 和审阅清单。
-- `scripts/`：后续 download、inspect 和 utility scripts 的占位目录。
+- `scripts/`：download、inspect 和 utility scripts。
 - `src/ricebench/`：最小 Python package namespace。
 - `tests/`：后续 tests 的占位目录。
 - `.codex/prompts/`：分阶段 Codex prompt 文件。

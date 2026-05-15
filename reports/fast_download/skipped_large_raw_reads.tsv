@@ -1,0 +1,4 @@
+remote_path_or_url	size_bytes	reason_skipped
+s3://3kricegenome/reduced/CNVnator_Q10_goodRD_noCN1-3.vcf.gz	1096525917	forbidden_read_or_out_of_scope_keyword
+s3://3kricegenome/reduced/CNVnator_Q10_goodRD_noCN1-3_regions.txt	4826289	forbidden_read_or_out_of_scope_keyword
+s3://3kricegenome/reduced/LargeSV-README.txt	881	forbidden_read_or_out_of_scope_keyword

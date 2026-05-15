@@ -1,0 +1,2 @@
+2026-02-24 17:15:05          0 snpseek-dl/phenotype/
+2026-02-24 17:16:17    1135836 snpseek-dl/phenotype/3kRG_PhenotypeData_v20170411.xlsx

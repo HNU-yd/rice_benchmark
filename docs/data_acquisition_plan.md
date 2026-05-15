@@ -54,3 +54,17 @@ Phase 2A 产生：
 - `reports/download_preflight/preflight_report.md`
 
 Phase 2B 只有在 `manual_confirmation_required.tsv` 和 `preflight_verified_sources.tsv` 人工审阅后才能开始。
+
+## Phase 2D 快速下载结果引用
+
+Phase 2D 已按快速下载任务下载公开可访问的 3K Rice raw data。下载结果不改变 benchmark 边界：第一版仍限定为 3K Rice、SNP / indel，不做 `phenotype prediction`，weak evidence 只能作为 `weak localization evidence`。
+
+当前下载结果见：
+
+- `reports/fast_download/fast_download_report.md`
+- `reports/fast_download/auto_download_candidates.tsv`
+- `reports/fast_download/downloaded_files.tsv`
+- `manifest/download_manifest.tsv`
+- `manifest/checksum_table.tsv`
+
+下一步必须做 raw data inventory，重点检查 accession metadata、SNP genotype、indel genotype、trait table 和 IRGSP-1.0 reference build 是否可对齐。不能在 inventory 前假设 accession overlap 已成立。

@@ -1,0 +1,21 @@
+                           PRE 1k1rg/
+                           PRE 3k-hdra-merge/
+                           PRE 3k-pruned-v2.1/
+                           PRE 3krg-all-biallelic/
+                           PRE 3krg-base-filt-core-v0.7/
+                           PRE 3krg-base-filt-v0.7/
+                           PRE 3krg-base-v0.7/
+                           PRE HDF5/
+                           PRE IRRI_Lines/
+                           PRE baap/
+                           PRE gq92/
+                           PRE irri_elite/
+                           PRE phenotype/
+                           PRE pue/
+2018-04-10 21:54:47          1
+2018-04-10 21:54:47     598336 3K-HDRA-snp-comm-miss5pc.txt.gz
+2018-09-26 17:51:21  485787981 3K_coreSNP-v2.1.plink.tar.gz
+2018-04-10 21:55:07  643561279 NB_bialSNP_pseudo_canonical_ALL.vcf.gz
+2018-04-10 21:55:11     149762 Qmatrix-k9-3kRG.csv
+2018-08-31 11:57:28  986533366 RICE_RP.tar.gz
+2026-03-24 16:16:19      14666 Snpseek_subsets.html

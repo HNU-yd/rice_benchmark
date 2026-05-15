@@ -1,4 +1,4 @@
-# Raw Data 下载计划
+# Raw Data 下载计划与 Phase 2D 结果
 
 ## 1. Phase 2A 目标
 
@@ -152,3 +152,27 @@ Phase 2B-0 对 P0 source 做了 exact file list / URL / S3 path 级核验。
 仍 unresolved 的 P0 source 包括 accession metadata、SNP genotype、indel genotype、trait table、known genes、QTL 和 GWAS weak evidence。
 
 Phase 2C 下载只允许使用 `phase2c_download_candidates.tsv` 中列出的候选项。下载前仍要 dry-run。下载后必须计算 sha256 并更新 `checksum_table.tsv`。
+
+## Phase 2D 快速下载结果
+
+Phase 2D 按用户要求转为快速下载公开可访问数据，不再只停留在 reference 文件。实际执行范围仍限定为 3K Rice、SNP / indel、trait-conditioned SNP/indel localization 所需 raw data。
+
+已完成：
+
+- AWS Open Data 3K Rice root、`snpseek-dl/`、`reduced/`、phenotype 和 core SNP prefix listing。
+- 55 个下载候选筛选，其中 SNP genotype 36 个、indel genotype 5 个、accession metadata 10 个、trait table 1 个、reference 1 个、annotation 1 个、metadata/checksum 1 个。
+- 55 个候选文件全部下载成功。
+- 8 个 AWS listing 文件保存到 `data/raw/listings/`。
+- `manifest/download_manifest.tsv` 和 `manifest/checksum_table.tsv` 更新为 63 个 `data/raw` 文件的记录。
+- 所有登记文件已计算 sha256。
+
+未完成或必须后续核验：
+
+- `RICE_RP.tar.gz` 需要在 raw data inventory 阶段解包检查 accession_id、sample_id、subpopulation、country/region 等字段。
+- SNP、indel、trait table 的 accession overlap 尚未检查。
+- FASTA / GFF3 / SNP / indel 的 chromosome naming 和 reference build 尚未做一致性审计。
+- known gene、QTL、GWAS lead SNP 表未在 fast listing 中发现可直接下载且 provenance 足够清晰的文件。
+
+本阶段仍不实现 schema、normalization、benchmark construction、evaluator、model 或 Evo2。
+
+详细结果见 `reports/fast_download/fast_download_report.md`。

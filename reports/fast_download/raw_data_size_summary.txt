@@ -1,0 +1,9 @@
+941M	data/raw/accessions
+4.0K	data/raw/annotation
+20K	data/raw/checksums
+4.0K	data/raw/evidence
+40K	data/raw/listings
+3.3M	data/raw/metadata
+124M	data/raw/reference
+1.1M	data/raw/traits
+2.5G	data/raw/variants
