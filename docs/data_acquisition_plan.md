@@ -68,3 +68,15 @@ Phase 2D 已按快速下载任务下载公开可访问的 3K Rice raw data。下
 - `manifest/checksum_table.tsv`
 
 下一步必须做 raw data inventory，重点检查 accession metadata、SNP genotype、indel genotype、trait table 和 IRGSP-1.0 reference build 是否可对齐。不能在 inventory 前假设 accession overlap 已成立。
+
+## Phase 3 raw data inventory 结果引用
+
+Phase 3 已对下载后的 raw data 做轻量 inventory。当前结论是：
+
+- IRGSP-1.0 FASTA 与 GFF3 使用一致的 RefSeq `NC_*` seqid。
+- SNP / indel PLINK 文件使用 numeric chromosome values，需要建立 chromosome naming mapping。
+- SNP core PLINK 与 indel PLINK 的 B001-style sample IDs 高度重合。
+- trait table 的 accession-like 字段与 genotype B001-style IDs 尚未直接对齐，需要 accession mapping。
+- `RICE_RP.tar.gz` 主要包含 PLINK bed/bim/fam，没有独立 passport metadata 表。
+
+详细结果见 `reports/raw_data_inventory/raw_data_inventory_report.md`。

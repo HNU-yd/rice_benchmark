@@ -1,0 +1,9 @@
+source_file	extracted_file	n_rows	n_cols	columns	candidate_accession_columns	candidate_subpopulation_columns	candidate_country_columns	n_candidate_accessions	notes
+data/raw/accessions/RICE_RP.tar.gz	data/interim/inventory/extracted_metadata/RICE_RP__RICE_RP_mLIDs.fam	4591	6	FID,IID,paternal_id,maternal_id,sex,phenotype	IID			4591	FAM extracted from archive; IDs require mapping to phenotype/accession metadata
+data/raw/metadata/Qmatrix-k9-3kRG.csv		3024	10	id,ind1B,trop1,ind3,aus,ind2,temp,trop2,aro,ind1A	id	ind1B,trop1,ind3,aus,ind2,temp,trop2,aro,ind1A		3023	Qmatrix population structure metadata; not a complete passport table
+data/raw/metadata/README-1st-3kRG-Permissive-License.txt		6						0	description_or_manifest_file; inspect manually if needed
+data/raw/metadata/README-rice-reference-genomes-used.txt		24						0	description_or_manifest_file; inspect manually if needed
+data/raw/metadata/3kRG_download.html		1020						0	description_or_manifest_file; inspect manually if needed
+data/raw/metadata/3kRG_download_20240618.html		976						0	description_or_manifest_file; inspect manually if needed
+data/raw/metadata/3kRG_download_20260223.html		1032						0	description_or_manifest_file; inspect manually if needed
+data/raw/metadata/orig~3kRG_download.html		191						0	description_or_manifest_file; inspect manually if needed

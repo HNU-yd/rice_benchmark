@@ -1,0 +1,2 @@
+file_group	data_category_guess	fam_path	bim_path	bed_path	sample_count	variant_count	chrom_values	first_samples	first_variants	notes
+Nipponbare_indel	indel_genotype	data/raw/variants/indel/Nipponbare_indel.fam.gz	data/raw/variants/indel/Nipponbare_indel.bim.gz	data/raw/variants/indel/Nipponbare_indel.bed.gz	3023	2354934	1,2,3,4,5,6,7,8,9,10,11,12	B001,B002,B003,B004,B005,B006,B007,B008,B009,B010,...(+3013)	1037,1044,1060,1065,1073,1084,1091,1092,1098,1285	bed_not_parsed_binary_only_presence_recorded

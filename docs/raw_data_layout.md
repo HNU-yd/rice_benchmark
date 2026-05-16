@@ -74,3 +74,19 @@ data/raw/
 当前 `data/raw` 总大小约 3.6G。主要内容包括 IRGSP-1.0 FASTA/GFF3、3K Rice SNP genotype、indel genotype、phenotype table、accession metadata archive、Qmatrix、README/license/manifest 和 AWS listing 文件。
 
 raw data inventory 阶段必须先检查 accession / SNP / indel / trait / reference build 对齐关系，再决定后续 schema 和 benchmark table。
+
+## Phase 3 inventory 中间目录
+
+Phase 3 生成的中间检查文件位于：
+
+```text
+data/interim/inventory/
+```
+
+该目录只保存 inventory 过程中的 sample/accession set、reference chromosome list、GFF3 seqid list 和少量从 archive 抽取的 metadata/FAM 文件。`data/interim/` 不进入 git。
+
+可提交的 Phase 3 结果位于：
+
+```text
+reports/raw_data_inventory/
+```

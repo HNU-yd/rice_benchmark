@@ -1,0 +1,121 @@
+source_type	source_file	chrom_values	n_chrom_values	n_matching_reference	n_not_matching_reference	example_not_matching	notes
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029256.1	1	1	0		NC_029256.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 1, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029257.1	1	1	0		NC_029257.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 2, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029258.1	1	1	0		NC_029258.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 3, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029259.1	1	1	0		NC_029259.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 4, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029260.1	1	1	0		NC_029260.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 5, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029261.1	1	1	0		NC_029261.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 6, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029262.1	1	1	0		NC_029262.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 7, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029263.1	1	1	0		NC_029263.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 8, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029264.1	1	1	0		NC_029264.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 9, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029265.1	1	1	0		NC_029265.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 10, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029266.1	1	1	0		NC_029266.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 11, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029267.1	1	1	0		NC_029267.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 12, IRGSP-1.0
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379186.1	1	1	0		NW_015379186.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_050
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379187.1	1	1	0		NW_015379187.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_049
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379188.1	1	1	0		NW_015379188.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_048
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379189.1	1	1	0		NW_015379189.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_047
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379190.1	1	1	0		NW_015379190.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_046
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379191.1	1	1	0		NW_015379191.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_045
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379192.1	1	1	0		NW_015379192.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_044
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379193.1	1	1	0		NW_015379193.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_043
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379194.1	1	1	0		NW_015379194.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_042
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379195.1	1	1	0		NW_015379195.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_041
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379196.1	1	1	0		NW_015379196.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_039
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379197.1	1	1	0		NW_015379197.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_038
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379198.1	1	1	0		NW_015379198.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_037
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379199.1	1	1	0		NW_015379199.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_036
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379200.1	1	1	0		NW_015379200.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_035
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379201.1	1	1	0		NW_015379201.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_034
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379202.1	1	1	0		NW_015379202.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_033
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379203.1	1	1	0		NW_015379203.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_032
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379204.1	1	1	0		NW_015379204.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_031
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379205.1	1	1	0		NW_015379205.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_030
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379206.1	1	1	0		NW_015379206.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_029
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379207.1	1	1	0		NW_015379207.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_028
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379208.1	1	1	0		NW_015379208.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_027
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379209.1	1	1	0		NW_015379209.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_026
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379210.1	1	1	0		NW_015379210.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_024
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379211.1	1	1	0		NW_015379211.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_023
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379212.1	1	1	0		NW_015379212.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_022
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379213.1	1	1	0		NW_015379213.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_021
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379214.1	1	1	0		NW_015379214.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_020
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379215.1	1	1	0		NW_015379215.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_019
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379216.1	1	1	0		NW_015379216.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_016
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379217.1	1	1	0		NW_015379217.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_015
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379218.1	1	1	0		NW_015379218.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_014
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379219.1	1	1	0		NW_015379219.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_013
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379220.1	1	1	0		NW_015379220.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_012
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379221.1	1	1	0		NW_015379221.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_011
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379222.1	1	1	0		NW_015379222.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_010
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379223.1	1	1	0		NW_015379223.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_009
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379224.1	1	1	0		NW_015379224.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_008
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379225.1	1	1	0		NW_015379225.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_007
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379226.1	1	1	0		NW_015379226.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_005
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379227.1	1	1	0		NW_015379227.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_004
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379228.1	1	1	0		NW_015379228.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_002
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_001320.1	1	1	0		NC_001320.1 Oryza sativa Japonica Group plastid, complete genome
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_011033.1	1	1	0		NC_011033.1 Oryza sativa Japonica Group mitochondrion, complete genome
+reference_chromosomes	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_001751.1	1	1	0		NC_001751.1 Oryza sativa (japonica cultivar-group) mitochondrial plasmid B1, complete sequence
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_001320.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_001751.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_011033.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029256.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029257.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029258.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029259.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029260.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029261.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029262.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029263.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029264.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029265.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029266.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NC_029267.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379186.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379187.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379188.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379189.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379190.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379191.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379192.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379193.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379194.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379195.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379196.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379197.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379198.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379199.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379200.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379201.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379202.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379203.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379204.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379205.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379206.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379207.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379208.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379209.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379210.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379211.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379212.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379213.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379214.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379215.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379216.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379217.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379218.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379219.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379220.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379221.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379222.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379223.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379224.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379225.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379226.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379227.1	1	1	0		GFF3 direct seqid comparison
+gff3_seqids	data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	NW_015379228.1	1	1	0		GFF3 direct seqid comparison
+snp_vcf_chroms	data/raw/variants/snp/NB_bialSNP_pseudo.vcf.gz	1	1	0	1	1	VCF observed chroms are numeric; require mapping to RefSeq NC_* names
+snp_vcf_chroms	data/raw/variants/snp/NB_bialSNP_pseudo_canonical_ALL.vcf.gz	1	1	0	1	1	VCF observed chroms are numeric; require mapping to RefSeq NC_* names
+indel_plink_chroms	Nipponbare_indel	1,10,11,12,2,3,4,5,6,7,8,9	12	0	12	1,10,11,12,2,3,4,5,6,7,8,9	PLINK chrom values are numeric; require mapping to RefSeq NC_* names
+snp_plink_chroms	core_v0.7	1,10,11,12,2,3,4,5,6,7,8,9	12	0	12	1,10,11,12,2,3,4,5,6,7,8,9	PLINK chrom values are numeric; require mapping to RefSeq NC_* names

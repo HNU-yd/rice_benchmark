@@ -1,0 +1,59 @@
+source_file	seq_name	seq_length	is_primary_chromosome_guess	notes
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029256.1	43270923	yes	NC_029256.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 1, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029257.1	35937250	yes	NC_029257.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 2, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029258.1	36413819	yes	NC_029258.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 3, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029259.1	35502694	yes	NC_029259.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 4, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029260.1	29958434	yes	NC_029260.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 5, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029261.1	31248787	yes	NC_029261.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 6, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029262.1	29697621	yes	NC_029262.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 7, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029263.1	28443022	yes	NC_029263.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 8, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029264.1	23012720	yes	NC_029264.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 9, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029265.1	23207287	yes	NC_029265.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 10, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029266.1	29021106	yes	NC_029266.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 11, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_029267.1	27531856	yes	NC_029267.1 Oryza sativa Japonica Group cultivar Nipponbare chromosome 12, IRGSP-1.0
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379186.1	8529	no	NW_015379186.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_050
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379187.1	6261	no	NW_015379187.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_049
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379188.1	7140	no	NW_015379188.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_048
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379189.1	20829	no	NW_015379189.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_047
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379190.1	11447	no	NW_015379190.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_046
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379191.1	22545	no	NW_015379191.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_045
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379192.1	6000	no	NW_015379192.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_044
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379193.1	4236	no	NW_015379193.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_043
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379194.1	5510	no	NW_015379194.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_042
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379195.1	10210	no	NW_015379195.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_041
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379196.1	6269	no	NW_015379196.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_039
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379197.1	8197	no	NW_015379197.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_038
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379198.1	13061	no	NW_015379198.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_037
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379199.1	10434	no	NW_015379199.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_036
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379200.1	10686	no	NW_015379200.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_035
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379201.1	10311	no	NW_015379201.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_034
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379202.1	11093	no	NW_015379202.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_033
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379203.1	9603	no	NW_015379203.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_032
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379204.1	9548	no	NW_015379204.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_031
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379205.1	10794	no	NW_015379205.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_030
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379206.1	12884	no	NW_015379206.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_029
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379207.1	31094	no	NW_015379207.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_028
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379208.1	11522	no	NW_015379208.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_027
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379209.1	19971	no	NW_015379209.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_026
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379210.1	10060	no	NW_015379210.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_024
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379211.1	24772	no	NW_015379211.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_023
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379212.1	9889	no	NW_015379212.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_022
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379213.1	17477	no	NW_015379213.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_021
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379214.1	10699	no	NW_015379214.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_020
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379215.1	10422	no	NW_015379215.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_019
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379216.1	12792	no	NW_015379216.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_016
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379217.1	10595	no	NW_015379217.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_015
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379218.1	21421	no	NW_015379218.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_014
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379219.1	10512	no	NW_015379219.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_013
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379220.1	16417	no	NW_015379220.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_012
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379221.1	10901	no	NW_015379221.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_011
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379222.1	15493	no	NW_015379222.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_010
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379223.1	10296	no	NW_015379223.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_009
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379224.1	16676	no	NW_015379224.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_008
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379225.1	7820	no	NW_015379225.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_007
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379226.1	21787	no	NW_015379226.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_005
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379227.1	19457	no	NW_015379227.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_004
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NW_015379228.1	14476	no	NW_015379228.1 Oryza sativa Japonica Group cultivar Nipponbare unplaced genomic scaffold, IRGSP-1.0 Syng_TIGR_002
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_001320.1	134525	no	NC_001320.1 Oryza sativa Japonica Group plastid, complete genome
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_011033.1	490520	no	NC_011033.1 Oryza sativa Japonica Group mitochondrion, complete genome
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	NC_001751.1	2135	no	NC_001751.1 Oryza sativa (japonica cultivar-group) mitochondrial plasmid B1, complete sequence

@@ -1,0 +1,3 @@
+file_path	variant_type_guess	sample_count	first_samples	has_tbi	contig_header_count	first_observed_chroms	reference_build_guess	notes
+data/raw/variants/snp/NB_bialSNP_pseudo.vcf.gz	snp_or_pseudo_snp_vcf	1	SAMPLE_DUMM_dummy	yes	12	1	Nipponbare / IRGSP-1.0; naming appears numeric	header_found=yes
+data/raw/variants/snp/NB_bialSNP_pseudo_canonical_ALL.vcf.gz	snp_or_pseudo_snp_vcf	1	SAMPLE_DUMM_dummy	no	12	1	Nipponbare / IRGSP-1.0; naming appears numeric	header_found=yes
