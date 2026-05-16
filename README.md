@@ -39,17 +39,17 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 4C current data status audit and external database collection plan。
+当前阶段：Phase 4D accession ID mapping master draft。
 
-当前目标：统计服务器上已经落地的 3K Rice raw data、accession mapping sources、weak evidence 和 Dataverse metadata，明确缺失数据优先级，并制定外部水稻数据库搜集路线。不写正式 benchmark schema，不构建 split，不训练模型，不做 `phenotype prediction`。
+当前目标：整合 core SNP / indel / pruned SNP / Qmatrix genotype sample IDs、`3K_list_sra_ids.txt`、NCBI RunInfo、Genesys MCPD 和 phenotype accession-like fields，构建 `accession_mapping_master.tsv` 草稿，并标记 source、match rule、confidence 和 manual review flag。不写正式 benchmark schema，不构建 trait_value_table，不训练模型，不做 `phenotype prediction`。
 
-当前产物包括 `reports/current_data_status/project_data_status_summary.md`、`reports/current_data_status/current_data_category_summary.tsv`、`reports/current_data_status/accession_mapping_source_status.tsv`、`reports/current_data_status/missing_data_priority.tsv`、`reports/external_database_plan/external_database_inventory.tsv` 和 `reports/external_database_plan/external_database_collection_plan.md`。
+当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
-Phase 4C 结论：当前 `data/raw/` 有 74 个文件，总大小约 4.26 GiB；accession mapping 的源文件已基本齐全，但 `accession_mapping_master.tsv` 尚未构建，是当前最优先事项。Dataverse GWAS 下载失败不阻塞当前阶段。外部数据库只作为 knowledge layer，不替代 3K Rice genotype backbone。
+Phase 4D 结论：genotype union 样本数为 3024，`3K_list_sra_ids.txt` 和 RunInfo 覆盖 3024 / 3024；Genesys MCPD 覆盖 2706 / 3024；phenotype A/B 级可用于 trait mapping 的样本数为 2269 / 3024。C 级 name match 和多重匹配必须人工审查。
 
-下一阶段：构建 `accession_mapping_master.tsv` 草稿，并固定 source、match rule、confidence 和 manual review flag。
+下一阶段：审查 `manual_review_candidates.tsv`，冻结 high-confidence accession mapping 子集；若 A/B 覆盖足够，再构建 trait_state 和最小 Task 1 instances。
 
-当前 Phase 4C 不包含 schema 实现、benchmark construction、split、model implementation、evaluator implementation 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+当前 Phase 4D 不包含正式 schema 实现、benchmark construction、split、model implementation、evaluator implementation、GWAS 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 

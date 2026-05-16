@@ -1,0 +1,9 @@
+source_name	file_path	exists	n_records	key_columns	role	notes
+core_v0.7.fam.gz	data/raw/variants/snp/core_v0.7.fam.gz	yes	3024	FID,IID	SNP genotype sample IDs	B001-style sample IDs
+Nipponbare_indel.fam.gz	data/raw/variants/indel/Nipponbare_indel.fam.gz	yes	3023	FID,IID	indel genotype sample IDs	B001-style sample IDs
+pruned_v2.1.fam	data/raw/variants/snp/pruned_v2.1/pruned_v2.1.fam	yes	3024	FID,IID	pruned SNP sample IDs	B001-style sample IDs
+Qmatrix-k9-3kRG.csv	data/raw/metadata/Qmatrix-k9-3kRG.csv	yes	3023	id,subgroup proportions	population structure and genotype ID support	not phenotype target
+3K_list_sra_ids.txt	data/raw/accessions/snpseek/3K_list_sra_ids.txt	yes	3024	3K_DNA_IRIS_UNIQUE_ID,Genetic_Stock_varname,Country_Origin_updated,SRA Accession	main ID bridge	B/CX/IRIS to stock and SRA
+PRJEB6180_runinfo.csv	data/raw/accessions/ncbi_prjeb6180/PRJEB6180_runinfo.csv	yes	25529	Run,Experiment,Sample,BioSample,LibraryName	SRA/BioSample/Run expansion	grouped by Sample
+Genesys MCPD	data/raw/accessions/genesys/genesys_3k_mcpd_passport.xlsx	yes	2703	ACCENUMB,ACCENAME,ORIGCTY,SUBTAXA,DOI,ACCEURL	passport metadata	IRGC/name matching only
+3kRG phenotype XLSX	data/raw/traits/3kRG_PhenotypeData_v20170411.xlsx	yes	14002	STOCK_ID,GS_ACCNO,NAME,Source_Accno	phenotype accession-like candidates	not trait_value_table

@@ -1,0 +1,9 @@
+mapping_type	confidence	n	denominator	percent	usable_for_trait_mapping	notes
+genotype	A	3024	3024	100.00	no	A/B phenotype mapping can be used for formal trait mapping; C requires manual review; D is unmatched
+genotype	B	0	3024	0.00	no	A/B phenotype mapping can be used for formal trait mapping; C requires manual review; D is unmatched
+genotype	C	0	3024	0.00	no	A/B phenotype mapping can be used for formal trait mapping; C requires manual review; D is unmatched
+genotype	D	0	3024	0.00	no	A/B phenotype mapping can be used for formal trait mapping; C requires manual review; D is unmatched
+phenotype	A	0	3024	0.00	yes	A/B phenotype mapping can be used for formal trait mapping; C requires manual review; D is unmatched
+phenotype	B	2269	3024	75.03	yes	A/B phenotype mapping can be used for formal trait mapping; C requires manual review; D is unmatched
+phenotype	C	12	3024	0.40	no	A/B phenotype mapping can be used for formal trait mapping; C requires manual review; D is unmatched
+phenotype	D	743	3024	24.57	no	A/B phenotype mapping can be used for formal trait mapping; C requires manual review; D is unmatched

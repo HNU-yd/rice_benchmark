@@ -1,0 +1,6 @@
+metric	n	denominator	percent	notes
+phenotype_accession_candidate_rows	14002	14002	100.00	accession-like field values, not trait values
+phenotype_candidate_matches	16178	14002	115.54	all candidate matches, including C-level name matches
+genotype_samples_with_any_phenotype_match	2281	3024	75.43	A/B/C phenotype mapping
+genotype_samples_usable_for_trait_mapping	2269	3024	75.03	only A/B phenotype mapping
+manual_review_candidates	10204	16178	63.07	review rows can exceed unique candidate matches because multiple issue types may apply

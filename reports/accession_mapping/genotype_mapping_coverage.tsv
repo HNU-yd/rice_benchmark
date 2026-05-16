@@ -1,0 +1,12 @@
+metric	n	denominator	percent	notes
+genotype_union_samples	3024	3024	100.00	union of core SNP, indel, pruned SNP and Qmatrix IDs
+core_snp_samples	3024	3024	100.00	core_v0.7.fam.gz
+indel_samples	3023	3024	99.97	Nipponbare_indel.fam.gz
+pruned_snp_samples	3024	3024	100.00	pruned_v2.1.fam
+qmatrix_samples	3023	3024	99.97	Qmatrix-k9-3kRG.csv
+core_snp_intersect_indel	3023	3024	99.97	intersection over core SNP sample set
+core_snp_intersect_qmatrix	3023	3024	99.97	intersection over core SNP sample set
+core_snp_intersect_pruned_snp	3024	3024	100.00	intersection over core SNP sample set
+exact_3k_list_match	3024	3024	100.00	genotype_sample_id exact match to 3K_DNA_IRIS_UNIQUE_ID
+runinfo_matched_by_sra_sample	3024	3024	100.00	3K_list SRA Accession matched to RunInfo Sample
+genesys_matched	2706	3024	89.48	matched through IRGC first, then normalized name
