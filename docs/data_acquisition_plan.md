@@ -93,3 +93,22 @@ Phase 3C 在不新增下载的前提下，对已有本地 weak evidence raw file
 当前没有可靠本地 GWAS lead SNP raw file。该缺口不阻塞 v0.1-mini；v0.2-core 应在完成 3K phenotype、core SNP genotype、Qmatrix 和 accession mapping 对齐后自跑 GWAS。自跑 GWAS 仍然只能作为 `weak localization evidence`，不能写成 `causal ground truth`。
 
 详细结果见 `reports/weak_evidence_inventory/weak_evidence_inventory_report.md`。
+
+## Phase 4C 当前资产统计与外部数据库计划
+
+Phase 4C 对服务器当前已有资产做阶段性统计，不新增下载大文件，不构建正式 schema。
+
+当前 `data/raw/` 下共有 74 个文件，总大小约 4.26 GiB。已覆盖 reference、annotation、SNP genotype、indel genotype、pruned SNP、phenotype / trait、accession metadata、Qmatrix、Oryzabase 和 Q-TARO。`reports/dataverse_sanciangco/` 当前只保留 HGRSJG metadata 和 selected file list，Dataverse GWAS 大文件继续 defer。
+
+当前 accession mapping 源文件已经包括：
+
+- `3K_list_sra_ids.txt`
+- Genesys MCPD passport XLSX
+- NCBI PRJEB6180 RunInfo
+- SNP / indel PLINK fam
+- Qmatrix
+- 3K phenotype XLSX
+
+当前最优先事项是构建 `accession_mapping_master.tsv`。GWAS lead SNP 不阻塞 v0.1；v0.2-core 应在 accession mapping 完成后用 3K phenotype、core SNP genotype 和 Qmatrix 自跑 GWAS，作为 Tier 2 `weak localization evidence`。
+
+外部数据库搜集路线见 `reports/external_database_plan/external_database_collection_plan.md`。外部数据库只能作为 knowledge layer / evidence layer，不替代 3K Rice genotype backbone，也不能直接生成 `causal ground truth`。

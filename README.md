@@ -39,17 +39,17 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 3C weak evidence registration and inventory。
+当前阶段：Phase 4C current data status audit and external database collection plan。
 
-当前目标：在不新增下载的前提下，补登记已有 Oryzabase known/cloned trait gene list 与 Q-TARO QTL interval archive，检查其可读性、字段结构和后续作为 `weak localization evidence` 的可用边界。不写数据 schema，不构建 benchmark table，不训练模型。
+当前目标：统计服务器上已经落地的 3K Rice raw data、accession mapping sources、weak evidence 和 Dataverse metadata，明确缺失数据优先级，并制定外部水稻数据库搜集路线。不写正式 benchmark schema，不构建 split，不训练模型，不做 `phenotype prediction`。
 
-当前产物包括 `reports/raw_data_inventory/raw_data_inventory_report.md`、`reports/raw_data_inventory/raw_file_inventory.tsv`、`reports/raw_data_inventory/accession_overlap_matrix.tsv`、`reports/raw_data_inventory/chromosome_naming_report.tsv`、`reports/raw_data_inventory/raw_data_risk_report.tsv`、`reports/raw_data_inventory/v0_1_mini_recommendation.md`，以及 `reports/weak_evidence_inventory/weak_evidence_inventory_report.md`、`reports/weak_evidence_inventory/qtaro_inventory.tsv`、`reports/weak_evidence_inventory/oryzabase_inventory.tsv` 和 `reports/weak_evidence_inventory/gwas_lead_snp_status.md`。
+当前产物包括 `reports/current_data_status/project_data_status_summary.md`、`reports/current_data_status/current_data_category_summary.tsv`、`reports/current_data_status/accession_mapping_source_status.tsv`、`reports/current_data_status/missing_data_priority.tsv`、`reports/external_database_plan/external_database_inventory.tsv` 和 `reports/external_database_plan/external_database_collection_plan.md`。
 
-Phase 3C 已将 2 个本地 weak evidence raw files 写入 `manifest/download_manifest.tsv` 和 `manifest/checksum_table.tsv`。Q-TARO 已转换出 UTF-8 中间检查文件，Oryzabase 已完成字段盘点。GWAS lead SNP 当前没有可靠本地 raw file，不阻塞 v0.1-mini，后续 v0.2-core 应在 accession mapping 后自跑 GWAS。
+Phase 4C 结论：当前 `data/raw/` 有 74 个文件，总大小约 4.26 GiB；accession mapping 的源文件已基本齐全，但 `accession_mapping_master.tsv` 尚未构建，是当前最优先事项。Dataverse GWAS 下载失败不阻塞当前阶段。外部数据库只作为 knowledge layer，不替代 3K Rice genotype backbone。
 
-下一阶段：Phase 4，确定 v0.1-mini 数据范围，并开始构建最小可运行 benchmark 输入表。
+下一阶段：构建 `accession_mapping_master.tsv` 草稿，并固定 source、match rule、confidence 和 manual review flag。
 
-当前 Phase 3 不包含 schema 实现、benchmark construction、split、model implementation、evaluator implementation 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+当前 Phase 4C 不包含 schema 实现、benchmark construction、split、model implementation、evaluator implementation 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 

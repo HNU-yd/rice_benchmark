@@ -1,0 +1,11 @@
+missing_item	importance	blocks_v0_1	blocks_v0_2	can_be_generated_in_house	recommended_action	notes
+标准 accession ID master table	highest	yes	yes	yes	build accession_mapping_master.tsv first	当前最阻塞；没有该表就不能可靠连接 trait_state 与 genotype accession context。
+trait accession 与 genotype sample 的高置信 mapping	highest	yes	yes	yes	join PLINK/Qmatrix/SNP-Seek/Genesys/RunInfo/phenotype and flag confidence	阻塞 trait-conditioned instances；不能用模糊 name match 直接生成标签。
+正式 trait_value_table	high	yes	yes	yes	derive only after accession mapping and trait dictionary review	trait table 可以进入 trait_state 构建，但不做 phenotype prediction。
+GWAS lead SNP / significant SNP	medium_high	no	no	yes	self-compute after accession mapping with genotype + phenotype + Qmatrix	重要但不阻塞 v0.1；自跑 GWAS 仍然只是 weak localization evidence。
+更多文献级 trait-specific evidence	medium	no	no	partly	curate after provenance and leakage fields are defined	可增强 case study 和解释层；不得写成 causal ground truth。
+RAP / MSU / Gramene ID mapping	medium_high	no	no	partly	collect RAP-DB / MSU / Gramene cross-reference tables	主要影响 gene explanation 和 Oryzabase gene coordinate mapping，不阻塞 v0.1 skeleton。
+功能注释增强层	medium	no	no	partly	collect funRiceGenes, RAP-DB function, GO/ontology after core mapping	用于 candidate gene explanation，不替代 3K genotype backbone。
+表达 / 多组学增强数据	low_medium	no	no	no	defer until core benchmark table is stable	增强层，不阻塞 v0.1 / v0.2。
+Sanciangco / Dataverse GWAS raw result files	medium	no	no	not_needed_for_v0_2	defer large downloads; keep metadata only	下载失败不阻塞当前阶段；后续优先自跑 GWAS。
+新增 accession / pruned SNP raw files 的 checksum 与 manifest 补登记	high	no	no	yes	register checksums before using these files as reproducible inputs	04C 只统计现状；正式使用 Genesys、RunInfo、3K_list_sra_ids 或 pruned PLINK 前必须补登记。

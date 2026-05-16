@@ -1,0 +1,75 @@
+file_path	file_name	file_size_bytes	file_size_mb	data_category_guess	format_guess	checksum_registered	notes
+data/raw/accessions/RICE_RP.tar.gz	RICE_RP.tar.gz	986533366	940.832	accession metadata	.tar.gz	yes	raw data ignored by git
+data/raw/accessions/genesys/genesys_3k_mcpd_passport.xlsx	genesys_3k_mcpd_passport.xlsx	485871	0.463	accession metadata	.xlsx	no	raw data ignored by git
+data/raw/accessions/ncbi_prjeb6180/PRJEB6180_runinfo.csv	PRJEB6180_runinfo.csv	13077309	12.471	accession metadata	.csv	no	raw data ignored by git
+data/raw/accessions/snpseek/3K_list_sra_ids.txt	3K_list_sra_ids.txt	166286	0.159	accession metadata	.txt	no	raw data ignored by git
+data/raw/checksums/GCF_001433935.1_IRGSP-1.0_md5checksums.txt	GCF_001433935.1_IRGSP-1.0_md5checksums.txt	12720	0.012	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/evidence/known_genes/oryzabase/OryzabaseGeneListEn.tsv	OryzabaseGeneListEn.tsv	11281159	10.759	Oryzabase	.tsv	yes	raw data ignored by git
+data/raw/evidence/qtl/qtaro/qtaro_sjis.zip	qtaro_sjis.zip	90649	0.086	Q-TARO	.zip	yes	raw data ignored by git
+data/raw/listings/aws_3kricegenome_reduced.txt	aws_3kricegenome_reduced.txt	2011	0.002	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/listings/aws_3kricegenome_reduced_recursive.txt	aws_3kricegenome_reduced_recursive.txt	2299	0.002	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/listings/aws_3kricegenome_root.txt	aws_3kricegenome_root.txt	1801	0.002	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/listings/aws_3kricegenome_snpseek_dl.txt	aws_3kricegenome_snpseek_dl.txt	987	0.001	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/listings/aws_3kricegenome_snpseek_dl_core.txt	aws_3kricegenome_snpseek_dl_core.txt	1490	0.001	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/listings/aws_3kricegenome_snpseek_dl_phenotype.txt	aws_3kricegenome_snpseek_dl_phenotype.txt	139	0.000	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/listings/aws_3kricegenome_snpseek_dl_recursive.txt	aws_3kricegenome_snpseek_dl_recursive.txt	10536	0.010	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/listings/aws_3kricegenome_snpseek_dl_recursive_full.txt	aws_3kricegenome_snpseek_dl_recursive_full.txt	10536	0.010	listing / metadata	.txt	no	raw data ignored by git
+data/raw/listings/aws_3kricegenome_vcf.txt	aws_3kricegenome_vcf.txt	0	0.000	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/metadata/3kRG_download.html	3kRG_download.html	48962	0.047	listing / metadata	.html	yes	raw data ignored by git
+data/raw/metadata/3kRG_download_20240618.html	3kRG_download_20240618.html	48520	0.046	listing / metadata	.html	yes	raw data ignored by git
+data/raw/metadata/3kRG_download_20260223.html	3kRG_download_20260223.html	50092	0.048	listing / metadata	.html	yes	raw data ignored by git
+data/raw/metadata/MANIFEST_original.txt	MANIFEST_original.txt	2821381	2.691	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/metadata/Qmatrix-k9-3kRG.csv	Qmatrix-k9-3kRG.csv	149762	0.143	Qmatrix / population structure	.csv	yes	raw data ignored by git
+data/raw/metadata/README-1st-3kRG-Permissive-License.txt	README-1st-3kRG-Permissive-License.txt	442	0.000	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/metadata/README-rice-reference-genomes-used.txt	README-rice-reference-genomes-used.txt	1108	0.001	listing / metadata	.txt	yes	raw data ignored by git
+data/raw/metadata/orig~3kRG_download.html	orig~3kRG_download.html	14642	0.014	listing / metadata	.html	yes	raw data ignored by git
+data/raw/metadata/rvp_manifest_2.htm	rvp_manifest_2.htm	262883	0.251	listing / metadata	.htm	yes	raw data ignored by git
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	GCF_001433935.1_IRGSP-1.0_genomic.fna.gz	118932090	113.422	reference	.fna.gz	yes	raw data ignored by git
+data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	GCF_001433935.1_IRGSP-1.0_genomic.gff.gz	10328864	9.850	annotation	.gff.gz	yes	raw data ignored by git
+data/raw/traits/3kRG_PhenotypeData_v20170411.xlsx	3kRG_PhenotypeData_v20170411.xlsx	1135836	1.083	phenotype / trait	.xlsx	yes	raw data ignored by git
+data/raw/variants/indel/2pt3mio_3krg-indel-README.txt	2pt3mio_3krg-indel-README.txt	159	0.000	indel genotype	.txt	yes	raw data ignored by git
+data/raw/variants/indel/3krg-indel-README.txt	3krg-indel-README.txt	159	0.000	indel genotype	.txt	yes	raw data ignored by git
+data/raw/variants/indel/Nipponbare_indel.bed.gz	Nipponbare_indel.bed.gz	229492375	218.861	indel genotype	.bed.gz	yes	raw data ignored by git
+data/raw/variants/indel/Nipponbare_indel.bim.gz	Nipponbare_indel.bim.gz	21295453	20.309	indel genotype	.bim.gz	yes	raw data ignored by git
+data/raw/variants/indel/Nipponbare_indel.fam.gz	Nipponbare_indel.fam.gz	16755	0.016	indel genotype	.fam.gz	yes	raw data ignored by git
+data/raw/variants/snp/27m-snpEff-dstinct-GeneID.txt.gz	27m-snpEff-dstinct-GeneID.txt.gz	63409175	60.472	SNP genotype	.txt.gz	yes	raw data ignored by git
+data/raw/variants/snp/3K-HDRA-snp-comm-miss5pc.txt.gz	3K-HDRA-snp-comm-miss5pc.txt.gz	598336	0.571	SNP genotype	.txt.gz	yes	raw data ignored by git
+data/raw/variants/snp/3K_coreSNP-v2.1.plink.tar.gz	3K_coreSNP-v2.1.plink.tar.gz	485787981	463.284	SNP genotype	.tar.gz	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr1.zip	3k-core-v7-chr1.zip	59071141	56.335	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr10.zip	3k-core-v7-chr10.zip	33041384	31.511	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr11.zip	3k-core-v7-chr11.zip	65745039	62.699	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr12.zip	3k-core-v7-chr12.zip	44034793	41.995	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr2.zip	3k-core-v7-chr2.zip	55042722	52.493	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr3.zip	3k-core-v7-chr3.zip	41723187	39.790	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr4.zip	3k-core-v7-chr4.zip	58818350	56.094	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr5.zip	3k-core-v7-chr5.zip	39129418	37.317	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr6.zip	3k-core-v7-chr6.zip	41780589	39.845	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr7.zip	3k-core-v7-chr7.zip	39750044	37.909	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr8.zip	3k-core-v7-chr8.zip	50671238	48.324	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3k-core-v7-chr9.zip	3k-core-v7-chr9.zip	33121770	31.587	SNP genotype	.zip	yes	raw data ignored by git
+data/raw/variants/snp/3kRG-newPrunedSNPset.txt	3kRG-newPrunedSNPset.txt	721	0.001	pruned SNP	.txt	yes	raw data ignored by git
+data/raw/variants/snp/990k_3krg-snp-README.txt	990k_3krg-snp-README.txt	370	0.000	SNP genotype	.txt	yes	raw data ignored by git
+data/raw/variants/snp/Filt_3krg-snp-README.txt	Filt_3krg-snp-README.txt	426	0.000	SNP genotype	.txt	yes	raw data ignored by git
+data/raw/variants/snp/NB-snp.frqx.gz	NB-snp.frqx.gz	271533001	258.954	SNP genotype	.gz	yes	raw data ignored by git
+data/raw/variants/snp/NB_bialSNP_pseudo.vcf.gz	NB_bialSNP_pseudo.vcf.gz	190651130	181.819	SNP genotype	.vcf.gz	yes	raw data ignored by git
+data/raw/variants/snp/NB_bialSNP_pseudo.vcf.gz.tbi	NB_bialSNP_pseudo.vcf.gz.tbi	273432	0.261	SNP genotype	.tbi	yes	raw data ignored by git
+data/raw/variants/snp/NB_bialSNP_pseudo_canonical_ALL.vcf.gz	NB_bialSNP_pseudo_canonical_ALL.vcf.gz	643561279	613.748	SNP genotype	.vcf.gz	yes	raw data ignored by git
+data/raw/variants/snp/README-3kRG-SNP-v1-1.txt	README-3kRG-SNP-v1-1.txt	153	0.000	SNP genotype	.txt	yes	raw data ignored by git
+data/raw/variants/snp/README-3kRG-SNPs-Permissive-License.txt	README-3kRG-SNPs-Permissive-License.txt	408	0.000	SNP genotype	.txt	yes	raw data ignored by git
+data/raw/variants/snp/README-3kRG-full-SNP-v1.txt	README-3kRG-full-SNP-v1.txt	133	0.000	SNP genotype	.txt	yes	raw data ignored by git
+data/raw/variants/snp/README-snp_pipeline.txt	README-snp_pipeline.txt	2785	0.003	SNP genotype	.txt	yes	raw data ignored by git
+data/raw/variants/snp/Snpseek_subsets.html	Snpseek_subsets.html	14666	0.014	SNP genotype	.html	yes	raw data ignored by git
+data/raw/variants/snp/core_v0.7.bed.gz	core_v0.7.bed.gz	117476185	112.034	SNP genotype	.bed.gz	yes	raw data ignored by git
+data/raw/variants/snp/core_v0.7.bim.gz	core_v0.7.bim.gz	3171530	3.025	SNP genotype	.bim.gz	yes	raw data ignored by git
+data/raw/variants/snp/core_v0.7.fam.gz	core_v0.7.fam.gz	16782	0.016	SNP genotype	.fam.gz	yes	raw data ignored by git
+data/raw/variants/snp/index-2017-0321-perChrCoreSnps.html	index-2017-0321-perChrCoreSnps.html	11059	0.011	SNP genotype	.html	yes	raw data ignored by git
+data/raw/variants/snp/pca_pruned_v2.1.eigenvec.var.gz	pca_pruned_v2.1.eigenvec.var.gz	51393517	49.013	pruned SNP	.gz	yes	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/pruned_v2.1.bed	pruned_v2.1.bed	764770359	729.342	pruned SNP	.bed	no	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/pruned_v2.1.bim	pruned_v2.1.bim	26901979	25.656	pruned SNP	.bim	no	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/pruned_v2.1.fam	pruned_v2.1.fam	102728	0.098	pruned SNP	.fam	no	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/readme_pruned-v2.1.txt	readme_pruned-v2.1.txt	377	0.000	pruned SNP	.txt	no	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/sha256sum.txt	sha256sum.txt	471	0.000	pruned SNP	.txt	no	raw data ignored by git
+data/raw/variants/snp/readme_core_v0.7.txt	readme_core_v0.7.txt	266	0.000	SNP genotype	.txt	yes	raw data ignored by git
+data/raw/variants/snp/readme_pruned-v2.1.txt	readme_pruned-v2.1.txt	377	0.000	pruned SNP	.txt	yes	raw data ignored by git
+data/raw/variants/snp/result.log.txt	result.log.txt	555	0.001	SNP genotype	.txt	yes	raw data ignored by git
+data/raw/variants/snp/snpseek_down_20260105.htm	snpseek_down_20260105.htm	3088	0.003	SNP genotype	.htm	yes	raw data ignored by git
