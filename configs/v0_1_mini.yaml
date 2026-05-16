@@ -1,0 +1,27 @@
+version: v0.1-mini
+
+scope:
+  species: "Oryza sativa"
+  primary_dataset: "3K Rice"
+  chromosome_scope: ["1"]
+  variant_scope: "SNP-only"
+  reference_build: "IRGSP-1.0 / GCF_001433935.1"
+  task: "trait-conditioned SNP/indel localization"
+  prototype: true
+
+inputs:
+  snp_bim: "data/raw/variants/snp/core_v0.7.bim.gz"
+  reference_fasta: "data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.fna.gz"
+  reference_gff3: "data/raw/reference/GCF_001433935.1_IRGSP-1.0_genomic.gff.gz"
+  frozen_traits: "configs/v0_1_frozen_traits.yaml"
+
+window:
+  chromosome: "1"
+  refseq_chrom: "NC_029256.1"
+  window_size: 100000
+  stride: 50000
+
+rules:
+  weak_evidence_not_causal_ground_truth: true
+  unknown_not_negative: true
+  no_phenotype_prediction: true

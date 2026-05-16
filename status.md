@@ -31,3 +31,21 @@
 - 生成配置：`configs/v0_1_frozen_traits.yaml`。
 - `data/interim/trait_state_review/` 已生成本地 frozen trait id 文件，但不进入 git。
 - 本阶段没有构建 Task 1 instances，没有构建 split，没有训练模型，没有执行 phenotype prediction。
+
+## 2026-05-16 Phase 5C-prebuild v0.1-mini chr1 SNP input skeleton
+
+- 执行 prompt：`.codex/prompts/05c_prebuild_v0_1_chr1_inputs.md`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 本阶段只构建 05C 的前置输入表，不构建 Task 1 instances。
+- chr1 SNP 数：42466。
+- chr1 window 数：865。
+- variant-window mapping 行数：84886。
+- chr1 weak evidence candidates 数：543。
+- weak evidence 有坐标数量：42，来源为 Q-TARO interval，`coordinate_build_uncertain=true`。
+- weak evidence 无坐标数量：501，来源为 Oryzabase chr1 gene/trait semantic evidence。
+- 生成报告：`reports/v0_1_mini/v0_1_mini_input_skeleton_report.md`。
+- 生成脚本目录：`scripts/build_v0_1/`。
+- 生成配置：`configs/v0_1_mini.yaml`。
+- `data/interim/v0_1_mini/` 已生成本地前置输入表，但不进入 git。
+- 05C 所需输入表已补齐，可以重新执行 `.codex/prompts/05c_build_chr1_snp_task1_instances.md`。
+- 本阶段没有训练模型，没有构建 evaluator，没有执行 phenotype prediction，没有把 weak evidence 写成 causal ground truth。

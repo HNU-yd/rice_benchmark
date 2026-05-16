@@ -1,0 +1,3 @@
+source	evidence_tier	evidence_type	n_raw_records	n_chr1_candidates	n_with_coordinates	n_without_coordinates	n_overlapping_windows	coordinate_build_uncertain_count	notes
+Q-TARO	Tier 4 QTL interval	qtl_interval	1051	42	42	0	41	42	source_chr1_records=189; weak localization evidence only; not causal ground truth
+Oryzabase	Tier 1 known/cloned trait gene	gene_or_trait_evidence_without_coordinate	22015	501	0	501	0	501	source_chr1_records=2784; weak localization evidence only; not causal ground truth

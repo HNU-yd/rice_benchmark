@@ -1,0 +1,2 @@
+chrom	refseq_chrom	n_variants	min_pos	max_pos	n_missing_pos	n_duplicate_variant_id	notes
+1	NC_029256.1	42466	1178	43255617	0	0	chr1 SNP-only prototype; allele orientation requires later validation

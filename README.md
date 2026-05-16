@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 5B trait descriptor review and frozen v0.1 traits。
+当前阶段：Phase 5C-prebuild v0.1-mini chr1 SNP input skeleton。
 
-当前目标：审查 Phase 5A 推荐 trait 的 descriptor、code meaning、类别分布和 weak evidence 关键词匹配，冻结小规模 v0.1-mini trait 子集。不构建 Task 1 instances，不构建 split，不训练模型，不做 `phenotype prediction`。
+当前目标：补齐 05C 所需的 chr1 SNP-only variant table、window table、variant-window mapping 和 weak evidence chr1 audit 输入骨架。不构建 Task 1 instances，不构建 split，不训练模型，不做 `phenotype prediction`。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -53,9 +53,11 @@ Phase 5A 已生成 trait_state prototype：high-confidence accession subset 为 
 
 Phase 5B 已审查 34 个推荐 trait，全部找到 descriptor，冻结进入 v0.1-mini 的 trait 为 9 个：`SPKF`、`FLA_REPRO`、`CULT_CODE_REPRO`、`LLT_CODE`、`PEX_REPRO`、`LSEN`、`PTH`、`CUAN_REPRO` 和 `CUDI_CODE_REPRO`。冻结配置位于 `configs/v0_1_frozen_traits.yaml`，审查报告位于 `reports/trait_state_review/trait_descriptor_review_report.md`。
 
-下一阶段：如果 frozen v0.1 trait 子集质量可以接受，则构建 chr1 SNP-only minimal Task 1 instances。
+Phase 5C-prebuild 已生成 v0.1-mini chr1 SNP-only 输入骨架：chr1 SNP 数为 42466，chr1 window 数为 865，variant-window mapping 行数为 84886，chr1 weak evidence candidates 为 543，其中 42 个有 Q-TARO interval 坐标，501 个为无坐标 Oryzabase gene/trait 语义证据。报告位于 `reports/v0_1_mini/v0_1_mini_input_skeleton_report.md`。
 
-当前 Phase 5B 不包含正式 schema 实现、benchmark construction、split、model implementation、evaluator implementation、GWAS 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+下一阶段：重新执行 `05c_build_chr1_snp_task1_instances.md`，构建 chr1 SNP-only minimal Task 1 instances。
+
+当前 Phase 5C-prebuild 不包含正式 schema 实现、benchmark construction、split、model implementation、evaluator implementation、GWAS 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 

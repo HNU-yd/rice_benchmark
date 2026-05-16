@@ -1,0 +1,2 @@
+chrom	refseq_chrom	reference_length	window_size	stride	n_windows	n_variants	n_variant_window_mapping_rows	notes
+1	NC_029256.1	43270923	100000	50000	865	42466	84886	windows are 1-based inclusive; no label semantics assigned here

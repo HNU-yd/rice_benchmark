@@ -1,0 +1,13 @@
+numeric_chrom	refseq_chrom	reference_build	mapping_confidence	notes
+1	NC_029256.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+2	NC_029257.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+3	NC_029258.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+4	NC_029259.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+5	NC_029260.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+6	NC_029261.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+7	NC_029262.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+8	NC_029263.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+9	NC_029264.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+10	NC_029265.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+11	NC_029266.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
+12	NC_029267.1	IRGSP-1.0 / GCF_001433935.1	fixed_from_IRGSP_1_0_RefSeq_primary_chromosomes	manual fixed mapping for v0.1-mini; chromosome naming must remain explicit
