@@ -1,0 +1,11 @@
+check_name	status	observed	expected	notes
+instance_id_unique	pass	16265460	16265460	validated by trait/accession pair and complete window set; instance_id = trait_id + genotype_sample_id + window_id
+traits_are_frozen	pass	0	0	all instance traits must be frozen v0.1 traits
+accessions_high_confidence	pass	0	0	all instance accessions must come from high-confidence subset
+windows_known_chr1	pass	bad_window=0;bad_chrom=0	0	all windows must be chr1 windows
+instance_label_forbidden_tokens_absent	pass	0	0	label_state must not contain forbidden supervised-label terms
+unknown_unlabeled_retained_in_instances	pass	14763798	>0	absence of evidence remains unknown_unlabeled
+window_signal_forbidden_tokens_absent	pass	0	0	checked 7785 rows in window_weak_signal_chr1_snp.tsv
+window_signal_unknown_unlabeled_retained	pass	7063	>0	checked 7785 rows in window_weak_signal_chr1_snp.tsv
+variant_label_forbidden_tokens_absent	pass	0	0	checked 382194 rows in variant_weak_label_chr1_snp.tsv
+variant_label_unknown_unlabeled_retained	pass	349604	>0	checked 382194 rows in variant_weak_label_chr1_snp.tsv

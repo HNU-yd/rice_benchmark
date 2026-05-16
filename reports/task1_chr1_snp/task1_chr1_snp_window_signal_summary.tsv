@@ -1,0 +1,10 @@
+trait_id	n_windows_total	n_windows_positive_weak_evidence	n_windows_regional_weak_evidence	n_windows_unknown_unlabeled	positive_or_regional_fraction	notes
+data_lt_2007__spkf	865	0	137	728	0.158382	unknown_unlabeled windows are not negative
+data_lt_2007__fla_repro	865	0	17	848	0.019653	unknown_unlabeled windows are not negative
+data_lt_2007__cult_code_repro	865	0	288	577	0.332948	unknown_unlabeled windows are not negative
+data_lt_2007__llt_code	865	0	261	604	0.301734	unknown_unlabeled windows are not negative
+data_lt_2007__pex_repro	865	0	0	865	0	unknown_unlabeled windows are not negative
+data_lt_2007__lsen	865	0	0	865	0	unknown_unlabeled windows are not negative
+data_lt_2007__pth	865	0	0	865	0	unknown_unlabeled windows are not negative
+data_lt_2007__cuan_repro	865	0	17	848	0.019653	unknown_unlabeled windows are not negative
+data_lt_2007__cudi_code_repro	865	0	2	863	0.002312	unknown_unlabeled windows are not negative

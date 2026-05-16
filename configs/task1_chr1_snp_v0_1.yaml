@@ -1,0 +1,23 @@
+version: v0.1-chr1-snp-task1
+
+scope:
+  chromosome: "1"
+  variant_type: "SNP"
+  reference_build: "IRGSP-1.0 / GCF_001433935.1"
+  task: "trait-conditioned SNP/indel localization"
+  prototype: true
+
+inputs:
+  frozen_traits: "configs/v0_1_frozen_traits.yaml"
+  high_confidence_accessions: "data/interim/trait_state/high_confidence_accessions.tsv"
+  trait_state_table: "data/interim/trait_state/trait_state_table_prototype.tsv"
+  variant_table: "data/interim/v0_1_mini/variant_table_chr1_snp_v0_1.tsv"
+  window_table: "data/interim/v0_1_mini/window_table_chr1_v0_1.tsv"
+  variant_window_mapping: "data/interim/v0_1_mini/variant_window_mapping_chr1_v0_1.tsv"
+  weak_evidence_candidates: "data/interim/v0_1_mini/weak_evidence_chr1_candidates.tsv"
+
+rules:
+  trait_state_is_condition_signal: true
+  no_phenotype_prediction: true
+  weak_evidence_not_causal_ground_truth: true
+  unknown_not_negative: true

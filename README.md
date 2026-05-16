@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 5C-prebuild v0.1-mini chr1 SNP input skeleton。
+当前阶段：Phase 5C chr1 SNP-only minimal Task 1 instances。
 
-当前目标：补齐 05C 所需的 chr1 SNP-only variant table、window table、variant-window mapping 和 weak evidence chr1 audit 输入骨架。不构建 Task 1 instances，不构建 split，不训练模型，不做 `phenotype prediction`。
+当前目标：基于 frozen v0.1 traits、high-confidence accession subset、chr1 SNP variant/window tables 和 chr1 weak evidence audit，构建 chr1 SNP-only minimal Task 1 instance prototype。不构建 split，不训练模型，不做 `phenotype prediction`。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -55,9 +55,11 @@ Phase 5B 已审查 34 个推荐 trait，全部找到 descriptor，冻结进入 v
 
 Phase 5C-prebuild 已生成 v0.1-mini chr1 SNP-only 输入骨架：chr1 SNP 数为 42466，chr1 window 数为 865，variant-window mapping 行数为 84886，chr1 weak evidence candidates 为 543，其中 42 个有 Q-TARO interval 坐标，501 个为无坐标 Oryzabase gene/trait 语义证据。报告位于 `reports/v0_1_mini/v0_1_mini_input_skeleton_report.md`。
 
-下一阶段：重新执行 `05c_build_chr1_snp_task1_instances.md`，构建 chr1 SNP-only minimal Task 1 instances。
+Phase 5C 已构建 chr1 SNP-only minimal Task 1 instance prototype：frozen trait 数为 9，high-confidence accession 数为 2268，chr1 SNP 数为 42466，chr1 window 数为 865，Task 1 instance 数为 16265460。当前 weak evidence 覆盖 722 个 trait-window pair 和 32590 个 trait-variant pair；未覆盖的 window / variant 保留为 `unknown_unlabeled`，不作为 negative。报告位于 `reports/task1_chr1_snp/task1_chr1_snp_report.md`。
 
-当前 Phase 5C-prebuild 不包含正式 schema 实现、benchmark construction、split、model implementation、evaluator implementation、GWAS 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+下一阶段：如果 Task 1 instance prototype 合格，则构建 minimal evaluator 和 random / heuristic baseline prototype。
+
+当前 Phase 5C 不包含 split、model implementation、evaluator implementation、baseline implementation、GWAS 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 

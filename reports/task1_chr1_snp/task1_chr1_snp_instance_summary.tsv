@@ -1,0 +1,10 @@
+metric	value	notes
+frozen_traits	9	from frozen v0.1 traits
+high_confidence_accessions	2268	A/B accession mapping with SNP core and Qmatrix
+chr1_snp_variants	42466	from chr1 SNP variant table
+chr1_windows	865	100kb windows, 50kb stride
+task1_instances	16265460	full chr1 SNP-only instance prototype
+trait_window_pairs_with_weak_evidence	722	regional weak evidence
+trait_variant_pairs_with_weak_evidence	32590	regional weak evidence
+unknown_unlabeled_window_pairs	7063	not negative
+unknown_unlabeled_variant_pairs	349604	not negative

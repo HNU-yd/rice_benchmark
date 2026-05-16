@@ -49,3 +49,22 @@
 - `data/interim/v0_1_mini/` 已生成本地前置输入表，但不进入 git。
 - 05C 所需输入表已补齐，可以重新执行 `.codex/prompts/05c_build_chr1_snp_task1_instances.md`。
 - 本阶段没有训练模型，没有构建 evaluator，没有执行 phenotype prediction，没有把 weak evidence 写成 causal ground truth。
+
+## 2026-05-16 Phase 5C chr1 SNP-only minimal Task 1 instances
+
+- 执行 prompt：`.codex/prompts/05c_build_chr1_snp_task1_instances.md`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 本阶段基于 frozen v0.1 traits、high-confidence accession subset、chr1 SNP variant/window tables 和 chr1 weak evidence audit 构建 minimal Task 1 instance prototype。
+- frozen trait 数：9。
+- high-confidence accession 数：2268。
+- chr1 SNP 数：42466。
+- chr1 window 数：865。
+- Task 1 instance 数：16265460。
+- weak evidence 覆盖：722 个 trait-window pair，32590 个 trait-variant pair。
+- `unknown_unlabeled` 已保留：instance 表中 14763798 行，window weak signal 表中 7063 行，variant weak label 表中 349604 行。
+- 校验结果：`reports/task1_chr1_snp/task1_chr1_snp_validation.tsv` 中 10 项检查全部 `pass`，`validation_failed=0`。
+- 生成报告：`reports/task1_chr1_snp/task1_chr1_snp_report.md`、`reports/task1_chr1_snp/task1_chr1_snp_instance_summary.tsv`、`reports/task1_chr1_snp/task1_chr1_snp_trait_summary.tsv`、`reports/task1_chr1_snp/task1_chr1_snp_window_signal_summary.tsv`、`reports/task1_chr1_snp/task1_chr1_snp_validation.tsv`。
+- 生成脚本目录：`scripts/task1/`。
+- 生成配置：`configs/task1_chr1_snp_v0_1.yaml`。
+- `data/interim/task1_chr1_snp/` 已生成本地 instance、manifest、window signal 和 variant weak label 表，但不进入 git。
+- 本阶段没有训练模型，没有构建 evaluator，没有构建 baseline，没有执行 GWAS，没有执行 phenotype prediction，没有把 trait_state 当 prediction label，没有把 weak evidence 写成 causal ground truth，也没有把 unknown/unlabeled 标记为 negative。
