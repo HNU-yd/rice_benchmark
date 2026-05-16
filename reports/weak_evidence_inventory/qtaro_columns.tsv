@@ -1,0 +1,33 @@
+column_index	column_name	non_empty_count	example_values	role_guess	notes
+1	id	1051	1,2,3,4,5	unclassified	field inventory only; not a benchmark schema
+2	QTL/Gene	716	Ph5-1,hr6,rb2,alk6-1,Ehd1	qtl_or_gene_name	field inventory only; not a benchmark schema
+3	Major category	1051	Morphological trait,Physiological trait,Resistance or Tolerance,Others	unclassified	field inventory only; not a benchmark schema
+4	Category of object character	1051	Dwarf,Eating quality,Flowering,Drought tolerance,Seed	trait_or_character	field inventory only; not a benchmark schema
+5	Character	1030	plant height,Head rice,Rice bran,Alkali-spread.score,Grain l/w ratio	trait_or_character	field inventory only; not a benchmark schema
+6	Marker	1020	RFLP,SSR,CAPS,Mixture,Indel	marker	field inventory only; not a benchmark schema
+7	No. of marker for position determination	1051	2,1	marker	field inventory only; not a benchmark schema
+8	Chr	1051	5,6,2,10,3	chromosome	field inventory only; not a benchmark schema
+9	Genome start	1051	2069338,1764586,2105542,5425408,17481862	genome_start	field inventory only; not a benchmark schema
+10	Genome end	1051	2760413,5425602,2882252,24913615,17627660	genome_end	field inventory only; not a benchmark schema
+11	Mapping method	1051	C)Interval,A)Physical,B)Fine,d)Co-segregated	unclassified	field inventory only; not a benchmark schema
+12	Population	1024	DHL,DH from BC3F1,BC3F5,RIL,BC3(TC)F1	unclassified	field inventory only; not a benchmark schema
+13	No. of plants	996	123,312,0,84,308	unclassified	field inventory only; not a benchmark schema
+14	LOD	777	11.9,55.6,32.5,13.4,5.22	lod_score	field inventory only; not a benchmark schema
+15	Parent A	1027	IR64,Caiapo,Nipponbare,Azucena,V20A	unclassified	field inventory only; not a benchmark schema
+16	Parent B	1026	Azucena,Oryza glaberrima (accession IRGC No. 103544),T65,Bala,Nona Bokra	unclassified	field inventory only; not a benchmark schema
+17	Direction (Parent)	758	B,A	unclassified	field inventory only; not a benchmark schema
+18	a) Physical	55	"AC027038,OSJNBb0112E,OSJNBa005I1,OJ1111_C09,OSJNBb0077C18"""",AL662970,AF053365,OSJNBa0095J22"	unclassified	field inventory only; not a benchmark schema
+19	b) Fine1; interval	114	C234,Al874a,RM5373,RM6737,OSR15	unclassified	field inventory only; not a benchmark schema
+20	b) Fine2; interval	114	C1369,Al951a,RM1108,SDB07,SCAB11	unclassified	field inventory only; not a benchmark schema
+21	b) Fine3; co-segregated	35	RM3150,RM5373,C913A,C434,7312.T4A	unclassified	field inventory only; not a benchmark schema
+22	c) Interval1; interval	718	RG313,RM190,RM236,RM253,R1618	unclassified	field inventory only; not a benchmark schema
+23	c) Interval2; interval	718	RZ556,RM253,RM279,RM162,G164	unclassified	field inventory only; not a benchmark schema
+24	c) Interval3; co-segregated	125	RZ251,RG331,RZ387,C178,RM7003	unclassified	field inventory only; not a benchmark schema
+25	d) Co-segregated	121	RM104,RM25,RM240,RM220,RM249	unclassified	field inventory only; not a benchmark schema
+26	Explained variance	799	54.1,32.7,50.1,14,25	unclassified	field inventory only; not a benchmark schema
+27	Additive effect	720	-2.41,-18.25,0.87,-0.74,0.23	unclassified	field inventory only; not a benchmark schema
+28	Year	1051	1998,2004,2006,2007,1999	unclassified	field inventory only; not a benchmark schema
+29	Reference source	1051	pha,jsa,rgn	reference	field inventory only; not a benchmark schema
+30	Reference no.	1051	4,5,8,22,25	reference	field inventory only; not a benchmark schema
+31	Reference	1051	Yan, J., Zhu, J., He, C., Benmoussa, M., and Wu, P. (1998). Molecular Dissection of Developmental Behavior of Plant Height in Rice (Oryza sativa L.). Genetics 150, 1257-1265.,Aluko, G., Martinez, C., Tohme, J., Castano, C., Bergman, C., and Oard, J.H. (2004). QTL mapping of grain quality traits from the interspecific cross Oryza sativa x O. glaberrima. Theor Appl Genet 109, 630-639.,Doi, K., Izawa, T., Fuse, T., Yamanouchi, U., Kubo, T., Shimatani, Z., Yano, M., and Yoshimura, A. (2004). Ehd1, a B-type response regulator in rice, confers short-day promotion of flowering and controls FT-like gene expression independently of Hd1. Genes Dev 18, 926-936.,Lafitte, H.R., Price, A.H., and Courtois, B. (2004). Yield response to water deficit in an upland rice mapping population: associations among traits and genetic markers. Theor Appl Genet 109, 1237-1246.,Li, J., Xiao, J., Grandillo, S., Jiang, L., Wan, Y., Deng, Q., Yuan, L., and McCouch, S.R. (2004). QTL detection for rice grain quality traits using an interspecific backcross population derived from cultivated Asian (O. sativa L.) and African (O. glaberrima S.) rice. Genome 47, 697-704.	reference	field inventory only; not a benchmark schema
+32	Reference location	340	http://www.genetics.org/cgi/content/abstract/150/3/1257,http://crop.scijournals.org/cgi/content/abstract/44/6/2214,http://www.genetics.org/cgi/content/abstract/150/2/899,http://www.sciencemag.org/cgi/content/abstract/312/5778/1392,http://jxb.oxfordjournals.org/cgi/content/abstract/erl162v1	reference	field inventory only; not a benchmark schema

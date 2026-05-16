@@ -1,8 +1,8 @@
 file_id	local_path	relative_path	filename	file_size_bytes	file_size_mb	extension	inferred_category	is_compressed	is_archive	checksum_status	notes
 RAW_0001	data/raw/accessions/RICE_RP.tar.gz	accessions/RICE_RP.tar.gz	RICE_RP.tar.gz	986533366	940.832	.tar.gz	accession_metadata	yes	yes	registered	raw data ignored by git
 RAW_0002	data/raw/checksums/GCF_001433935.1_IRGSP-1.0_md5checksums.txt	checksums/GCF_001433935.1_IRGSP-1.0_md5checksums.txt	GCF_001433935.1_IRGSP-1.0_md5checksums.txt	12720	0.012	.txt	metadata	no	no	registered	raw data ignored by git
-RAW_0003	data/raw/evidence/known_genes/oryzabase/OryzabaseGeneListEn.tsv	evidence/known_genes/oryzabase/OryzabaseGeneListEn.tsv	OryzabaseGeneListEn.tsv	11281159	10.759	.tsv	weak_evidence	no	no	missing	raw data ignored by git
-RAW_0004	data/raw/evidence/qtl/qtaro/qtaro_sjis.zip	evidence/qtl/qtaro/qtaro_sjis.zip	qtaro_sjis.zip	90649	0.086	.zip	weak_evidence	yes	yes	missing	raw data ignored by git
+RAW_0003	data/raw/evidence/known_genes/oryzabase/OryzabaseGeneListEn.tsv	evidence/known_genes/oryzabase/OryzabaseGeneListEn.tsv	OryzabaseGeneListEn.tsv	11281159	10.759	.tsv	weak_evidence	no	no	registered	raw data ignored by git
+RAW_0004	data/raw/evidence/qtl/qtaro/qtaro_sjis.zip	evidence/qtl/qtaro/qtaro_sjis.zip	qtaro_sjis.zip	90649	0.086	.zip	weak_evidence	yes	yes	registered	raw data ignored by git
 RAW_0005	data/raw/listings/aws_3kricegenome_reduced.txt	listings/aws_3kricegenome_reduced.txt	aws_3kricegenome_reduced.txt	2011	0.002	.txt	listing_metadata	no	no	registered	raw data ignored by git
 RAW_0006	data/raw/listings/aws_3kricegenome_reduced_recursive.txt	listings/aws_3kricegenome_reduced_recursive.txt	aws_3kricegenome_reduced_recursive.txt	2299	0.002	.txt	listing_metadata	no	no	registered	raw data ignored by git
 RAW_0007	data/raw/listings/aws_3kricegenome_root.txt	listings/aws_3kricegenome_root.txt	aws_3kricegenome_root.txt	1801	0.002	.txt	listing_metadata	no	no	registered	raw data ignored by git

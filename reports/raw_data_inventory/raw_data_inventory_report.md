@@ -46,7 +46,7 @@ FASTA/GFF3 使用 `NC_*` accession-style seqid。SNP VCF、SNP PLINK 和 indel P
 
 ## 12. 主要风险
 
-主要 high risk 包括 accession ID mismatch、trait/genotype overlap insufficient、unknown cannot be negative。另发现 2 个 raw weak evidence candidate，但尚未完成 provenance、coordinate build 和 checksum/manifest 补登记。完整风险见 `raw_data_risk_report.tsv`。
+主要 high risk 包括 accession ID mismatch、trait/genotype overlap insufficient、unknown cannot be negative。另发现 2 个 raw weak evidence candidate，当前 checksum/manifest 已登记；但 provenance、coordinate build 和 trait specificity 仍需后续确认。完整风险见 `raw_data_risk_report.tsv`。
 
 ## 13. v0.1-mini 建议
 

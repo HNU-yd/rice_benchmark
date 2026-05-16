@@ -80,3 +80,16 @@ Phase 3 已对下载后的 raw data 做轻量 inventory。当前结论是：
 - `RICE_RP.tar.gz` 主要包含 PLINK bed/bim/fam，没有独立 passport metadata 表。
 
 详细结果见 `reports/raw_data_inventory/raw_data_inventory_report.md`。
+
+## Phase 3C weak evidence 登记与盘点
+
+Phase 3C 在不新增下载的前提下，对已有本地 weak evidence raw files 做补登记和字段盘点：
+
+- `data/raw/evidence/known_genes/oryzabase/OryzabaseGeneListEn.tsv`
+- `data/raw/evidence/qtl/qtaro/qtaro_sjis.zip`
+
+两个文件已写入 `manifest/download_manifest.tsv` 和 `manifest/checksum_table.tsv`，并已计算 sha256。Q-TARO 已解包并转换为 UTF-8 中间检查文件；Oryzabase 已完成 gene symbol、RAP ID、MSU ID、chromosome、trait class 和 Trait Ontology 字段盘点。
+
+当前没有可靠本地 GWAS lead SNP raw file。该缺口不阻塞 v0.1-mini；v0.2-core 应在完成 3K phenotype、core SNP genotype、Qmatrix 和 accession mapping 对齐后自跑 GWAS。自跑 GWAS 仍然只能作为 `weak localization evidence`，不能写成 `causal ground truth`。
+
+详细结果见 `reports/weak_evidence_inventory/weak_evidence_inventory_report.md`。

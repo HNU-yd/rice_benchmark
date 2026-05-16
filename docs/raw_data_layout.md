@@ -90,3 +90,21 @@ data/interim/inventory/
 ```text
 reports/raw_data_inventory/
 ```
+
+## Phase 3C weak evidence 中间目录
+
+Phase 3C 对 Q-TARO 只做本地解包和编码转换，不新增下载。中间检查文件位于：
+
+```text
+data/interim/evidence/qtaro/
+```
+
+其中 `qtaro_sjis.csv.utf8` 用于字段盘点，不作为正式 benchmark table。Oryzabase 当前直接读取 raw TSV，不生成正式 processed gene table。
+
+可提交的 Phase 3C 结果位于：
+
+```text
+reports/weak_evidence_inventory/
+```
+
+`data/raw/` 和 `data/interim/` 继续不进入 git。Oryzabase、Q-TARO 和后续自跑 GWAS 都只能作为 `weak localization evidence`；没有 evidence 覆盖的 variant 或 reference window 仍然是 unknown，不能当作 negative。

@@ -168,10 +168,18 @@ def write_risk_report(overlap_rows: list[dict[str, object]], chrom_rows: list[di
     chrom_mismatches = [row for row in chrom_rows if row["source_type"] in {"snp_vcf_chroms", "snp_plink_chroms", "indel_plink_chroms"} and int(row["n_not_matching_reference"] or 0) > 0]
     raw_rows = read_tsv(REPORT_DIR / "raw_file_inventory.tsv")
     evidence_files = [row for row in raw_rows if row.get("inferred_category") == "weak_evidence"]
+    unregistered_evidence_files = [row for row in evidence_files if row.get("checksum_status") != "registered"]
     evidence_desc = (
-        f"已发现 {len(evidence_files)} 个 raw weak evidence candidate，但尚未做 provenance、coordinate build 和 checksum/manifest 补登记。"
+        f"已发现 {len(evidence_files)} 个 raw weak evidence candidate；其中 {len(unregistered_evidence_files)} 个尚未进入 checksum manifest。"
+        if unregistered_evidence_files
+        else f"已发现 {len(evidence_files)} 个 raw weak evidence candidate，当前均已进入 checksum manifest；provenance、coordinate build 和 trait specificity 仍需后续确认。"
         if evidence_files
         else "fast download 和 inventory 中没有发现可直接使用的 weak evidence 表。"
+    )
+    unregistered_desc = (
+        "部分 evidence raw files 不在当前 checksum manifest 中。"
+        if unregistered_evidence_files
+        else "当前 raw weak evidence files 均已进入 checksum manifest。"
     )
     rows = [
         {
@@ -225,8 +233,8 @@ def write_risk_report(overlap_rows: list[dict[str, object]], chrom_rows: list[di
             "blocking_next_phase": "yes",
         },
         {
-            "risk_id": "RISK_WEAK_EVIDENCE_MISSING",
-            "risk_category": "weak evidence missing or unverified",
+            "risk_id": "RISK_WEAK_EVIDENCE_UNVERIFIED",
+            "risk_category": "weak evidence unverified",
             "severity": "medium",
             "affected_files": compact_list([row.get("local_path", "") for row in evidence_files], 10) if evidence_files else "known gene / QTL / GWAS lead SNP tables",
             "description": evidence_desc,
@@ -237,9 +245,9 @@ def write_risk_report(overlap_rows: list[dict[str, object]], chrom_rows: list[di
         {
             "risk_id": "RISK_RAW_EVIDENCE_NOT_IN_MANIFEST",
             "risk_category": "unregistered raw evidence",
-            "severity": "medium",
-            "affected_files": compact_list([row.get("local_path", "") for row in evidence_files if row.get("checksum_status") != "registered"], 10),
-            "description": "部分 evidence raw files 不在当前 checksum manifest 中。",
+            "severity": "medium" if unregistered_evidence_files else "low",
+            "affected_files": compact_list([row.get("local_path", "") for row in unregistered_evidence_files], 10),
+            "description": unregistered_desc,
             "why_it_matters": "未登记 checksum 的 raw evidence 后续不可作为可复现输入。",
             "recommended_action": "在确认来源后更新 manifest/checksum；若 provenance 不清楚则仅作为待审阅 raw candidate。",
             "blocking_next_phase": "no",
@@ -308,6 +316,7 @@ def write_main_report(overlap_rows: list[dict[str, object]], chrom_rows: list[di
     raw_rows = read_tsv(REPORT_DIR / "raw_file_inventory.tsv")
     raw_size = sum(int(row.get("file_size_bytes") or 0) for row in raw_rows)
     evidence_rows = [row for row in raw_rows if row.get("inferred_category") == "weak_evidence"]
+    unregistered_evidence_rows = [row for row in evidence_rows if row.get("checksum_status") != "registered"]
     ref_rows = read_tsv(REPORT_DIR / "reference_inventory.tsv")
     gff_rows = read_tsv(REPORT_DIR / "gff3_inventory.tsv")
     snp_rows = read_tsv(REPORT_DIR / "snp_file_inventory.tsv")
@@ -320,6 +329,13 @@ def write_main_report(overlap_rows: list[dict[str, object]], chrom_rows: list[di
     snp_plink = [row for row in plink_rows if row.get("data_category_guess") == "snp_genotype"]
     high_risks = [row for row in risk_rows if row.get("severity") == "high"]
     chrom_mismatch = [row for row in chrom_rows if row.get("source_type") in {"snp_vcf_chroms", "snp_plink_chroms", "indel_plink_chroms"} and int(row.get("n_not_matching_reference") or 0) > 0]
+    evidence_status = (
+        f"另发现 {len(evidence_rows)} 个 raw weak evidence candidate，其中 {len(unregistered_evidence_rows)} 个尚未完成 checksum/manifest 补登记。"
+        if unregistered_evidence_rows
+        else f"另发现 {len(evidence_rows)} 个 raw weak evidence candidate，当前 checksum/manifest 已登记；但 provenance、coordinate build 和 trait specificity 仍需后续确认。"
+        if evidence_rows
+        else "当前没有发现可直接使用的 raw weak evidence candidate。"
+    )
 
     text = f"""# Phase 3 Raw Data Inventory 报告
 
@@ -369,7 +385,7 @@ FASTA/GFF3 使用 `NC_*` accession-style seqid。SNP VCF、SNP PLINK 和 indel P
 
 ## 12. 主要风险
 
-主要 high risk 包括 accession ID mismatch、trait/genotype overlap insufficient、unknown cannot be negative。另发现 {len(evidence_rows)} 个 raw weak evidence candidate，但尚未完成 provenance、coordinate build 和 checksum/manifest 补登记。完整风险见 `raw_data_risk_report.tsv`。
+主要 high risk 包括 accession ID mismatch、trait/genotype overlap insufficient、unknown cannot be negative。{evidence_status}完整风险见 `raw_data_risk_report.tsv`。
 
 ## 13. v0.1-mini 建议
 
