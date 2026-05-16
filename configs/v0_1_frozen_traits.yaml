@@ -1,0 +1,78 @@
+version: v0.1-frozen-traits
+
+source:
+  recommendation_table: "reports/trait_state/v0_1_trait_recommendation.tsv"
+  descriptor_review: "reports/trait_state_review/trait_descriptor_review.tsv"
+
+constraints:
+  no_phenotype_prediction: true
+  trait_state_is_condition_signal: true
+  weak_evidence_not_causal_ground_truth: true
+  unknown_not_negative: true
+  accession_confidence_levels: ["A", "B"]
+  excluded_accession_confidence_levels: ["C", "D"]
+
+frozen_traits:
+  - trait_id: "data_lt_2007__spkf"
+    source_sheet: "Data < 2007"
+    trait_name: "SPKF"
+    trait_type_guess: "categorical"
+    n_non_missing: 2094
+    biological_interpretability: "high"
+    freeze_decision: "freeze_for_v0_1"
+  - trait_id: "data_lt_2007__fla_repro"
+    source_sheet: "Data < 2007"
+    trait_name: "FLA_REPRO"
+    trait_type_guess: "categorical"
+    n_non_missing: 2092
+    biological_interpretability: "high"
+    freeze_decision: "freeze_for_v0_1"
+  - trait_id: "data_lt_2007__cult_code_repro"
+    source_sheet: "Data < 2007"
+    trait_name: "CULT_CODE_REPRO"
+    trait_type_guess: "categorical"
+    n_non_missing: 2075
+    biological_interpretability: "high"
+    freeze_decision: "freeze_for_v0_1"
+  - trait_id: "data_lt_2007__llt_code"
+    source_sheet: "Data < 2007"
+    trait_name: "LLT_CODE"
+    trait_type_guess: "categorical"
+    n_non_missing: 2076
+    biological_interpretability: "high"
+    freeze_decision: "freeze_for_v0_1"
+  - trait_id: "data_lt_2007__pex_repro"
+    source_sheet: "Data < 2007"
+    trait_name: "PEX_REPRO"
+    trait_type_guess: "categorical"
+    n_non_missing: 2095
+    biological_interpretability: "high"
+    freeze_decision: "freeze_for_v0_1"
+  - trait_id: "data_lt_2007__lsen"
+    source_sheet: "Data < 2007"
+    trait_name: "LSEN"
+    trait_type_guess: "categorical"
+    n_non_missing: 2093
+    biological_interpretability: "high"
+    freeze_decision: "freeze_for_v0_1"
+  - trait_id: "data_lt_2007__pth"
+    source_sheet: "Data < 2007"
+    trait_name: "PTH"
+    trait_type_guess: "categorical"
+    n_non_missing: 2092
+    biological_interpretability: "medium"
+    freeze_decision: "freeze_for_v0_1"
+  - trait_id: "data_lt_2007__cuan_repro"
+    source_sheet: "Data < 2007"
+    trait_name: "CUAN_REPRO"
+    trait_type_guess: "categorical"
+    n_non_missing: 2094
+    biological_interpretability: "high"
+    freeze_decision: "freeze_for_v0_1"
+  - trait_id: "data_lt_2007__cudi_code_repro"
+    source_sheet: "Data < 2007"
+    trait_name: "CUDI_CODE_REPRO"
+    trait_type_guess: "binary"
+    n_non_missing: 2093
+    biological_interpretability: "high"
+    freeze_decision: "freeze_for_v0_1"

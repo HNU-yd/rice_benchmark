@@ -1,0 +1,35 @@
+trait_id	trait_name	matched_source	matched_keyword	matched_trait_or_category	match_strength	notes
+data_lt_2007__spkf	SPKF	Oryzabase	seed set percent	Tolerance and resistance - Disease resistance,  Tolerance and resistance - Stress tolerance,  Other	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__fla_repro	FLA_REPRO	Oryzabase	flag leaf angle	Vegetative organ - Culm	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__cult_code_repro	CULT_CODE_REPRO	Q-TARO	culm length	culm length	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__llt_code	LLT_CODE	Oryzabase	leaf length	Vegetative organ - Culm	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__pex_repro	PEX_REPRO	Oryzabase	panicle exsertion	Biochemical character,  Reproductive organ - panicle	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__lsen	LSEN	Oryzabase	leaf senescence	Tolerance and resistance - Stress tolerance,  Vegetative organ - Leaf	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__pth	PTH	Oryzabase	panicle threshability	Seed - Physiological traits - Shattering	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__cuan_repro	CUAN_REPRO	Oryzabase	culm angle	Vegetative organ - Culm,  Character as QTL - Yield and productivity	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__cudi_code_repro	CUDI_CODE_REPRO	Oryzabase	culm diam of basal internode at reproductive	Character as QTL - Germination,  Reproductive organ - Pollination, fertilization, fertility,  Vegetative organ - Root,  Tolerance and resistance - Stress tolerance,  Vegetative organ - Leaf,  Character as QTL - Yield and productivity,  Character as QTL - Grain quality,  Seed - Morphological traits - Grain shape,  Vegetative organ - Culm	weak_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__apco_rev_repro	APCO_REV_REPRO	Oryzabase	apiculus color	Biochemical character,  Seed,  Tolerance and resistance - Stress tolerance,  Tolerance and resistance - Insect resistance,  Coloration - Others,  Coloration - Anthocyanin,  Seed - Morphological traits,  Tolerance and resistance - Disease resistance,  Vegetative organ - Culm	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__auco_rev_veg	AUCO_REV_VEG	Oryzabase	leaf color	Coloration - Anthocyanin	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__blco_rev_veg	BLCO_REV_VEG	Oryzabase	leaf color	Coloration - Anthocyanin	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__blpub_veg	BLPUB_VEG	Oryzabase	leaf pubescence	Vegetative organ - Leaf	weak_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__blsco_rev_veg	BLSCO_REV_VEG	Oryzabase	leaf sheath color	Coloration - Anthocyanin	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__cco_rev_veg	CCO_REV_VEG	Oryzabase	collar color	Coloration - Anthocyanin	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__cuno_code_repro	CUNO_CODE_REPRO	Oryzabase	culm number	Vegetative organ,  Vegetative organ - Culm	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__cust_repro	CUST_REPRO	Oryzabase	culm strength	Vegetative organ - Culm,  Tolerance and resistance - Stress tolerance,  Biochemical character	weak_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__endo	ENDO	Oryzabase	endosperm type	Character as QTL - Germination,  Reproductive organ - Pollination, fertilization, fertility,  Vegetative organ - Root,  Tolerance and resistance - Stress tolerance,  Vegetative organ - Leaf,  Character as QTL - Yield and productivity,  Character as QTL - Grain quality,  Seed - Morphological traits - Grain shape,  Vegetative organ - Culm	weak_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__inco_rev_repro	INCO_REV_REPRO	Oryzabase	internode color	Coloration - Anthocyanin	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__la	LA	Oryzabase	leaf angle	Vegetative organ - Culm	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__ligco_rev_veg	LIGCO_REV_VEG	Oryzabase	ligule color	Coloration - Anthocyanin,  Seed - Morphological traits,  Tolerance and resistance - Stress tolerance	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__ligsh	LIGSH	Oryzabase	ligule shape	Vegetative organ - Shoot apical meristem(SAM)	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__lpco_rev_post	LPCO_REV_POST	Oryzabase	lemma and palea color	Coloration - Others	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__lppub	LPPUB	Oryzabase	lemma and palea pubescence	Vegetative organ - Leaf	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__noco_rev	NOCO_REV	Oryzabase	node color	Coloration - Anthocyanin	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__pa_repro	PA_REPRO	Oryzabase	panicle axis	Vegetative organ - Culm	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__plt_code_post	PLT_CODE_POST	Oryzabase	panicle length	Vegetative organ - Culm	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__psh	PSH	Q-TARO	seed shattering	seed shattering	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__pty	PTY	Oryzabase	panicle type	Vegetative organ - Culm	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__scco_rev	SCCO_REV	Oryzabase	seed coat color	Coloration - Anthocyanin	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__sdht_code	SDHT_CODE	Oryzabase	seedling height	Character as QTL - Plant growth activity	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__second_br_repro	SECOND_BR_REPRO	Oryzabase	secondary branch number	Reproductive organ - Spikelet, flower, glume, awn,  Tolerance and resistance - Stress tolerance	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__slco_rev	SLCO_REV	Oryzabase	sterile lemma color	Other,  Reproductive organ - Inflorescence,  Seed - Morphological traits,  Vegetative organ - Leaf,  Coloration - Anthocyanin,  Coloration - Chlorophyll,  Tolerance and resistance - Stress tolerance	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth
+data_lt_2007__sllt_code	SLLT_CODE	Oryzabase	sterile lemma length	Reproductive organ - Pollination, fertilization, fertility - Sterility,  Reproductive organ - Spikelet, flower, glume, awn	strong_keyword	关键词级弱语义匹配；不能解释为 causal ground truth

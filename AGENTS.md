@@ -33,6 +33,7 @@ GWAS、QTL、known trait genes、LD blocks、credible intervals 和 trait-gene a
 - 训练代码中禁止动态随机切分 split。
 - 所有 models 和 baselines 必须输出标准化 output tables。
 - 新增或修改 Python 代码时，必须同步更新 README 或对应 docs。
+- 每次执行完prompt都需要更新status.md，记录每次执行完prompt的结果。
 
 ## GitHub 同步规则
 
