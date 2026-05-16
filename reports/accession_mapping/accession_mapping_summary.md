@@ -56,3 +56,7 @@ phenotype mapping：A=0，B=2269，C=12，D=743。
 ## 下一步建议
 
 优先人工审查 `manual_review_candidates.tsv` 中的 C 级名称匹配和多重匹配；然后生成 high-confidence accession mapping 子集。若 A/B 级 phenotype mapping 覆盖足够，再构建 trait_state 和最小 Task 1 instances；若不足，先补充 accession ID mapping。
+
+## Harmonization 口径
+
+后续论文方法、补充材料和项目文档统一引用 `docs/accession_id_harmonization.md` 与 `accession_id_harmonization_statement.md`。当前口径是：本项目进行了多源 ID harmonization，并只使用高置信 A/B 级映射样本，避免错误 genotype–trait 配对。C 级候选默认排除主 benchmark，D 级未映射样本不进入 trait-conditioned 分析，也不能作为 negative。
