@@ -1,0 +1,26 @@
+source_database	local_path	n_rows	n_cols	columns	id_columns_detected	trait_columns_detected	gene_symbol_columns_detected	rap_id_columns_detected	msu_id_columns_detected	go_columns_detected	notes
+funRiceGenes	data/raw/external_knowledge/funricegenes/funricegenes_home.html										format html not parsed in 07A schema preview
+funRiceGenes	data/raw/external_knowledge/funricegenes/funricegenes_shiny_home.html										format html not parsed in 07A schema preview
+funRiceGenes	data/raw/external_knowledge/funricegenes/geneInfo.table.txt	4568	3	Symbol;RAPdb;MSU			Symbol	RAPdb	MSU		delimiter='\t'
+funRiceGenes	data/raw/external_knowledge/funricegenes/famInfo.table.txt	6181	4	Symbol;RAPdb;MSU;Name			Symbol;Name	RAPdb	MSU		delimiter='\t'
+funRiceGenes	data/raw/external_knowledge/funricegenes/geneKeyword.table.txt	45930	6	Symbol;RAPdb;MSU;Keyword;Title;Evidence	Evidence	Keyword	Symbol	RAPdb	MSU		delimiter='\t'
+funRiceGenes	data/raw/external_knowledge/funricegenes/reference.table.txt	8631	6	Title;Year;Journal;Affiliation;Abstract;Gene							delimiter='\t'
+funRiceGenes	data/raw/external_knowledge/funricegenes/net.pdf										format pdf not parsed in 07A schema preview
+funRiceGenes	data/raw/external_knowledge/funricegenes/help.pdf										format pdf not parsed in 07A schema preview
+MSU_RGAP	data/raw/external_knowledge/msu_rgAP/downloads_gad.shtml										format html not parsed in 07A schema preview
+MSU_RGAP	data/raw/external_knowledge/msu_rgAP/download_osa1r7.shtml										format html not parsed in 07A schema preview
+MSU_RGAP	data/raw/external_knowledge/msu_rgAP/osa1_r7.all_models.gff3.gz	813788	9	seqid;source;type;start;end;score;strand;phase;attributes	seqid						delimiter='\t'
+MSU_RGAP	data/raw/external_knowledge/msu_rgAP/osa1_r7.all_models.functional_annotation.txt.gz	66339	2	model;annotation	model						delimiter='\t'
+MSU_RGAP	data/raw/external_knowledge/msu_rgAP/osa1_r7.locus_brief_info.txt.gz	66339	10	chr;locus;model;start;stop;ori;is_TE;is_expressed;is_representative;annotation	locus;model	stop			locus		delimiter='\t'
+MSU_RGAP	data/raw/external_knowledge/msu_rgAP/osa1_r7.all_models.GOSlim.txt.gz	176966	6	LOC_Os01g01010.1;GO:0030234;F;enzyme regulator activity;IEA;TAIR:AT3G59570		enzyme regulator activity		LOC_Os01g01010.1	LOC_Os01g01010.1	GO:0030234	delimiter='\t'
+MSU_RGAP	data/raw/external_knowledge/msu_rgAP/legacy_annotation_dbs_index.html										format html not parsed in 07A schema preview
+RAP-DB	data/raw/external_knowledge/rapdb/irgsp1_download_page.html										format html not parsed in 07A schema preview
+RAP-DB	data/raw/external_knowledge/rapdb/download.99861702.js										format js not parsed in 07A schema preview
+RAP-DB	data/raw/external_knowledge/rapdb/IRGSP-1.0_representative_annotation_2026-02-05.tsv.gz	40250	19	Transcript_ID;Locus_ID;Description;RAP-DB Gene Symbol Synonym(s);RAP-DB Gene Name Synonym(s);CGSNL Gene Symbol;CGSNL Gene Name;Oryzabase Gene Symbol Synonym(s);Oryzabase Gene Name Synonym(s);GO;InterPro;Transcript evidence;ORF evidence;Curation Date;Literature PMID;Oryzabase Trait Gene ID;Subcellular location;Comment;B5toI1	Transcript_ID;Locus_ID;Transcript evidence;ORF evidence;Literature PMID;Oryzabase Trait Gene ID	Oryzabase Trait Gene ID;B5toI1	RAP-DB Gene Symbol Synonym(s);RAP-DB Gene Name Synonym(s);CGSNL Gene Symbol;CGSNL Gene Name;Oryzabase Gene Symbol Synonym(s);Oryzabase Gene Name Synonym(s)	Transcript_ID;RAP-DB Gene Symbol Synonym(s);RAP-DB Gene Name Synonym(s);Transcript evidence	Locus_ID	GO	delimiter='\t'
+RAP-DB	data/raw/external_knowledge/rapdb/IRGSP-1.0_representative_transcript_exon_2026-02-05.gtf.gz	221205	9	seqid;source;type;start;end;score;strand;phase;attributes	seqid						delimiter='\t'
+RAP-DB	data/raw/external_knowledge/rapdb/RAP-MSU_2026-02-05.txt.gz	66669	2	Os01g0100100;LOC_Os01g01010.1,LOC_Os01g01010.2				Os01g0100100;LOC_Os01g01010.1,LOC_Os01g01010.2	LOC_Os01g01010.1,LOC_Os01g01010.2		delimiter='\t'
+RAP-DB	data/raw/external_knowledge/rapdb/IRGSP-1.0_transcript-evidence_2012-04-11.txt.gz	44514	3	Os01t0100100-01;AK242339 (DDBJ:antisense transcript);Oryza sativa Japonica Group	AK242339 (DDBJ:antisense transcript)			Os01t0100100-01;AK242339 (DDBJ:antisense transcript)			delimiter='\t'
+RAP-DB	data/raw/external_knowledge/rapdb/curated_gene_list.html										format html not parsed in 07A schema preview
+RAP-DB	data/raw/external_knowledge/rapdb/curated_genes.json	7031	12	locus;transcript;seqid;start;end;strand;curated_date;gene_symbols;gene_names;to;po;references	locus;transcript;seqid	to	gene_symbols;gene_names	transcript	locus		json list/dict preview
+RAP-DB	data/raw/external_knowledge/rapdb/agri_gene_list.html										format html not parsed in 07A schema preview
+RAP-DB	data/raw/external_knowledge/rapdb/agri_genes.json	1093	12	locus;transcript;seqid;start;end;strand;traits;gene_symbols;gene_names;to;po;references	locus;transcript;seqid	traits;to	gene_symbols;gene_names	transcript	locus		json list/dict preview

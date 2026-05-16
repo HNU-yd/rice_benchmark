@@ -87,3 +87,24 @@
 - 生成配置：`configs/evaluator_chr1_snp_v0_1.yaml`。
 - `data/interim/baselines_chr1_snp/` 已生成本地 score tables，但不进入 git。
 - 本阶段没有训练模型，没有构建深度学习模型，没有执行 GWAS，没有构建 matched decoy，没有执行 phenotype prediction，没有把 weak evidence 写成 causal ground truth，没有把 unknown_unlabeled 当作 negative，也没有输出正式 AUROC / AUPRC。
+
+## 2026-05-16 Phase 7A external rice knowledge collection
+
+- 执行 prompt：`.codex/prompts/07a_collect_rapdb_funricegenes_msu.md`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 本阶段补充 RAP-DB、funRiceGenes 和 MSU / Rice Genome Annotation Project 第一批外部水稻知识库。
+- RAP-DB 下载结果：10 个文件 downloaded，0 个 failed，0 个 skipped。
+- funRiceGenes 下载结果：8 个文件 downloaded，0 个 failed，0 个 skipped。
+- MSU / RGAP 下载结果：7 个文件 downloaded，0 个 failed，0 个 skipped。
+- raw external knowledge 文件总数：25。
+- 字段审查记录数：25。
+- integration plan 记录数：25。
+- 失败或需要人工下载记录数：0。
+- 可进入 annotation layer 的关键文件包括 RAP-DB representative annotation / GTF、MSU RGAP all_models GFF3、functional annotation 和 locus brief info。
+- 可进入 known gene evidence layer 的关键文件包括 funRiceGenes `geneInfo.table.txt`、RAP-DB `curated_genes.json` 和 `agri_genes.json`。
+- 可进入 gene ID mapping layer 的关键文件包括 RAP-DB `RAP-MSU_2026-02-05.txt.gz` 和 funRiceGenes `famInfo.table.txt`。
+- 更新 manifest：`manifest/download_manifest.tsv` 和 `manifest/checksum_table.tsv` 已登记 07A 下载文件与 sha256。
+- 生成报告：`reports/external_knowledge/summary/external_knowledge_07a_report.md`、`external_knowledge_file_inventory.tsv`、`external_knowledge_download_failures.tsv`、`external_knowledge_schema_preview.tsv`、`external_knowledge_integration_plan.tsv`。
+- 生成脚本目录：`scripts/external_knowledge/`。
+- `data/raw/external_knowledge/` 已生成本地下载文件，但不进入 git。
+- 本阶段没有训练模型，没有构建 Task 1 instances，没有构建 matched decoy，没有执行 GWAS，没有执行 phenotype prediction，没有把 known gene / QTL / annotation 写成 causal ground truth，也没有把没有 evidence 的区域当作 negative。

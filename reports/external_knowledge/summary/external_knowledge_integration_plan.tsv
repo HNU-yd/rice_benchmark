@@ -1,0 +1,26 @@
+source_database	file_name	integration_layer	main_use	priority	requires_coordinate_mapping	requires_gene_id_mapping	can_enter_v0_1	can_enter_v0_2	notes
+funRiceGenes	funricegenes_home.html	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+funRiceGenes	funricegenes_shiny_home.html	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+funRiceGenes	geneInfo.table.txt	known_gene_evidence_layer	known gene / agriculturally important gene evidence	P1	false	true	true	true	external evidence / annotation / explanation only
+funRiceGenes	famInfo.table.txt	gene_id_mapping_layer	RAP-DB / MSU / gene family ID harmonization	P0	false	true	true	true	external evidence / annotation / explanation only
+funRiceGenes	geneKeyword.table.txt	functional_annotation_layer	functional keyword / GO annotation	P1	false	true	true	true	external evidence / annotation / explanation only
+funRiceGenes	reference.table.txt	known_gene_evidence_layer	外部知识库 metadata	P2	false	true	false	true	external evidence / annotation / explanation only
+funRiceGenes	net.pdf	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+funRiceGenes	help.pdf	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+MSU_RGAP	downloads_gad.shtml	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+MSU_RGAP	download_osa1r7.shtml	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+MSU_RGAP	osa1_r7.all_models.gff3.gz	gene_annotation_layer	提供 gene model 坐标和 annotation scaffold	P0	true	true	true	true	external evidence / annotation / explanation only
+MSU_RGAP	osa1_r7.all_models.functional_annotation.txt.gz	gene_annotation_layer	gene functional annotation and description	P0	false	true	true	true	external evidence / annotation / explanation only
+MSU_RGAP	osa1_r7.locus_brief_info.txt.gz	gene_annotation_layer	gene functional annotation and description	P0	false	true	true	true	external evidence / annotation / explanation only
+MSU_RGAP	osa1_r7.all_models.GOSlim.txt.gz	functional_annotation_layer	functional keyword / GO annotation	P1	false	true	true	true	external evidence / annotation / explanation only
+MSU_RGAP	legacy_annotation_dbs_index.html	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+RAP-DB	irgsp1_download_page.html	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+RAP-DB	download.99861702.js	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+RAP-DB	IRGSP-1.0_representative_annotation_2026-02-05.tsv.gz	gene_annotation_layer	gene functional annotation and description	P0	false	true	true	true	external evidence / annotation / explanation only
+RAP-DB	IRGSP-1.0_representative_transcript_exon_2026-02-05.gtf.gz	gene_annotation_layer	提供 gene model 坐标和 annotation scaffold	P0	true	true	true	true	external evidence / annotation / explanation only
+RAP-DB	RAP-MSU_2026-02-05.txt.gz	gene_id_mapping_layer	RAP-DB / MSU / gene family ID harmonization	P0	false	true	true	true	external evidence / annotation / explanation only
+RAP-DB	IRGSP-1.0_transcript-evidence_2012-04-11.txt.gz	gene_id_mapping_layer	外部知识库 metadata	P2	false	true	false	true	external evidence / annotation / explanation only
+RAP-DB	curated_gene_list.html	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+RAP-DB	curated_genes.json	known_gene_evidence_layer	known gene / agriculturally important gene evidence	P1	false	true	true	true	external evidence / annotation / explanation only
+RAP-DB	agri_gene_list.html	candidate_gene_explanation_layer	metadata, citation, help, and provenance	P2	false	false	false	true	external evidence / annotation / explanation only
+RAP-DB	agri_genes.json	known_gene_evidence_layer	known gene / agriculturally important gene evidence	P1	false	true	true	true	external evidence / annotation / explanation only

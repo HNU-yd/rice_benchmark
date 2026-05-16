@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 6A minimal evaluator 和 baseline prototype。
+当前阶段：Phase 7A external rice knowledge collection。
 
-当前目标：基于 chr1 SNP-only minimal Task 1 weak signal tables 构建最小 evaluator、`random_uniform` baseline 和简单 heuristic baselines。不构建 matched decoy，不训练模型，不做 `phenotype prediction`。
+当前目标：补充 RAP-DB、funRiceGenes 和 MSU / Rice Genome Annotation Project 第一批外部水稻知识库，用于后续 annotation layer、known gene evidence layer、gene ID mapping layer 和 candidate gene explanation layer。不构建 Task 1 instances，不构建 matched decoy，不训练模型，不做 `phenotype prediction`。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -59,9 +59,11 @@ Phase 5C 已构建 chr1 SNP-only minimal Task 1 instance prototype：frozen trai
 
 Phase 6A 已构建 evaluator / baseline prototype：baseline 包括 `random_uniform`、`window_snp_density`、`genomic_position` 和 `shuffled_trait`。window-level baseline score 行数为 31140，variant-level baseline score 行数为 1528776；评价报告位于 `reports/baselines_chr1_snp/baseline_evaluation_report.md`，校验报告位于 `reports/baselines_chr1_snp/baseline_validation.tsv`。
 
-下一阶段：构建 matched decoy 和 frozen split，然后再进入正式 evaluator 指标。
+Phase 7A 已补充第一批外部水稻知识库：RAP-DB 下载 10 个文件，funRiceGenes 下载 8 个文件，MSU / RGAP 下载 7 个文件，失败或 skipped 记录数为 0。报告位于 `reports/external_knowledge/summary/external_knowledge_07a_report.md`，字段审查位于 `reports/external_knowledge/summary/external_knowledge_schema_preview.tsv`，集成计划位于 `reports/external_knowledge/summary/external_knowledge_integration_plan.tsv`。
 
-当前 Phase 6A 不包含 matched decoy、frozen split、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+下一阶段：整理外部知识库为统一 gene annotation / known gene evidence / gene ID mapping layer，然后构建 matched decoy 和 frozen split。
+
+当前 Phase 7A 不包含 matched decoy、frozen split、Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer，不能写成 causal ground truth。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 
