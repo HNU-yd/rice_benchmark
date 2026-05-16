@@ -1,0 +1,7 @@
+metric	n	denominator	percent	notes
+genotype_union_samples	3024	3024	100	accession_mapping_master.tsv total rows
+phenotype_A_B_usable_mapping	2269	3024	75.0331	A/B high-confidence phenotype mapping before SNP/Qmatrix filter
+high_confidence_snp_qmatrix_subset	2268	3024	75	usable_for_trait_mapping=true, phenotype confidence A/B, SNP core present, Qmatrix present
+high_confidence_snp_indel_qmatrix_subset	2268	3024	75	same subset with indel_available=true
+excluded_C_level_name_only	12	3024	0.3968	C-level candidates require manual review and are excluded
+excluded_D_level_unmapped	743	3024	24.5701	D-level unmapped samples are unknown, not negative

@@ -1,0 +1,123 @@
+trait_id	source_sheet	trait_name	trait_type_guess	n_non_missing	missing_rate	recommendation_priority	recommended_for_v0_1	reason	notes
+data_lt_2007__blco_rev_veg	Data < 2007	BLCO_REV_VEG	categorical	2096	0	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Blade color at vegetative; numeric summary describes encoded category values only
+data_lt_2007__cco_rev_veg	Data < 2007	CCO_REV_VEG	categorical	2096	0	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Collar color at vegetative - cultivated; numeric summary describes encoded category values only
+data_lt_2007__ligco_rev_veg	Data < 2007	LIGCO_REV_VEG	categorical	2096	0	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Ligule color at vegetative - cultivated; numeric summary describes encoded category values only
+data_lt_2007__apco_rev_repro	Data < 2007	APCO_REV_REPRO	categorical	2095	0.000477	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Apiculus color at reproductive; numeric summary describes encoded category values only
+data_lt_2007__auco_rev_veg	Data < 2007	AUCO_REV_VEG	categorical	2095	0.000477	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Auricle color at vegetative; numeric summary describes encoded category values only
+data_lt_2007__blpub_veg	Data < 2007	BLPUB_VEG	categorical	2095	0.000477	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Blade pubescence at vegetative; numeric summary describes encoded category values only
+data_lt_2007__blsco_rev_veg	Data < 2007	BLSCO_REV_VEG	categorical	2095	0.000477	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Basal leafsheath color at vegetative; numeric summary describes encoded category values only
+data_lt_2007__inco_rev_repro	Data < 2007	INCO_REV_REPRO	categorical	2095	0.000477	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Internode color at reproductive - cultivated; numeric summary describes encoded category values only
+data_lt_2007__pex_repro	Data < 2007	PEX_REPRO	categorical	2095	0.000477	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Panicle exsertion at reproductive; numeric summary describes encoded category values only
+data_lt_2007__cuan_repro	Data < 2007	CUAN_REPRO	categorical	2094	0.000954	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Culm angle at reproductive; numeric summary describes encoded category values only
+data_lt_2007__cust_repro	Data < 2007	CUST_REPRO	categorical	2094	0.000954	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Culm strength at reproductive - cultivated; numeric summary describes encoded category values only
+data_lt_2007__lpco_rev_post	Data < 2007	LPCO_REV_POST	categorical	2094	0.000954	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Lemma and palea color at post-harvest; numeric summary describes encoded category values only
+data_lt_2007__spkf	Data < 2007	SPKF	categorical	2094	0.000954	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Spikelet fertility; numeric summary describes encoded category values only
+data_lt_2007__cudi_code_repro	Data < 2007	CUDI_CODE_REPRO	binary	2093	0.001431	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Culm diam. of basal internode at reproductive; numeric summary describes encoded category values only
+data_lt_2007__lsen	Data < 2007	LSEN	categorical	2093	0.001431	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Leaf senescence; numeric summary describes encoded category values only
+data_lt_2007__pty	Data < 2007	PTY	categorical	2093	0.001431	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Panicle type; numeric summary describes encoded category values only
+data_lt_2007__fla_repro	Data < 2007	FLA_REPRO	categorical	2092	0.001908	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Flag leaf angle at reproductive - cultivated; numeric summary describes encoded category values only
+data_lt_2007__pth	Data < 2007	PTH	categorical	2092	0.001908	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Panicle threshability; numeric summary describes encoded category values only
+data_lt_2007__scco_rev	Data < 2007	SCCO_REV	categorical	2092	0.001908	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Seed coat color; numeric summary describes encoded category values only
+data_lt_2007__endo	Data < 2007	ENDO	categorical	2091	0.002385	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Endosperm type; numeric summary describes encoded category values only
+data_lt_2007__sllt_code	Data < 2007	SLLT_CODE	categorical	2091	0.002385	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Sterile lemma length; numeric summary describes encoded category values only
+data_lt_2007__cuno_code_repro	Data < 2007	CUNO_CODE_REPRO	categorical	2076	0.009542	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Culm number (code) at reproductive - cultivated; numeric summary describes encoded category values only
+data_lt_2007__llt_code	Data < 2007	LLT_CODE	categorical	2076	0.009542	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Leaf length - cultivated; numeric summary describes encoded category values only
+data_lt_2007__cult_code_repro	Data < 2007	CULT_CODE_REPRO	categorical	2075	0.010019	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Culm length at reproductive; numeric summary describes encoded category values only
+data_lt_2007__sdht_code	Data < 2007	SDHT_CODE	categorical	2074	0.010496	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Seedling height; numeric summary describes encoded category values only
+data_lt_2007__plt_code_post	Data < 2007	PLT_CODE_POST	categorical	2071	0.011927	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Panicle length at post-harvest; numeric summary describes encoded category values only
+data_lt_2007__slco_rev	Data < 2007	SLCO_REV	categorical	1904	0.091603	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Sterile lemma color; numeric summary describes encoded category values only
+data_lt_2007__la	Data < 2007	LA	categorical	1382	0.340649	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Leaf angle - cultivated; numeric summary describes encoded category values only
+data_lt_2007__lppub	Data < 2007	LPPUB	categorical	1381	0.341126	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Lemma and palea pubescence; numeric summary describes encoded category values only
+data_lt_2007__pa_repro	Data < 2007	PA_REPRO	binary	1381	0.341126	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Panicle axis at reproductive; numeric summary describes encoded category values only
+data_lt_2007__ligsh	Data < 2007	LIGSH	categorical	1380	0.341603	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Ligule shape; numeric summary describes encoded category values only
+data_lt_2007__psh	Data < 2007	PSH	categorical	1380	0.341603	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Panicle shattering; numeric summary describes encoded category values only
+data_lt_2007__second_br_repro	Data < 2007	SECOND_BR_REPRO	categorical	1377	0.343034	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Secondary branching at reproductive; numeric summary describes encoded category values only
+data_lt_2007__noco_rev	Data < 2007	NOCO_REV	categorical	589	0.718989	P1	true	覆盖度较高，可作为 v0.1-mini 候选 trait_state	Node color; numeric summary describes encoded category values only
+data_lt_2007__apco_rev_post	Data < 2007	APCO_REV_POST	categorical	456	0.782443	P2	false	样本数较少或暂不适合进入 v0.1-mini	Apiculus color at post-harvest; numeric summary describes encoded category values only
+data_lt_2007__awpr_repro	Data < 2007	AWPR_REPRO	categorical	420	0.799618	P2	false	样本数较少或暂不适合进入 v0.1-mini	Awn presence at reproductive; numeric summary describes encoded category values only
+data_lt_2007__awco_rev	Data < 2007	AWCO_REV	categorical	419	0.800095	P2	false	样本数较少或暂不适合进入 v0.1-mini	Awn color; numeric summary describes encoded category values only
+data_gt_2007__apco_rev_post	Data > 2007	APCO_REV_POST	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Apiculus color at post-harvest; numeric summary describes encoded category values only
+data_gt_2007__apco_rev_repro	Data > 2007	APCO_REV_REPRO	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Apiculus color at reproductive; numeric summary describes encoded category values only
+data_gt_2007__apsh	Data > 2007	APSH	binary	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Lemma shape of apiculus; numeric summary describes encoded category values only
+data_gt_2007__auco_rev_veg	Data > 2007	AUCO_REV_VEG	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Auricle color at vegetative; numeric summary describes encoded category values only
+data_gt_2007__blco_rev_veg	Data > 2007	BLCO_REV_VEG	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Blade color at vegetative; numeric summary describes encoded category values only
+data_gt_2007__blpub_veg	Data > 2007	BLPUB_VEG	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Blade pubescence at vegetative; numeric summary describes encoded category values only
+data_gt_2007__blsco_rev_veg	Data > 2007	BLSCO_REV_VEG	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Basal leafsheath color at vegetative; numeric summary describes encoded category values only
+data_gt_2007__cco_rev_veg	Data > 2007	CCO_REV_VEG	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Collar color at vegetative - cultivated; numeric summary describes encoded category values only
+data_gt_2007__cuan_repro	Data > 2007	CUAN_REPRO	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm angle at reproductive; numeric summary describes encoded category values only
+data_gt_2007__cust_repro	Data > 2007	CUST_REPRO	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm strength at reproductive - cultivated; numeric summary describes encoded category values only
+data_gt_2007__fla_erepro	Data > 2007	FLA_EREPRO	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Flagleaf (attitude of blade) - Early observation; numeric summary describes encoded category values only
+data_gt_2007__fla_repro	Data > 2007	FLA_REPRO	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Flag leaf angle at reproductive - cultivated; numeric summary describes encoded category values only
+data_gt_2007__inco_rev_repro	Data > 2007	INCO_REV_REPRO	binary	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Internode color at reproductive - cultivated; numeric summary describes encoded category values only
+data_gt_2007__la	Data > 2007	LA	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf angle - cultivated; numeric summary describes encoded category values only
+data_gt_2007__ligco_rev_veg	Data > 2007	LIGCO_REV_VEG	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Ligule color at vegetative - cultivated; numeric summary describes encoded category values only
+data_gt_2007__ligsh	Data > 2007	LIGSH	binary	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Ligule shape; numeric summary describes encoded category values only
+data_gt_2007__lpco_rev_post	Data > 2007	LPCO_REV_POST	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Lemma and palea color at post-harvest; numeric summary describes encoded category values only
+data_gt_2007__lppub	Data > 2007	LPPUB	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Lemma and palea pubescence; numeric summary describes encoded category values only
+data_gt_2007__lsen	Data > 2007	LSEN	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf senescence; numeric summary describes encoded category values only
+data_gt_2007__noco_rev	Data > 2007	NOCO_REV	binary	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Node color; numeric summary describes encoded category values only
+data_gt_2007__pa_repro	Data > 2007	PA_REPRO	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle axis at reproductive; numeric summary describes encoded category values only
+data_gt_2007__pex_repro	Data > 2007	PEX_REPRO	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle exsertion at reproductive; numeric summary describes encoded category values only
+data_gt_2007__psh	Data > 2007	PSH	binary	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle shattering; numeric summary describes encoded category values only
+data_gt_2007__pth	Data > 2007	PTH	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle threshability; numeric summary describes encoded category values only
+data_gt_2007__pty	Data > 2007	PTY	binary	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle type; numeric summary describes encoded category values only
+data_gt_2007__slco_rev	Data > 2007	SLCO_REV	binary	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Sterile lemma color; numeric summary describes encoded category values only
+data_gt_2007__sllt_code	Data > 2007	SLLT_CODE	binary	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Sterile lemma length; numeric summary describes encoded category values only
+data_gt_2007__spkf	Data > 2007	SPKF	categorical	149	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Spikelet fertility; numeric summary describes encoded category values only
+data_gt_2007__second_br_repro	Data > 2007	SECOND_BR_REPRO	binary	148	0.006711	P2	false	样本数较少或暂不适合进入 v0.1-mini	Secondary branching at reproductive; numeric summary describes encoded category values only
+data_gt_2007__awco_rev	Data > 2007	AWCO_REV	categorical	35	0.765101	P2	false	样本数较少或暂不适合进入 v0.1-mini	Awn color; numeric summary describes encoded category values only
+data_gt_2007__awdist	Data > 2007	AWDIST	categorical	35	0.765101	P2	false	样本数较少或暂不适合进入 v0.1-mini	Distribution of awns; numeric summary describes encoded category values only
+data_gt_2007__awco_lrev	Data > 2007	AWCO_LREV	categorical	33	0.778523	P2	false	样本数较少或暂不适合进入 v0.1-mini	Awn color (Late observation); numeric summary describes encoded category values only
+phenotype_data__apco_rev_repro	Phenotype Data	APCO_REV_REPRO	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Apiculus color at reproductive; numeric summary describes encoded category values only
+phenotype_data__auco_rev_veg	Phenotype Data	AUCO_REV_VEG	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Auricle color at vegetative; numeric summary describes encoded category values only
+phenotype_data__awco_rev	Phenotype Data	AWCO_REV	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Awn color; numeric summary describes encoded category values only
+phenotype_data__blco_rev_veg	Phenotype Data	BLCO_REV_VEG	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Blade color at vegetative; numeric summary describes encoded category values only
+phenotype_data__blpub_veg	Phenotype Data	BLPUB_VEG	binary	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Blade pubescence at vegetative; numeric summary describes encoded category values only
+phenotype_data__blsco_rev_veg	Phenotype Data	BLSCO_REV_VEG	binary	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Basal leafsheath color at vegetative; numeric summary describes encoded category values only
+phenotype_data__cco_rev_veg	Phenotype Data	CCO_REV_VEG	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Collar color at vegetative - cultivated; numeric summary describes encoded category values only
+phenotype_data__cuan_repro	Phenotype Data	CUAN_REPRO	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm angle at reproductive; numeric summary describes encoded category values only
+phenotype_data__cust_repro	Phenotype Data	CUST_REPRO	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm strength at reproductive - cultivated; numeric summary describes encoded category values only
+phenotype_data__fla_repro	Phenotype Data	FLA_REPRO	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Flag leaf angle at reproductive - cultivated; numeric summary describes encoded category values only
+phenotype_data__inco_rev_repro	Phenotype Data	INCO_REV_REPRO	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Internode color at reproductive - cultivated; numeric summary describes encoded category values only
+phenotype_data__ligco_rev_veg	Phenotype Data	LIGCO_REV_VEG	binary	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Ligule color at vegetative - cultivated; numeric summary describes encoded category values only
+phenotype_data__lpco_rev_post	Phenotype Data	LPCO_REV_POST	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Lemma and palea color at post-harvest; numeric summary describes encoded category values only
+phenotype_data__lsen	Phenotype Data	LSEN	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf senescence; numeric summary describes encoded category values only
+phenotype_data__pex_repro	Phenotype Data	PEX_REPRO	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle exsertion at reproductive; numeric summary describes encoded category values only
+phenotype_data__pth	Phenotype Data	PTH	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle threshability; numeric summary describes encoded category values only
+phenotype_data__pty	Phenotype Data	PTY	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle type; numeric summary describes encoded category values only
+phenotype_data__scco_rev	Phenotype Data	SCCO_REV	binary	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Seed coat color; numeric summary describes encoded category values only
+phenotype_data__sllt_code	Phenotype Data	SLLT_CODE	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Sterile lemma length; numeric summary describes encoded category values only
+phenotype_data__spkf	Phenotype Data	SPKF	categorical	23	0	P2	false	样本数较少或暂不适合进入 v0.1-mini	Spikelet fertility; numeric summary describes encoded category values only
+phenotype_data__awpr_repro	Phenotype Data	AWPR_REPRO	categorical	22	0.043478	P2	false	样本数较少或暂不适合进入 v0.1-mini	Awn presence at reproductive; numeric summary describes encoded category values only
+phenotype_data__cudi_code_repro	Phenotype Data	CUDI_CODE_REPRO	binary	22	0.043478	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm diam. of basal internode at reproductive; numeric summary describes encoded category values only
+phenotype_data__cult_code_repro	Phenotype Data	CULT_CODE_REPRO	categorical	22	0.043478	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm length at reproductive; numeric summary describes encoded category values only
+phenotype_data__cuno_code_repro	Phenotype Data	CUNO_CODE_REPRO	categorical	22	0.043478	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm number (code) at reproductive - cultivated; numeric summary describes encoded category values only
+phenotype_data__endo	Phenotype Data	ENDO	binary	22	0.043478	P2	false	样本数较少或暂不适合进入 v0.1-mini	Endosperm type; numeric summary describes encoded category values only
+phenotype_data__llt_code	Phenotype Data	LLT_CODE	categorical	22	0.043478	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf length - cultivated; numeric summary describes encoded category values only
+phenotype_data__plt_code_post	Phenotype Data	PLT_CODE_POST	categorical	22	0.043478	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle length at post-harvest; numeric summary describes encoded category values only
+phenotype_data__sdht_code	Phenotype Data	SDHT_CODE	categorical	22	0.043478	P2	false	样本数较少或暂不适合进入 v0.1-mini	Seedling height; numeric summary describes encoded category values only
+data_gt_2007__blsco_anth_veg	Data > 2007	BLSCO_ANTH_VEG	binary	18	0.879195	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf sheath anthocyanin coloration; numeric summary describes encoded category values only
+data_gt_2007__blanthdi_veg	Data > 2007	BLANTHDI_VEG	categorical	17	0.885906	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf blade distribution of anthocyanin coloration; numeric summary describes encoded category values only
+data_gt_2007__blanthpr_veg	Data > 2007	BLANTHPR_VEG	categorical	17	0.885906	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf blade anthocyanin coloration; numeric summary describes encoded category values only
+phenotype_data__slco_rev	Phenotype Data	SLCO_REV	binary	17	0.26087	P2	false	样本数较少或暂不适合进入 v0.1-mini	Sterile lemma color; numeric summary describes encoded category values only
+data_gt_2007__inanth	Data > 2007	INANTH	categorical	10	0.932886	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm internode anthocyanin color; numeric summary describes encoded category values only
+phenotype_data__la	Phenotype Data	LA	categorical	9	0.608696	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf angle - cultivated; numeric summary describes encoded category values only
+phenotype_data__ligsh	Phenotype Data	LIGSH	binary	9	0.608696	P2	false	样本数较少或暂不适合进入 v0.1-mini	Ligule shape; numeric summary describes encoded category values only
+phenotype_data__lppub	Phenotype Data	LPPUB	categorical	9	0.608696	P2	false	样本数较少或暂不适合进入 v0.1-mini	Lemma and palea pubescence; numeric summary describes encoded category values only
+phenotype_data__pa_repro	Phenotype Data	PA_REPRO	binary	9	0.608696	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle axis at reproductive; numeric summary describes encoded category values only
+phenotype_data__psh	Phenotype Data	PSH	binary	9	0.608696	P2	false	样本数较少或暂不适合进入 v0.1-mini	Panicle shattering; numeric summary describes encoded category values only
+phenotype_data__second_br_repro	Phenotype Data	SECOND_BR_REPRO	categorical	9	0.608696	P2	false	样本数较少或暂不适合进入 v0.1-mini	Secondary branching at reproductive; numeric summary describes encoded category values only
+data_gt_2007__apanth_repro	Data > 2007	APANTH_REPRO	binary	6	0.959732	P2	false	样本数较少或暂不适合进入 v0.1-mini	Lemma_Anthocyanin colouration of area below apiculus; numeric summary describes encoded category values only
+data_gt_2007__noanth	Data > 2007	NOANTH	categorical	6	0.959732	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm node of anthocyanin color; numeric summary describes encoded category values only
+phenotype_data__apco_rev_post	Phenotype Data	APCO_REV_POST	categorical	3	0.869565	P2	false	样本数较少或暂不适合进入 v0.1-mini	Apiculus color at post-harvest; numeric summary describes encoded category values only
+phenotype_data__noco_rev	Phenotype Data	NOCO_REV	categorical	3	0.869565	P2	false	样本数较少或暂不适合进入 v0.1-mini	Node color; numeric summary describes encoded category values only
+phenotype_data__apanth_repro	Phenotype Data	APANTH_REPRO	categorical	1	0.956522	P2	false	样本数较少或暂不适合进入 v0.1-mini	Lemma_Anthocyanin colouration of area below apiculus; numeric summary describes encoded category values only
+phenotype_data__apsh	Phenotype Data	APSH	categorical	1	0.956522	P2	false	样本数较少或暂不适合进入 v0.1-mini	Lemma shape of apiculus; numeric summary describes encoded category values only
+phenotype_data__awco_lrev	Phenotype Data	AWCO_LREV	categorical	1	0.956522	P2	false	样本数较少或暂不适合进入 v0.1-mini	Awn color (Late observation); numeric summary describes encoded category values only
+phenotype_data__blanthpr_veg	Phenotype Data	BLANTHPR_VEG	categorical	1	0.956522	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf blade anthocyanin coloration; numeric summary describes encoded category values only
+phenotype_data__blsco_anth_veg	Phenotype Data	BLSCO_ANTH_VEG	categorical	1	0.956522	P2	false	样本数较少或暂不适合进入 v0.1-mini	Leaf sheath anthocyanin coloration; numeric summary describes encoded category values only
+phenotype_data__fla_erepro	Phenotype Data	FLA_EREPRO	categorical	1	0.956522	P2	false	样本数较少或暂不适合进入 v0.1-mini	Flagleaf (attitude of blade) - Early observation; numeric summary describes encoded category values only
+phenotype_data__inanth	Phenotype Data	INANTH	categorical	1	0.956522	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm internode anthocyanin color; numeric summary describes encoded category values only
+phenotype_data__noanth	Phenotype Data	NOANTH	categorical	1	0.956522	P2	false	样本数较少或暂不适合进入 v0.1-mini	Culm node of anthocyanin color; numeric summary describes encoded category values only
+phenotype_data__awdist	Phenotype Data	AWDIST	categorical	0	1	P2	false	当前 high-confidence subset 中无非缺失值	Distribution of awns
+phenotype_data__blanthdi_veg	Phenotype Data	BLANTHDI_VEG	categorical	0	1	P2	false	当前 high-confidence subset 中无非缺失值	Leaf blade distribution of anthocyanin coloration

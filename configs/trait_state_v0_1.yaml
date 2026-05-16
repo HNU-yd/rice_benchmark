@@ -1,0 +1,24 @@
+version: v0.1-trait-state-prototype
+
+accession_subset:
+  use_confidence_levels: ["A", "B"]
+  exclude_confidence_levels: ["C", "D"]
+  require_snp_core: true
+  require_qmatrix: true
+
+trait_state_rules:
+  continuous:
+    normalization: "zscore"
+    grouping:
+      low: "bottom_30_percent"
+      mid: "middle_40_percent"
+      high: "top_30_percent"
+  categorical:
+    state: "normalized_category"
+  binary:
+    state: "class_value"
+
+constraints:
+  no_phenotype_prediction: true
+  trait_state_is_condition_signal: true
+  unknown_not_negative: true

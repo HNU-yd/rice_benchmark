@@ -1,0 +1,9 @@
+sheet_name	n_rows	n_cols	used_for_trait_state	n_high_confidence_rows	notes
+README	7	2	false	0	not used by high-confidence accession subset
+Phenotype Data	2267	53	true	23	used through best_phenotype_sheet
+Annotations	54	2	false	0	not used by high-confidence accession subset
+<2007 Dictionary	329	4	false	0	not used by high-confidence accession subset
+>2007 Dictionary	232	4	false	0	not used by high-confidence accession subset
+Data < 2007	2115	40	true	2096	used through best_phenotype_sheet
+Data > 2007	153	41	true	149	used through best_phenotype_sheet
+Sheet1	47	1	false	0	not used by high-confidence accession subset

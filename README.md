@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 4D accession ID mapping master draft。
+当前阶段：Phase 5A trait_state prototype。
 
-当前目标：整合 core SNP / indel / pruned SNP / Qmatrix genotype sample IDs、`3K_list_sra_ids.txt`、NCBI RunInfo、Genesys MCPD 和 phenotype accession-like fields，构建 `accession_mapping_master.tsv` 草稿，并标记 source、match rule、confidence 和 manual review flag。不写正式 benchmark schema，不构建 trait_value_table，不训练模型，不做 `phenotype prediction`。
+当前目标：基于 A/B high-confidence accession mapping，从 `3kRG_PhenotypeData_v20170411.xlsx` 抽取 trait 值，构建 trait_table、trait_value_table 和 trait_state_table prototype。不写正式 benchmark schema，不构建 split，不训练模型，不做 `phenotype prediction`。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -49,9 +49,11 @@ Phase 4D 结论：genotype union 样本数为 3024，`3K_list_sra_ids.txt` 和 R
 
 Phase 4E 已形成 accession ID harmonization 口径说明：`docs/accession_id_harmonization.md`。主 benchmark 只使用 A/B 级 high-confidence genotype–phenotype mapping；C 级只进入人工审查，D 级不进入 trait-conditioned training/evaluation。未映射样本不作为 negative。
 
-下一阶段：审查 `manual_review_candidates.tsv`，冻结 high-confidence accession mapping 子集；若 A/B 覆盖足够，再构建 trait_state 和最小 Task 1 instances。
+Phase 5A 已生成 trait_state prototype：high-confidence accession subset 为 2268 个样本，可用于 SNP-only trait prototype 的样本数为 2268，可用于 SNP+indel trait prototype 的样本数为 2268。当前识别到非 metadata trait 122 个，其中 continuous 0 个、categorical 99 个、binary 23 个；推荐进入 v0.1-mini 的 trait 为 34 个。报告位于 `reports/trait_state/trait_state_prototype_report.md`。
 
-当前 Phase 4D 不包含正式 schema 实现、benchmark construction、split、model implementation、evaluator implementation、GWAS 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+下一阶段：如果 v0.1 trait 子集足够，则构建 chr1 SNP-only minimal Task 1 instances；否则先人工审查 trait 字段和 accession mapping。
+
+当前 Phase 5A 不包含正式 schema 实现、benchmark construction、split、model implementation、evaluator implementation、GWAS 或 Evo2 相关实现。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 
