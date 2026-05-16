@@ -1,0 +1,145 @@
+level	baseline_name	trait_id	k	n_ranked	n_positive_or_regional	n_hits	hit_rate	weak_evidence_recall	expected_hits_random	enrichment_over_random	notes
+variant	random_uniform	data_lt_2007__spkf	100	42466	6238	22	0.22	0.003527	14.689399	1.497679	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__spkf	500	42466	6238	76	0.152	0.012183	73.446993	1.03476	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__spkf	1000	42466	6238	157	0.157	0.025168	146.893986	1.068798	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__spkf	5000	42466	6238	753	0.1506	0.120712	734.469929	1.025229	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__fla_repro	100	42466	706	4	0.04	0.005666	1.662506	2.406006	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__fla_repro	500	42466	706	7	0.014	0.009915	8.312532	0.842102	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__fla_repro	1000	42466	706	16	0.016	0.022663	16.625065	0.962402	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__fla_repro	5000	42466	706	68	0.0136	0.096317	83.125324	0.818042	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cult_code_repro	100	42466	13032	28	0.28	0.002149	30.68808	0.912406	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cult_code_repro	500	42466	13032	142	0.284	0.010896	153.440399	0.925441	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cult_code_repro	1000	42466	13032	306	0.306	0.023481	306.880799	0.99713	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cult_code_repro	5000	42466	13032	1524	0.3048	0.116943	1534.403994	0.99322	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__llt_code	100	42466	11901	37	0.37	0.003109	28.024773	1.32026	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__llt_code	500	42466	11901	160	0.32	0.013444	140.123864	1.141847	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__llt_code	1000	42466	11901	285	0.285	0.023948	280.247728	1.016957	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__llt_code	5000	42466	11901	1411	0.2822	0.118561	1401.238638	1.006966	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__pex_repro	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__pex_repro	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__pex_repro	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__pex_repro	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__lsen	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__lsen	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__lsen	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__lsen	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__pth	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__pth	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__pth	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__pth	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cuan_repro	100	42466	706	0	0	0	1.662506	0	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cuan_repro	500	42466	706	11	0.022	0.015581	8.312532	1.323303	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cuan_repro	1000	42466	706	19	0.019	0.026912	16.625065	1.142853	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cuan_repro	5000	42466	706	85	0.017	0.120397	83.125324	1.022552	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cudi_code_repro	100	42466	7	1	0.01	0.142857	0.016484	60.665714	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cudi_code_repro	500	42466	7	1	0.002	0.142857	0.082419	12.133143	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cudi_code_repro	1000	42466	7	2	0.002	0.285714	0.164838	12.133143	unknown_unlabeled used only as ranking background
+variant	random_uniform	data_lt_2007__cudi_code_repro	5000	42466	7	2	0.0004	0.285714	0.824189	2.426629	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__spkf	100	42466	6238	0	0	0	14.689399	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__spkf	500	42466	6238	0	0	0	73.446993	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__spkf	1000	42466	6238	0	0	0	146.893986	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__spkf	5000	42466	6238	1110	0.222	0.177942	734.469929	1.511294	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__fla_repro	100	42466	706	0	0	0	1.662506	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__fla_repro	500	42466	706	0	0	0	8.312532	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__fla_repro	1000	42466	706	0	0	0	16.625065	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__fla_repro	5000	42466	706	0	0	0	83.125324	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cult_code_repro	100	42466	13032	100	1	0.007673	30.68808	3.258594	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cult_code_repro	500	42466	13032	330	0.66	0.025322	153.440399	2.150672	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cult_code_repro	1000	42466	13032	399	0.399	0.030617	306.880799	1.300179	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cult_code_repro	5000	42466	13032	1278	0.2556	0.098066	1534.403994	0.832897	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__llt_code	100	42466	11901	100	1	0.008403	28.024773	3.568272	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__llt_code	500	42466	11901	330	0.66	0.027729	140.123864	2.355059	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__llt_code	1000	42466	11901	399	0.399	0.033527	280.247728	1.42374	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__llt_code	5000	42466	11901	1278	0.2556	0.107386	1401.238638	0.91205	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__pex_repro	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__pex_repro	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__pex_repro	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__pex_repro	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__lsen	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__lsen	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__lsen	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__lsen	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__pth	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__pth	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__pth	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__pth	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cuan_repro	100	42466	706	0	0	0	1.662506	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cuan_repro	500	42466	706	0	0	0	8.312532	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cuan_repro	1000	42466	706	0	0	0	16.625065	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cuan_repro	5000	42466	706	0	0	0	83.125324	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cudi_code_repro	100	42466	7	0	0	0	0.016484	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cudi_code_repro	500	42466	7	0	0	0	0.082419	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cudi_code_repro	1000	42466	7	0	0	0	0.164838	0	unknown_unlabeled used only as ranking background
+variant	window_snp_density	data_lt_2007__cudi_code_repro	5000	42466	7	0	0	0	0.824189	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__spkf	100	42466	6238	0	0	0	14.689399	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__spkf	500	42466	6238	0	0	0	73.446993	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__spkf	1000	42466	6238	0	0	0	146.893986	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__spkf	5000	42466	6238	592	0.1184	0.094902	734.469929	0.806023	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__fla_repro	100	42466	706	100	1	0.141643	1.662506	60.150142	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__fla_repro	500	42466	706	500	1	0.708215	8.312532	60.150142	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__fla_repro	1000	42466	706	706	0.706	1	16.625065	42.466	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__fla_repro	5000	42466	706	706	0.1412	1	83.125324	8.4932	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cult_code_repro	100	42466	13032	100	1	0.007673	30.68808	3.258594	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cult_code_repro	500	42466	13032	500	1	0.038367	153.440399	3.258594	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cult_code_repro	1000	42466	13032	1000	1	0.076734	306.880799	3.258594	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cult_code_repro	5000	42466	13032	5000	1	0.383671	1534.403994	3.258594	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__llt_code	100	42466	11901	0	0	0	28.024773	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__llt_code	500	42466	11901	0	0	0	140.123864	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__llt_code	1000	42466	11901	80	0.08	0.006722	280.247728	0.285462	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__llt_code	5000	42466	11901	4080	0.816	0.342828	1401.238638	2.91171	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__pex_repro	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__pex_repro	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__pex_repro	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__pex_repro	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__lsen	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__lsen	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__lsen	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__lsen	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__pth	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__pth	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__pth	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__pth	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cuan_repro	100	42466	706	100	1	0.141643	1.662506	60.150142	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cuan_repro	500	42466	706	500	1	0.708215	8.312532	60.150142	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cuan_repro	1000	42466	706	706	0.706	1	16.625065	42.466	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cuan_repro	5000	42466	706	706	0.1412	1	83.125324	8.4932	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cudi_code_repro	100	42466	7	0	0	0	0.016484	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cudi_code_repro	500	42466	7	0	0	0	0.082419	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cudi_code_repro	1000	42466	7	0	0	0	0.164838	0	unknown_unlabeled used only as ranking background
+variant	genomic_position	data_lt_2007__cudi_code_repro	5000	42466	7	7	0.0014	1	0.824189	8.4932	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__spkf	100	42466	6238	0	0	0	14.689399	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__spkf	500	42466	6238	0	0	0	73.446993	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__spkf	1000	42466	6238	0	0	0	146.893986	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__spkf	5000	42466	6238	0	0	0	734.469929	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__fla_repro	100	42466	706	0	0	0	1.662506	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__fla_repro	500	42466	706	0	0	0	8.312532	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__fla_repro	1000	42466	706	0	0	0	16.625065	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__fla_repro	5000	42466	706	0	0	0	83.125324	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cult_code_repro	100	42466	13032	0	0	0	30.68808	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cult_code_repro	500	42466	13032	0	0	0	153.440399	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cult_code_repro	1000	42466	13032	0	0	0	306.880799	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cult_code_repro	5000	42466	13032	728	0.1456	0.055862	1534.403994	0.474451	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__llt_code	100	42466	11901	0	0	0	28.024773	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__llt_code	500	42466	11901	0	0	0	140.123864	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__llt_code	1000	42466	11901	0	0	0	280.247728	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__llt_code	5000	42466	11901	0	0	0	1401.238638	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__pex_repro	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__pex_repro	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__pex_repro	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__pex_repro	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__lsen	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__lsen	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__lsen	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__lsen	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__pth	100	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__pth	500	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__pth	1000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__pth	5000	42466	0	0	0		0		unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cuan_repro	100	42466	706	0	0	0	1.662506	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cuan_repro	500	42466	706	0	0	0	8.312532	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cuan_repro	1000	42466	706	0	0	0	16.625065	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cuan_repro	5000	42466	706	0	0	0	83.125324	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cudi_code_repro	100	42466	7	0	0	0	0.016484	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cudi_code_repro	500	42466	7	0	0	0	0.082419	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cudi_code_repro	1000	42466	7	0	0	0	0.164838	0	unknown_unlabeled used only as ranking background
+variant	shuffled_trait	data_lt_2007__cudi_code_repro	5000	42466	7	0	0	0	0.824189	0	unknown_unlabeled used only as ranking background

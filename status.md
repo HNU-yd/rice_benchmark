@@ -68,3 +68,22 @@
 - 生成配置：`configs/task1_chr1_snp_v0_1.yaml`。
 - `data/interim/task1_chr1_snp/` 已生成本地 instance、manifest、window signal 和 variant weak label 表，但不进入 git。
 - 本阶段没有训练模型，没有构建 evaluator，没有构建 baseline，没有执行 GWAS，没有执行 phenotype prediction，没有把 trait_state 当 prediction label，没有把 weak evidence 写成 causal ground truth，也没有把 unknown/unlabeled 标记为 negative。
+
+## 2026-05-16 Phase 6A minimal evaluator and baseline prototype
+
+- 执行 prompt：`.codex/prompts/06a_minimal_evaluator_and_baseline_prototype.md`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 本阶段基于 chr1 SNP-only Task 1 window/variant weak signal tables 构建 minimal evaluator 和 baseline prototype。
+- baseline 类型：`random_uniform`、`window_snp_density`、`genomic_position`、`shuffled_trait`。
+- window-level baseline score 行数：31140。
+- variant-level baseline score 行数：1528776。
+- window-level 指标行数：36；variant-level 指标行数：36。
+- top-k hit 明细：window 144 行，variant 144 行。
+- window-level 摘要：`genomic_position` 在 mean weak_evidence_recall_at_50 上最高，为 0.383341；`random_uniform` 为 0.050673；`window_snp_density` 为 0.031001；`shuffled_trait` 为 0.001157。
+- variant-level 摘要：`genomic_position` 在 mean weak_evidence_recall_at_1000 上最高，为 0.347243；`random_uniform` 为 0.067981；`window_snp_density` 为 0.010691；`shuffled_trait` 为 0。
+- 校验结果：`reports/baselines_chr1_snp/baseline_validation.tsv` 中 10 项检查全部 `pass`，`validation_failed=0`。
+- 生成报告：`reports/baselines_chr1_snp/baseline_evaluation_report.md`、`reports/baselines_chr1_snp/window_baseline_metrics.tsv`、`reports/baselines_chr1_snp/variant_baseline_metrics.tsv`、`reports/baselines_chr1_snp/topk_window_hits.tsv`、`reports/baselines_chr1_snp/topk_variant_hits.tsv`、`reports/baselines_chr1_snp/baseline_validation.tsv`。
+- 生成脚本目录：`scripts/baselines/` 和 `scripts/eval/`。
+- 生成配置：`configs/evaluator_chr1_snp_v0_1.yaml`。
+- `data/interim/baselines_chr1_snp/` 已生成本地 score tables，但不进入 git。
+- 本阶段没有训练模型，没有构建深度学习模型，没有执行 GWAS，没有构建 matched decoy，没有执行 phenotype prediction，没有把 weak evidence 写成 causal ground truth，没有把 unknown_unlabeled 当作 negative，也没有输出正式 AUROC / AUPRC。

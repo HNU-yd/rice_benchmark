@@ -1,0 +1,28 @@
+version: v0.1-chr1-snp-evaluator-prototype
+
+scope:
+  chromosome: "1"
+  variant_type: "SNP"
+  evaluation_level:
+    - trait_window
+    - trait_variant
+  prototype: true
+
+rules:
+  weak_evidence_not_causal_ground_truth: true
+  unknown_not_negative: true
+  no_formal_auroc_without_decoy: true
+  no_formal_auprc_without_decoy: true
+  no_phenotype_prediction: true
+
+metrics:
+  window_level:
+    - top_k_window_hit_rate
+    - weak_evidence_window_recall
+    - evidence_rank_percentile
+    - enrichment_over_random
+  variant_level:
+    - top_k_variant_hit_rate
+    - weak_evidence_variant_recall
+    - evidence_rank_percentile
+    - enrichment_over_random

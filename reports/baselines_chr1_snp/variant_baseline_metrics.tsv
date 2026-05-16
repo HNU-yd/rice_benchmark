@@ -1,0 +1,37 @@
+baseline_name	trait_id	n_variants	n_positive_or_regional_variants	top_100_hit_rate	top_500_hit_rate	top_1000_hit_rate	top_5000_hit_rate	weak_evidence_recall_at_100	weak_evidence_recall_at_500	weak_evidence_recall_at_1000	weak_evidence_recall_at_5000	median_rank_percentile_of_evidence_variants	enrichment_over_random_at_1000	notes
+random_uniform	data_lt_2007__spkf	42466	6238	0.22	0.152	0.157	0.1506	0.003527	0.012183	0.025168	0.120712	0.50073	1.068798	weak evidence ranking metric; no formal binary-classifier metric
+random_uniform	data_lt_2007__fla_repro	42466	706	0.04	0.014	0.016	0.0136	0.005666	0.009915	0.022663	0.096317	0.497386	0.962402	weak evidence ranking metric; no formal binary-classifier metric
+random_uniform	data_lt_2007__cult_code_repro	42466	13032	0.28	0.284	0.306	0.3048	0.002149	0.010896	0.023481	0.116943	0.504474	0.99713	weak evidence ranking metric; no formal binary-classifier metric
+random_uniform	data_lt_2007__llt_code	42466	11901	0.37	0.32	0.285	0.2822	0.003109	0.013444	0.023948	0.118561	0.49801	1.016957	weak evidence ranking metric; no formal binary-classifier metric
+random_uniform	data_lt_2007__pex_repro	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+random_uniform	data_lt_2007__lsen	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+random_uniform	data_lt_2007__pth	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+random_uniform	data_lt_2007__cuan_repro	42466	706	0	0.022	0.019	0.017	0	0.015581	0.026912	0.120397	0.519239	1.142853	weak evidence ranking metric; no formal binary-classifier metric
+random_uniform	data_lt_2007__cudi_code_repro	42466	7	0.01	0.002	0.002	0.0004	0.142857	0.142857	0.285714	0.285714	0.751325	12.133143	weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__spkf	42466	6238	0	0	0	0.222	0	0	0	0.177942	0.503509	0	weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__fla_repro	42466	706	0	0	0	0	0	0	0	0	0.376675	0	weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__cult_code_repro	42466	13032	1	0.66	0.399	0.2556	0.007673	0.025322	0.030617	0.098066	0.41115	1.300179	weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__llt_code	42466	11901	1	0.66	0.399	0.2556	0.008403	0.027729	0.033527	0.107386	0.445967	1.42374	weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__pex_repro	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__lsen	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__pth	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__cuan_repro	42466	706	0	0	0	0	0	0	0	0	0.376675	0	weak evidence ranking metric; no formal binary-classifier metric
+window_snp_density	data_lt_2007__cudi_code_repro	42466	7	0	0	0	0	0	0	0	0	0.191617	0	weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__spkf	42466	6238	0	0	0	0.1184	0	0	0	0.094902	0.82276	0	weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__fla_repro	42466	706	1	1	0.706	0.1412	0.141643	0.708215	1	1	0.991699	42.466	weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__cult_code_repro	42466	13032	1	1	1	1	0.007673	0.038367	0.076734	0.383671	0.694819	3.258594	weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__llt_code	42466	11901	0	0	0.08	0.816	0	0	0.006722	0.342828	0.83822	0.285462	weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__pex_repro	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__lsen	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__pth	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__cuan_repro	42466	706	1	1	0.706	0.1412	0.141643	0.708215	1	1	0.991699	42.466	weak evidence ranking metric; no formal binary-classifier metric
+genomic_position	data_lt_2007__cudi_code_repro	42466	7	0	0	0	0.0014	0	0	0	1	0.894996	0	weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__spkf	42466	6238	0	0	0	0	0	0	0	0	0.298893	0	weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__fla_repro	42466	706	0	0	0	0	0	0	0	0	0.126634	0	weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__cult_code_repro	42466	13032	0	0	0	0.1456	0	0	0	0.055862	0.237949	0	weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__llt_code	42466	11901	0	0	0	0	0	0	0	0	0.232544	0	weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__pex_repro	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__lsen	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__pth	42466	0	0	0	0	0							weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__cuan_repro	42466	706	0	0	0	0	0	0	0	0	0.126634	0	weak evidence ranking metric; no formal binary-classifier metric
+shuffled_trait	data_lt_2007__cudi_code_repro	42466	7	0	0	0	0	0	0	0	0	0.231249	0	weak evidence ranking metric; no formal binary-classifier metric

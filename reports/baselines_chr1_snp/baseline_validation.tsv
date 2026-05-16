@@ -1,0 +1,11 @@
+check_name	status	observed	expected	notes
+window_score_fields_complete	pass	12	12	window_baseline_scores.tsv required fields
+variant_score_fields_complete	pass	11	11	variant_baseline_scores.tsv required fields
+required_baselines_present	pass	window=genomic_position,random_uniform,shuffled_trait,window_snp_density;variant=genomic_position,random_uniform,shuffled_trait,window_snp_density	genomic_position,random_uniform,shuffled_trait,window_snp_density	required baseline score tables are present at both levels
+every_trait_has_window_scores	pass	missing_trait_sets=0;bad_counts=0	9 traits x 865 windows per baseline	score table is complete at trait-window level
+every_trait_has_variant_scores	pass	missing_trait_sets=0;bad_counts=0	9 traits x 42466 variants per baseline	score table is complete at trait-variant level
+window_score_ranks_unique_per_trait_baseline	pass	0	0	rank uniqueness check within each baseline and trait
+variant_score_ranks_unique_per_trait_baseline	pass	0	0	rank uniqueness check within each baseline and trait
+window_label_forbidden_tokens_absent	pass	0	0	window label_state must avoid forbidden supervised-label terms
+variant_label_forbidden_tokens_absent	pass	0	0	variant label_state must avoid forbidden supervised-label terms
+formal_auroc_auprc_fields_absent	pass		no AUROC/AUPRC fields	formal binary-classifier metrics require matched decoy
