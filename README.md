@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Design v0.5.5 data protocol alignment。
+当前阶段：Matched decoy v0.5.5 chr1 SNP prototype pre-layer。
 
-当前目标：把 `/home/data2/projects/design` 中 v0.5.5 设计要求落到当前 3K Rice 数据处理协议中，固化 trait usability、trait preprocessing、covariate availability、matching field availability、negative pair protocol 和候选池诊断。不训练模型，不构建 phenotype prediction target，不把 weak evidence 或 unknown/unlabeled 写成 causal ground truth / negative label。
+当前目标：在已完成的 v0.5.5 数据协议和 external knowledge annotation / evidence / mapping 层上，构建 chr1 SNP-only prototype 的 matched background candidate pool、matched decoy pair 和 diagnostics。不训练模型，不冻结 split，不构建正式 evaluator，不把 weak evidence、decoy、unknown/unlabeled 写成 causal ground truth / negative label。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -83,9 +83,18 @@ External knowledge v0.5.5 integration 已生成统一 annotation / evidence / ge
 
 本次处理结果：gene annotation 125082 行，gene ID mapping 154144 行，known gene evidence 80635 行，trait-gene evidence 80635 行，QTL interval evidence 1051 行，evidence coordinate mapping 81686 行，source manifest 13 行，validation 13 项检查全部 pass。可进入 frozen 9 traits 主评价候选池的 exact trait-gene evidence 为 4696 行；2391 行 ambiguous frozen-trait keyword matches 和其余 broader / missing trait evidence 均只进入 broader evidence pool 或 manual review。所有 evidence 的 `allowed_usage` 均限制为 evaluation / explanation / case study / development evidence candidate，不作为 training label。
 
-下一阶段：基于统一 annotation / evidence / mapping 表构建 matched decoy 和后续 frozen split。
+Matched decoy v0.5.5 pre-layer 已生成 chr1 SNP-only matched background candidate pool：
 
-当前 Design v0.5.5 data protocol alignment 不包含 matched decoy、frozen split、Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer，不能写成 causal ground truth。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+- full local tables：`data/interim/matched_decoy_v055/objects/`、`candidate_pool/`、`pairs/` 和 `diagnostics/`。
+- report previews：`reports/matched_decoy_v055/`。
+- scripts：`scripts/matched_decoy/build_matched_decoy_objects_v055.py`、`build_detectability_research_bias_v055.py`、`build_matched_decoy_candidate_pool_v055.py`、`build_matched_decoy_pairs_v055.py`、`validate_matched_decoy_v055.py` 和 `run_build_matched_decoy_v055.sh`。
+- report：`reports/matched_decoy_v055/matched_decoy_report.md`。
+
+本次处理结果：matched decoy objects 114998 行，其中 33981 个进入 chr1 主 evaluation candidate pool；candidate pool 1019430 行；matched decoy pair 169905 行；diagnostics 61 行；detectability proxy 和 research-bias proxy 各 114998 行；validation 16 项检查全部 pass。主候选对象按类型为 variant 32590、window 722、gene 623、qtl_interval 46，所有主候选对象均有 candidate pool 和 5 个 matched background decoy。PEX_REPRO exact main-evaluation evidence 仍为 0；Q-TARO 只作为 region-level / interval-level evidence，不强行 gene mapping。
+
+下一阶段：基于 matched decoy diagnostics 设计 frozen split，确保 gene / interval proximity blocking，并继续排除 manual review 和 broader evidence。
+
+当前仍不包含 frozen split、Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer；matched decoy 只作为 matched background，不是真阴性。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 

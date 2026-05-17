@@ -1,0 +1,16 @@
+field_name	field_category	availability	proxy_field	used_in_object_table	used_in_candidate_pool	used_in_pair_matching	used_in_diagnostics	used_in_sensitivity	missing_reason	notes	pipeline_version
+coordinate	coordinate	present	chrom/start/end	yes	yes	yes	yes	yes	NA	IRGSP-1.0 compatible where mapped; Q-TARO downgraded when uncertain	matched_decoy_v055_chr1_snp_prototype_v1
+position_bin	position	present	1 Mb bins from chr1 coordinates	yes	yes	yes	yes	yes	NA	coarse position control only	matched_decoy_v055_chr1_snp_prototype_v1
+gene_density	gene_density	proxy_used	gene_annotation_table local +/-500 kb count	yes	yes	yes	yes	yes	NA	annotation-derived proxy, not complete functional density	matched_decoy_v055_chr1_snp_prototype_v1
+variant_density	variant_density	present_chr1_proxy	chr1 SNP table / window n_snp	yes	yes	yes	yes	yes	NA	chr1 SNP-only prototype; indels not included	matched_decoy_v055_chr1_snp_prototype_v1
+annotation_richness	annotation_richness	proxy_used	annotation_record_count/database_source_count	yes	yes	yes	yes	yes	NA	proxy for annotation richness	matched_decoy_v055_chr1_snp_prototype_v1
+evidence_source_coverage	evidence_source_coverage	proxy_used	external evidence source count	yes	yes	yes	yes	yes	NA	proxy for source coverage, not causal support	matched_decoy_v055_chr1_snp_prototype_v1
+database_detectability	database_detectability	proxy_used	annotation/database source availability	yes	yes	yes	yes	yes	NA	detectability proxy only	matched_decoy_v055_chr1_snp_prototype_v1
+interval_length	interval_length	present	end-start+1	yes	yes	yes	yes	yes	NA	used for qtl_interval and region objects	matched_decoy_v055_chr1_snp_prototype_v1
+MAF	MAF	unavailable	NA	no	no	no	yes	future	not materialized for candidate pool in current prototype	not materialized for candidate pool in current prototype	matched_decoy_v055_chr1_snp_prototype_v1
+LD	LD	unavailable	NA	no	no	no	yes	future	not materialized for current chr1 matched decoy layer	not materialized for current chr1 matched decoy layer	matched_decoy_v055_chr1_snp_prototype_v1
+missingness	missingness	unavailable	NA	no	no	no	yes	future	per-variant missingness not available in current candidate table	per-variant missingness not available in current candidate table	matched_decoy_v055_chr1_snp_prototype_v1
+mappability	mappability	unavailable	NA	no	no	no	yes	future	no genome-wide mappability table available	no genome-wide mappability table available	matched_decoy_v055_chr1_snp_prototype_v1
+recombination_rate	position	unavailable	NA	no	no	no	yes	future	no recombination map available	no recombination map available	matched_decoy_v055_chr1_snp_prototype_v1
+research_bias	research_bias	proxy_used	annotation richness / external hit count / known-gene proximity	yes	yes	yes	yes	yes	NA	proxy only; not complete literature bias correction	matched_decoy_v055_chr1_snp_prototype_v1
+chr1_snp_coverage	chr1_snp_coverage	present_chr1_only	window overlap and SNP count	yes	yes	yes	yes	yes	NA	current data plane is chr1 SNP-only	matched_decoy_v055_chr1_snp_prototype_v1

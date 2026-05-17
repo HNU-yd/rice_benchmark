@@ -227,3 +227,47 @@
 - 校验覆盖：annotation 坐标有效性、mapping confidence、无 `training_label` usage、QTL 不作为 causal label、source manifest checksum、ambiguous mapping 进入 manual review、coordinate mapping 降级策略、主键唯一性。
 - 当前限制：部分 source 坐标版本仍不一致，trait name normalization 仍有模糊映射，QTL interval 可能过宽，部分 source license / terms 需要继续确认，Q-TARO gene 字段不能可靠映射到统一 gene ID。
 - 本阶段没有修改 raw data，没有训练模型，没有构建 matched decoy，没有冻结 split，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有报告正式 AUROC / AUPRC，没有把任何 evidence 写成 training label 或 causal ground truth。
+
+## 2026-05-17 Phase 08B matched decoy v0.5.5 pre-layer
+
+- 执行 prompt：`.codex/prompts/08B_build_matched_decoy_v055.md`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 本阶段基于 external knowledge v0.5.5 层和 chr1 SNP-only prototype，构建 matched decoy object、candidate pool、pair 和 diagnostics 前置层。
+- 新增可复现脚本目录：`scripts/matched_decoy/`。
+- 执行命令：
+  - `python scripts/matched_decoy/build_matched_decoy_objects_v055.py`
+  - `python scripts/matched_decoy/build_detectability_research_bias_v055.py`
+  - `python scripts/matched_decoy/build_matched_decoy_candidate_pool_v055.py`
+  - `python scripts/matched_decoy/build_matched_decoy_pairs_v055.py`
+  - `python scripts/matched_decoy/validate_matched_decoy_v055.py`
+  - `python -m py_compile scripts/matched_decoy/*.py`
+- 生成 full local tables：
+  - `data/interim/matched_decoy_v055/objects/matched_decoy_object_table.tsv`
+  - `data/interim/matched_decoy_v055/candidate_pool/matched_decoy_candidate_pool.tsv`
+  - `data/interim/matched_decoy_v055/pairs/matched_decoy_pair_table.tsv`
+  - `data/interim/matched_decoy_v055/diagnostics/decoy_matching_diagnostics.tsv`
+  - `data/interim/matched_decoy_v055/diagnostics/matching_field_availability_v055.tsv`
+  - `data/interim/matched_decoy_v055/diagnostics/detectability_bias_table_v055.tsv`
+  - `data/interim/matched_decoy_v055/diagnostics/research_bias_table_v055.tsv`
+  - `data/interim/matched_decoy_v055/diagnostics/decoy_validation.tsv`
+- 生成 tracked report previews / summaries：
+  - `reports/matched_decoy_v055/matched_decoy_report.md`
+  - `reports/matched_decoy_v055/decoy_validation.tsv`
+  - `reports/matched_decoy_v055/decoy_matching_diagnostics.tsv`
+  - `reports/matched_decoy_v055/matching_field_availability_v055.tsv`
+  - `reports/matched_decoy_v055/*.preview.tsv`
+- 表规模：matched decoy objects 114998 行，candidate pool 1019430 行，matched decoy pairs 169905 行，diagnostics 61 行，matching field availability 15 行，detectability proxy 114998 行，research-bias proxy 114998 行，validation 16 行。
+- 主评价候选对象数：33981，其中 variant 32590、window 722、gene 623、qtl_interval 46。
+- broader evidence objects excluded from main evaluation：74248；manual-review-required objects excluded from main evaluation：2611。
+- candidate pool 覆盖率：gene、qtl_interval、variant 和 window 主候选对象均为 100%，每个主候选对象保留 30 个 matched background candidate。
+- matched pair 覆盖率：gene、qtl_interval、variant 和 window 主候选对象均为 100%，每个主候选对象保留 5 个 matched background decoy。
+- PEX_REPRO exact main-evaluation evidence object 数仍为 0，没有强行补标签。
+- Q-TARO 生成 1051 个 qtl_interval objects，其中 46 个 chr1 exact trait-mapped interval objects 可进入当前 prototype candidate pool；Q-TARO 没有被强行映射为 high-confidence gene evidence。
+- 匹配字段：coordinate、position_bin、gene_density、variant_density、annotation_richness、evidence_source_coverage、database_detectability、interval_length、research_bias 和 chr1_snp_coverage。
+- 不可用字段：MAF、LD、missingness、mappability 和 recombination_rate；这些字段只在 diagnostics 中标记 unavailable，没有声称已经控制。
+- detectability proxy：chr1 SNP coverage、window coverage、variant coverage 和 database detectability proxy。
+- research-bias proxy：annotation record count、external knowledge hit count、database source count、trait evidence count 和 known-gene proximity proxy。
+- 校验结果：`reports/matched_decoy_v055/decoy_validation.tsv` 中 16 项检查全部 `pass`，`validation_failed=0`。
+- 校验覆盖：输出非空、object_id 唯一、主候选仅 exact frozen trait mapping、PEX_REPRO 不强行补 evidence、Q-TARO 不强行 gene mapping、broader/manual review 不进主候选、decoy 不写成 true negative、allowed_usage 不含 training_label、主键唯一性。
+- 当前限制：candidate pool 是 bounded prototype，不是全基因组枚举；detectability 和 research bias 只是 proxy；当前没有 MAF / LD / mappability / recombination map / full callability；Q-TARO 坐标未 liftover。
+- 本阶段没有修改 raw data，没有训练模型，没有冻结 split，没有构建正式 evaluator，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有报告正式 AUROC / AUPRC，没有把 evidence 当 causal ground truth，没有把 decoy 或 unknown_unlabeled 当 true negative。

@@ -1,0 +1,17 @@
+check_name	status	n_records	n_failed	details	blocking_issue	notes	pipeline_version
+outputs_exist_and_nonempty	pass	7	0	all required outputs are nonempty	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+matched_decoy_object_table_primary_key_unique	pass	114998	0	primary key object_id; missing=0; duplicates=0	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+main_pool_exact_frozen_trait_only	pass	114998	0	main candidates require exact_frozen_trait_mapping=true	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+pex_repro_not_force_filled	pass	114998	0	PEX_REPRO exact evidence remains zero	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+qtaro_not_forced_to_high_confidence_gene_mapping	pass	114998	0	Q-TARO remains qtl_interval/region-level evidence	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+broader_evidence_not_in_main_pool	pass	114998	0	broader evidence retained outside main evaluation	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+manual_review_objects_not_in_main_pool	pass	114998	0	manual review objects excluded from main evaluation	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+decoys_not_marked_true_negative	pass	1189335	0	decoys are matched background candidates only	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+decoy_pair_object_ids_differ	pass	169905	0	object_id and decoy_object_id must differ	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+failed_matching_objects_enter_diagnostics	pass	0	0	failed matches are summarized in diagnostics	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+matching_fields_recorded	pass	14	0	all matching fields recorded	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+allowed_usage_has_no_training_label	pass	114998	0	allowed_usage must not be training_label	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+matched_decoy_candidate_pool_primary_key_unique	pass	1019430	0	primary key candidate_pool_id; missing=0; duplicates=0	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+matched_decoy_pair_table_primary_key_unique	pass	169905	0	primary key decoy_pair_id; missing=0; duplicates=0	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+detectability_bias_table_primary_key_unique	pass	114998	0	primary key object_id; missing=0; duplicates=0	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
+research_bias_table_primary_key_unique	pass	114998	0	primary key object_id; missing=0; duplicates=0	false	NA	matched_decoy_v055_chr1_snp_prototype_v1
