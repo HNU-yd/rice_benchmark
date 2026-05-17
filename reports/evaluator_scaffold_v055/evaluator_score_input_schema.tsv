@@ -1,0 +1,17 @@
+field_name	required	dtype	description	allowed_values	example	notes	scaffold_version
+score_table_name	true	string	Name of submitted score table	NA	variant_baseline_scores.tsv	Required for provenance.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+score_source	true	string	Score source category	baseline;model;diagnostic;random	baseline	Baseline score can be used in dry-run but not as formal main result here.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+score_version	true	string	Score version or run identifier	NA	v0_1_chr1_snp_20260516	Must be stable for reproducibility.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+score_level	true	string	Resolution of score rows	variant;window;gene;region;trait_level_variant;trait_level_window	variant	Accession-level scores cannot directly enter final evidence evaluation.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+trait_id	true	string	Frozen trait identifier	frozen trait ids	data_lt_2007__spkf	Trait-conditioned map key.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+variant_id	conditional	string	Variant identifier for variant-level scores	NA	chr1_1178_1178	Required when score_level is variant or trait_level_variant.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+window_id	conditional	string	Window identifier for window-level scores	NA	chr1_1_100000	Required when score_level is window or trait_level_window.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+gene_id	conditional	string	Gene identifier for gene-level scores	NA	Os01g0101600	Required for gene-level scoring.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+object_id	optional	string	Matched decoy/evidence object identifier	NA	OBJ_VARIANT_00082095	May be filled after joining to scaffold object table.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+score	true	float	Continuous score where direction is declared separately	finite numeric	0.923	No metric is computed in this scaffold.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+score_direction	true	string	Whether larger or smaller score is better	higher_is_better;lower_is_better	higher_is_better	Required before any future ranking task.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+split_version	true	string	Frozen split version used by score table	NA	frozen_split_v055_chr1_snp_prototype_v1	Must match split manifest for formal future use.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+aggregation_recipe_version	conditional	string	Recipe for accession-level to trait-level map aggregation	NA	trait_map_agg_v1	Accession-level scores must be aggregated before evidence evaluation.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+model_version	optional	string	Model or baseline version	NA	random_uniform_v0_1	No model is trained in this scaffold.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+accession_id	false	string	Optional index only before trait-level aggregation	NA	ACC_0353	Not required and cannot be a direct formal evidence evaluation field.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+notes	false	string	Free text notes	NA	dry-run only	Must not encode labels or negatives.	evaluator_scaffold_v055_chr1_snp_prototype_v1

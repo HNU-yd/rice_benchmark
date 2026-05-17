@@ -310,3 +310,47 @@
 - split validation：12 项全部 pass，validation_failed=0。
 - 当前限制：仍是 chr1 SNP-only prototype，不是 final full benchmark split；region blocking 使用 coarse 5 Mb proximity bin；QTL source coordinates 未 liftover；MAF、LD、mappability、recombination rate 和 full callability 不可用。
 - 本阶段没有修改 raw data，没有训练模型，没有构建正式 evaluator，没有报告 AUROC / AUPRC，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有把 evidence 当训练 label，没有把 matched decoy 或 unknown_unlabeled 当 true negative。
+
+## 2026-05-17 Phase 09A split-aware evaluator scaffold v0.5.5
+
+- 执行 prompt：`.codex/prompts/09A_build_split_aware_evaluator_scaffold_v055.md`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 08C 已 commit / push，当前输入 commit hash：`b8b5794`。
+- 本阶段基于 08B matched decoy 层和 08C frozen split 层，构建 chr1 SNP-only prototype 的 split-aware evaluator scaffold。
+- 新增可复现脚本目录：`scripts/evaluator_scaffold/`。
+- 执行命令：
+  - `bash scripts/evaluator_scaffold/run_build_evaluator_scaffold_v055.sh`
+  - `python -m py_compile scripts/evaluator_scaffold/*.py`
+- 生成 full local tables：
+  - `data/interim/evaluator_scaffold_v055/inputs/evaluator_object_input_table.tsv`
+  - `data/interim/evaluator_scaffold_v055/inputs/evaluator_decoy_input_table.tsv`
+  - `data/interim/evaluator_scaffold_v055/outputs_schema/evaluator_score_input_schema.tsv`
+  - `data/interim/evaluator_scaffold_v055/outputs_schema/evaluator_output_schema.tsv`
+  - `data/interim/evaluator_scaffold_v055/tasks/evaluator_task_manifest.tsv`
+  - `data/interim/evaluator_scaffold_v055/dry_run/baseline_score_dry_run_input.tsv`
+  - `data/interim/evaluator_scaffold_v055/dry_run/evaluator_dry_run_join_check.tsv`
+  - `data/interim/evaluator_scaffold_v055/diagnostics/evaluator_leakage_guard.tsv`
+  - `data/interim/evaluator_scaffold_v055/diagnostics/evaluator_scaffold_validation.tsv`
+  - `data/interim/evaluator_scaffold_v055/diagnostics/baseline_score_dry_run_join_summary.tsv`
+- 生成 tracked report previews / summaries：
+  - `reports/evaluator_scaffold_v055/evaluator_scaffold_report.md`
+  - `reports/evaluator_scaffold_v055/evaluator_score_input_schema.tsv`
+  - `reports/evaluator_scaffold_v055/evaluator_output_schema.tsv`
+  - `reports/evaluator_scaffold_v055/evaluator_task_manifest.tsv`
+  - `reports/evaluator_scaffold_v055/evaluator_dry_run_join_check.tsv`
+  - `reports/evaluator_scaffold_v055/evaluator_leakage_guard.tsv`
+  - `reports/evaluator_scaffold_v055/evaluator_scaffold_validation.tsv`
+  - `reports/evaluator_scaffold_v055/baseline_score_dry_run_join_summary.tsv`
+  - `reports/evaluator_scaffold_v055/*.preview.tsv`
+- 表规模：evaluator object input 33981 行，evaluator decoy input 169905 行，score input schema 16 行，future output schema 17 行，task manifest 84 行，baseline score dry-run input 1559916 行，join check 7 行，leakage guard 10 行，validation 8 行。
+- evaluator object 类型：variant 32590、window 722、gene 623、qtl_interval 46。
+- evaluator object split：dev 22661、source_disjoint_or_temporal 9155、prototype_locked 2165。
+- baseline dry-run join 覆盖：window 5560 / 31140，variant 131036 / 1528776，总体 136596 / 1559916。该 dry-run 只验证 baseline score 与 evaluator object / matched background decoy 的 schema 对齐和 join 可行性，不生成正式指标。
+- decoy pair 跟随 evidence object split：169905 / 169905，通过率 100%。
+- manual review 和 broader evidence 在 evaluator object input 中均为 0。
+- score schema 中 `accession_id` 为 optional index only，不是必需评分字段，不能直接进入正式 evidence evaluation。
+- `prototype_locked_not_final=true` 保留在 evaluator object input；没有使用 `final_locked` 作为字段名、split 值或 role 值。
+- leakage guard 10 项全部 pass，blocking issue 为 0。
+- scaffold validation 8 项全部 pass，validation_failed=0。
+- 当前限制：仍是 chr1 SNP-only prototype scaffold；只定义输入、schema、任务 manifest、dry-run join 和 leakage guard；gene / QTL region score source 只在 schema 层定义，当前没有对应 score table；baseline score 只用于 dry-run，不形成正式主结果。
+- 本阶段没有修改 raw data，没有训练模型，没有构建正式 evaluator，没有报告正式 AUROC / AUPRC，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有把 evidence 当训练 label，没有把 matched decoy 或 unknown_unlabeled 当 true negative。

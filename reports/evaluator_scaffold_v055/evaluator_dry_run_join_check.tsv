@@ -1,0 +1,8 @@
+check_id	check_name	status	n_input_records	n_matched_records	n_unmatched_records	match_rate	details	blocking_issue	notes	scaffold_version
+EDRJ_00000001	evaluator_object_joined_to_split_assignment	pass	33981	33981	0	1	object input is derived from frozen split assignments	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+EDRJ_00000002	evaluator_object_joined_to_matched_decoy_pair	pass	33981	33981	0	1	each evaluator object should have matched decoys	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+EDRJ_00000003	decoy_pair_follows_evidence_object_split	pass	169905	169905	0	1	decoys must follow evidence split	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+EDRJ_00000004	baseline_score_joins_evaluator_object_or_decoy	pass	1559916	136596	1423320	0.087566	dry-run baseline score rows aligned to object or decoy where possible	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+EDRJ_00000005	manual_review_or_broader_not_in_evaluator_object	pass	33981	33981	0	1	manual/broader evidence excluded	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+EDRJ_00000006	prototype_locked_not_final_locked	pass	33981	33981	0	1	no final_locked split or role value in evaluator object input	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+EDRJ_00000007	unknown_unlabeled_and_decoy_not_negative	pass	203886	203886	0	1	no true_negative or unknown_as_negative wording in inputs	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1

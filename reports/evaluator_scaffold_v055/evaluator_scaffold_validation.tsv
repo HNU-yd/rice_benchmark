@@ -1,0 +1,9 @@
+check_name	status	n_records	n_failed	details	blocking_issue	notes	scaffold_version
+outputs_exist_and_nonempty	pass	8	0	all outputs nonempty	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+evaluator_object_input_allowed_splits_only	pass	33981	0	object input only has allowed evaluator splits	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+decoy_input_no_true_negative	pass	169905	0	decoy input treats decoy as matched background only	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+task_manifest_no_formal_metric	pass	84	0	all tasks are dry-run only and non-formal	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+output_schema_unknown_as_negative_default_false	pass	17	0	uses_unknown_as_negative example/default is false	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+score_schema_accession_id_not_required	pass	16	0	accession_id is not a required score input field	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+dry_run_score_input_does_not_generate_formal_metric	pass	1559916	0	dry-run score input is schema-aligned only; no metric output generated	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+join_and_leakage_guards_no_blocking_issue	pass	17	0	guard and join checks have no blocking failures	false	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1

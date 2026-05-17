@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Frozen split v0.5.5 chr1 SNP prototype。
+当前阶段：Evaluator scaffold v0.5.5 chr1 SNP prototype。
 
-当前目标：在已完成的 v0.5.5 数据协议、external knowledge 层和 matched decoy 前置层上，构建 chr1 SNP-only prototype 的 leakage-aware frozen split。不训练模型，不构建正式 evaluator，不把 weak evidence、decoy、unknown/unlabeled 写成 causal ground truth / negative label。
+当前目标：在已完成的 v0.5.5 数据协议、external knowledge 层、matched decoy 前置层和 leakage-aware frozen split 上，构建 chr1 SNP-only prototype 的 split-aware evaluator scaffold。该层只定义 evaluator 输入、score schema、任务 manifest、dry-run join check 和 leakage guard；不训练模型，不构建正式 evaluator，不报告正式 AUROC / AUPRC，不把 weak evidence、decoy、unknown/unlabeled 写成 causal ground truth / negative label。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -101,7 +101,16 @@ Frozen split v0.5.5 已生成 chr1 SNP-only prototype 的 leakage-aware split：
 
 本次处理结果：split units 288045 行，split blocks 117571 行，frozen split assignments 288045 行，balance diagnostics 37 行，leakage checks 9 行，split validation 12 项全部 pass。accession split 为 train 1606、dev 336、test 326；evidence object split 为 dev 22661、prototype_locked 2165、source_disjoint_or_temporal 9155，manual review / broader / no-exact trait mapping 全部排除。`prototype_locked` 明确不是 `final_locked`；PEX_REPRO exact main-evaluation evidence 仍为 0；decoy pair 全部跟随 evidence object split。
 
-下一阶段：基于 frozen split 开始 evaluator scaffold，但仍不训练模型、不报告正式 AUROC / AUPRC。
+Evaluator scaffold v0.5.5 已生成 chr1 SNP-only prototype 的 split-aware evaluator scaffold：
+
+- full local tables：`data/interim/evaluator_scaffold_v055/inputs/`、`tasks/`、`outputs_schema/`、`dry_run/` 和 `diagnostics/`。
+- report previews / summaries：`reports/evaluator_scaffold_v055/`。
+- scripts：`scripts/evaluator_scaffold/build_evaluator_object_input_v055.py`、`build_evaluator_decoy_input_v055.py`、`build_evaluator_score_schema_v055.py`、`build_evaluator_task_manifest_v055.py`、`build_baseline_score_dry_run_input_v055.py`、`run_evaluator_scaffold_validation_v055.py` 和 `run_build_evaluator_scaffold_v055.sh`。
+- report：`reports/evaluator_scaffold_v055/evaluator_scaffold_report.md`。
+
+本次处理结果：evaluator object input 33981 行，evaluator decoy input 169905 行，score input schema 16 行，future output schema 17 行，task manifest 84 行，baseline score dry-run input 1559916 行，join check 7 行，leakage guard 10 行，validation 8 项全部 pass。对象类型为 variant 32590、window 722、gene 623、qtl_interval 46；split 为 dev 22661、source_disjoint_or_temporal 9155、prototype_locked 2165。baseline dry-run join 覆盖 window 5560 / 31140、variant 131036 / 1528776；该 join 只用于 schema 和 linkage 校验，不产生正式 benchmark 指标。
+
+下一阶段：基于 evaluator scaffold 做 chr1 SNP matched-ranking dry-run 或 evaluator adapter scaffold，但仍不训练模型、不报告正式 AUROC / AUPRC。
 
 当前仍不包含 Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer；matched decoy 只作为 matched background，不是真阴性。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
@@ -113,7 +122,7 @@ Frozen split v0.5.5 已生成 chr1 SNP-only prototype 的 leakage-aware split：
 - `scripts/`：download、inspect 和 utility scripts。
 - `src/ricebench/`：最小 Python package namespace。
 - `tests/`：后续 tests 的占位目录。
-- `.codex/prompts/`：仅保留目录占位；历史 prompt markdown 已清理，执行历史以 `status.md` 和 reports 为准。
+- `.codex/prompts/`：保留当前阶段 prompt 归档；执行历史以 `status.md` 和 reports 为准。
 
 ## Codex Workflow 说明
 

@@ -1,0 +1,18 @@
+field_name	required	dtype	description	allowed_values	example	notes	scaffold_version
+evaluation_run_id	true	string	Future evaluator run id	NA	eval_dryrun_001	No formal run is produced in 09A.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+task_id	true	string	Task manifest id	NA	TASK_001	Must map to evaluator_task_manifest.tsv.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+score_source	true	string	Score source category	baseline;model;diagnostic;random	baseline	Baseline dry-run only in 09A.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+score_version	true	string	Score version	NA	v0_1_chr1_snp_20260516	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+object_id	true	string	Evidence object id	NA	OBJ_VARIANT_00082095	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+trait_id	true	string	Trait id	frozen trait ids	data_lt_2007__spkf	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+object_type	true	string	Object type	variant;window;gene;qtl_interval	variant	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+assigned_split	true	string	Split evaluated	dev;prototype_locked;source_disjoint_or_temporal	dev	prototype_locked remains a non-final prototype split.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+metric_name	true	string	Metric identifier	dry_run_join_coverage;rank_percentile;topk_recovery;matched_background_enrichment	dry_run_join_coverage	No metric values are calculated in 09A.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+metric_value	true	float	Metric value	finite numeric	0.0	Placeholder schema only.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+n_evidence_objects	true	integer	Number of evidence objects used	>=0	100	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
+n_decoys	true	integer	Number of matched background decoys used	>=0	500	Decoys are not true negatives.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+calculated_on	true	string	Evaluation set semantics	evidence_plus_matched_decoys;diagnostic_only;future_supported_metric	evidence_plus_matched_decoys	Must not use genomewide unknown negatives.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+uses_true_negative	true	boolean	Whether true negatives are used	false	false	Default and required value is false.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+uses_unknown_as_negative	true	boolean	Whether unknown/unlabeled is used as negative	false	false	Default and required value is false.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+prototype_locked_not_final	true	boolean	Whether prototype lock is not final	true	true	Must remain true for prototype_locked rows.	evaluator_scaffold_v055_chr1_snp_prototype_v1
+notes	false	string	Notes	NA	schema only	NA	evaluator_scaffold_v055_chr1_snp_prototype_v1
