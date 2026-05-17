@@ -1,0 +1,13 @@
+field_name	availability	proxy_field	used_in_matching	used_in_sensitivity	missing_reason	notes
+trait_id	present	trait_value_table.trait_id	yes_hard_constraint	yes	NA	main negative pairs stay within the same trait_id
+source_sheet	present	trait_value_table.source_sheet	yes_hard_when_multiple_sources	yes	NA	current frozen traits all use Data < 2007
+broad_subgroup	present	Qmatrix max component	yes_hard_or_balance	yes	NA	derived from Qmatrix-k9; not a model identity token
+PC1_PC5	present	pruned_v2.1 PCA eigenvec	yes_continuous_distance	yes	NA	used as continuous Euclidean distance; never exact PC strata
+kinship	present_raw_matrix	pruned_v2.1 kinship/result.cXX.txt.bz2	no	yes_lmm_or_covariance_baseline	NA	large matrix is registered but not loaded into hard strata
+CROPYEAR	partial:741/2268	3k phenotype CROPYEAR	soft_priority_only	yes	no complete site/location/season table	unknown_env is retained and is not interpreted as same environment
+country_origin	present	accession_mapping_master.country_origin	no_hard_global	yes_balance_diagnostic	NA	too sparse for exact global strata
+SUBTAXA	partial:2197/2268	Genesys SUBTAXA	no_hard_global	yes_balance_diagnostic	NA	partly redundant with broad subgroup and can create small layers
+exact_library_batch	present	RunInfo/LibraryName via accession_mapping_master.library_names	no	qc_only	NA	exact library names are not used for residualization or hard pairing
+mappability	missing	NA	no	no	no genome-wide mappability table in current data	must be recorded as unavailable for detectability matching
+variant_callability	partial_proxy	variant missingness/QC summaries where available	future_decoy_only	future	not yet materialized as genome-wide decoy field	do not claim full detectability control yet
+research_bias	partial_proxy	annotation richness / known-gene proximity not yet unified	future_decoy_only	future	external knowledge not yet integrated into unified gene table	recorded before matched decoy construction

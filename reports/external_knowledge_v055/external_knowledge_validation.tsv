@@ -1,0 +1,14 @@
+check_name	status	n_records	n_failed	details	blocking_issue	notes
+gene_annotation_table_coordinates_valid	pass	125082	0	start/end/chrom valid for gene annotation rows	false	NA
+gene_id_mapping_has_confidence	pass	154144	0	mapping_confidence must be populated	false	NA
+known_gene_evidence_no_training_label_usage	pass	80635	0	known-gene evidence must not be training_label	false	NA
+qtl_interval_no_causal_or_training_usage	pass	1051	0	QTL interval evidence remains region-level weak reference	false	NA
+evidence_source_manifest_has_source_and_checksum	pass	13	0	source_name and checksum required	false	NA
+ambiguous_mapping_in_manual_review	pass	19909	0	ambiguous/unmapped gene ID mappings must enter manual review	false	NA
+evidence_coordinates_mapped_or_downgraded	pass	81686	0	coordinate mapping status must be explicit	false	NA
+annotation/gene_annotation_table.tsv_primary_key_unique	pass	125082	0	primary key gene_id; missing=0; duplicates=0	false	NA
+mapping/gene_id_mapping_table.tsv_primary_key_unique	pass	154144	0	primary key mapping_id; missing=0; duplicates=0	false	NA
+evidence/known_gene_evidence_table.tsv_primary_key_unique	pass	80635	0	primary key evidence_id; missing=0; duplicates=0	false	NA
+evidence/trait_gene_evidence_table.tsv_primary_key_unique	pass	80635	0	primary key trait_gene_evidence_id; missing=0; duplicates=0	false	NA
+evidence/qtl_interval_evidence_table.tsv_primary_key_unique	pass	1051	0	primary key qtl_evidence_id; missing=0; duplicates=0	false	NA
+evidence/evidence_coordinate_mapping_table.tsv_primary_key_unique	pass	81686	0	primary key evidence_id; missing=0; duplicates=0	false	NA

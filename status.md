@@ -108,3 +108,122 @@
 - 生成脚本目录：`scripts/external_knowledge/`。
 - `data/raw/external_knowledge/` 已生成本地下载文件，但不进入 git。
 - 本阶段没有训练模型，没有构建 Task 1 instances，没有构建 matched decoy，没有执行 GWAS，没有执行 phenotype prediction，没有把 known gene / QTL / annotation 写成 causal ground truth，也没有把没有 evidence 的区域当作 negative。
+
+## 2026-05-16 Population covariate completion download
+
+- 执行用户请求：补齐亚群、PC / kinship、来源批次和环境因素相关数据。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 本阶段新增下载 4 个 3K Rice pruned v2.1 PCA / kinship 文件：
+  - `data/raw/variants/snp/pruned_v2.1/pca/pca_pruned_v2.1.eigenvec`
+  - `data/raw/variants/snp/pruned_v2.1/pca/pca_pruned_v2.1.eigenval`
+  - `data/raw/variants/snp/pruned_v2.1/pca/pca_pruned_v2.1.log`
+  - `data/raw/variants/snp/pruned_v2.1/kinship/result.cXX.txt.bz2`
+- 样本级 PCA 验证：3024 个样本加 header，14 列，PC1-PC12；样本顺序与 `pruned_v2.1.fam` 和 `core_v0.7.fam.gz` 一致。
+- kinship 验证：`result.cXX.txt.bz2` 通过 bzip2 校验，解压后为 3024 行 x 3024 列。
+- 已有相关数据确认：Qmatrix 3023 样本，RunInfo 25529 条测序 run 记录，Genesys MCPD passport 和 3K phenotype XLSX 均已在本地。
+- AWS phenotype listing 中未发现独立 environment / site / season covariate 文件；当前环境相关字段仅能使用 phenotype `CROPYEAR`、passport origin / SUBTAXA / COLLSRC 和测序 run metadata 作为 proxy。
+- 更新 manifest：`manifest/download_manifest.tsv` 和 `manifest/checksum_table.tsv` 已登记 4 个新增下载文件与 sha256。
+- 生成报告：`reports/current_data_status/population_covariate_download_report.md`。
+- 重新生成当前 raw 资产汇总：`reports/current_data_status/current_raw_file_summary.tsv`、`current_data_category_summary.tsv` 和 `current_manifest_checksum_status.tsv`，当前 raw 文件数为 103。
+- 本阶段无下载失败文件，无需用户手工上传。
+- 本阶段没有训练模型，没有构建 Task 1 instances，没有执行 GWAS，没有执行 phenotype prediction，没有把 covariate、weak evidence 或 unknown_unlabeled 写成 causal ground truth / negative label。
+
+## 2026-05-16 Stratified residualization feasibility review
+
+- 执行用户请求：评估 `subgroup x PC/kinship x 来源批次 x 环境` 残差化 / 分层标准化和同层负配对方案是否会因层过细而无法训练或评价。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 使用数据：9 个 v0.1 frozen traits，18804 条 frozen trait non-missing value rows，2096 个至少有一个 frozen trait 非缺失的 accession。
+- 结论：严格硬分层不可行；`trait x subgroup` 可行，但叠加 `CROPYEAR`、country、SUBTAXA、exact library batch 后大量层变成 singleton 或小层。
+- 关键统计：
+  - `trait x subgroup`：81 个层，median size 193，层大小小于 20 的数量为 0。
+  - `trait x subgroup x CROPYEAR`：1054 个层，median size 3，层大小小于 20 的数量为 928。
+  - `trait x subgroup x country`：1958 个层，median size 2，层大小小于 20 的数量为 1707。
+  - `trait x subgroup x CROPYEAR x country`：4055 个层，median size 1，层大小小于 20 的数量为 3841。
+- `CROPYEAR` 覆盖弱：frozen trait rows 中只有 5257 / 18804 有已知年份，约 28.0%。
+- PC 不能离散成精确 strata；PC1-PC5 四位小数分层几乎全是 singleton，应作为连续协变量或 kNN 距离约束。
+- exact `library_names` 批次字段在 2096 个 accession 中 2096 个唯一，不能作为硬匹配批次层。
+- 建议：硬约束保留 `trait_id`、`source_sheet` 和 broad subgroup；PC / kinship 用连续协变量或 nearest-neighbor；`CROPYEAR`、country、SUBTAXA、batch 用作软约束、协变量或 balance diagnostics。
+- 生成报告：`reports/current_data_status/stratified_residualization_feasibility_report.md`。
+- 本阶段没有修改 raw data，没有训练模型，没有构建新 labels，没有执行 phenotype prediction，没有把 unknown_unlabeled 当作 negative。
+
+## 2026-05-17 Design v0.5.5 data protocol alignment
+
+- 执行用户请求：根据 `/home/data2/projects/design` 中 v0.5.5 benchmark / method / constraints 文档处理 `rice_benchmark` 当前数据，并清理旧 prompt markdown。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 新增可复现脚本：`scripts/trait_state/build_design_v055_tables.py`。
+- 执行命令：`python scripts/trait_state/build_design_v055_tables.py`。
+- 读取数据：9 个 v0.1 frozen traits、2268 个 A/B high-confidence accession、Qmatrix broad subgroup、pruned v2.1 PC1-PC12、kinship 文件存在性、phenotype `CROPYEAR`、country / Genesys SUBTAXA / sequencing LibraryName proxy。
+- 生成 full local tables：
+  - `data/interim/design_v055/metadata/covariate_accession_table.tsv`
+  - `data/interim/design_v055/metadata/trait_usability_table.tsv`
+  - `data/interim/design_v055/metadata/trait_preprocessing_table.tsv`
+  - `data/interim/design_v055/decoy/matching_field_availability_table.tsv`
+  - `data/interim/design_v055/negative_pairs/negative_pair_protocol_table.tsv`
+  - `data/interim/design_v055/negative_pairs/candidate_pool_size_table.tsv`
+  - `data/interim/design_v055/negative_pairs/balance_diagnostics_table.tsv`
+  - `data/interim/design_v055/qc_diagnostics/negative_pair_candidate_pool_summary.tsv`
+  - `data/interim/design_v055/qc_diagnostics/v055_data_processing_validation.tsv`
+  - `data/interim/design_v055/qc_diagnostics/v055_generated_table_schema.tsv`
+- 生成 review reports / tables：
+  - `reports/current_data_status/v055_data_processing_report.md`
+  - `reports/current_data_status/v055_trait_usability_table.tsv`
+  - `reports/current_data_status/v055_trait_preprocessing_table.tsv`
+  - `reports/current_data_status/v055_matching_field_availability_table.tsv`
+  - `reports/current_data_status/v055_covariate_field_availability_table.tsv`
+  - `reports/current_data_status/v055_negative_pair_candidate_pool_summary.tsv`
+  - `reports/current_data_status/v055_data_processing_validation.tsv`
+  - `reports/current_data_status/v055_generated_table_schema.tsv`
+- 处理结果：covariate accession rows 为 2268；frozen trait non-missing rows 为 18804；9 个 frozen traits 全部达到当前 main usability thresholds。
+- 负配对协议结果：18804 条 non-missing frozen trait-state rows 均生成 `L1_main_hard_negative` mismatched trait-state pair；L2、L3 和 no-pair 记录数均为 0。这里的 negative 只表示训练中的 mismatched trait-state pair，不是 variant/window negative label。
+- 候选池结果：各 trait 的 median L1 candidate pool size 为 108-235，所有行 L1 candidate pool size 均不低于 20。
+- 协变量结论：Qmatrix 和 PC 覆盖 2268 / 2268；CROPYEAR known coverage 为 741 / 2268；CROPYEAR 继续作为 weak environment proxy，缺失值保留为 `unknown_env`，不能视为相同环境。
+- matching field availability 结论：broad subgroup 可作为硬约束或 balance field；PC1-PC5 只能作为连续距离，不做精确 strata；kinship 只用于 LMM / covariance baseline 或 sensitivity；exact LibraryName 只用于 QC。
+- 校验结果：`reports/current_data_status/v055_data_processing_validation.tsv` 中 6 项检查全部 `pass`，`validation_failed=0`，`validation_warn=0`。
+- 清理旧 prompt markdown：删除 `.codex/prompts/*.md`，保留 `.codex/prompts/.gitkeep`。历史执行记录以 `status.md` 和 reports 为准。
+- 本阶段没有修改 raw data，没有训练模型，没有构建 matched decoy，没有构建 frozen split，没有执行 GWAS / Evo2，没有执行 phenotype prediction，没有把 weak evidence 写成 causal ground truth，也没有把 unknown_unlabeled 当作 negative。
+
+## 2026-05-17 Current data structure Chinese report
+
+- 执行用户请求：说明当前数据结构，并写一份中文报告。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 生成报告：`reports/current_data_status/current_data_structure_report.md`。
+- 报告内容覆盖：
+  - 项目当前状态和科研边界。
+  - `data/raw/`、`data/interim/`、`reports/`、`manifest/`、`configs/` 和 `scripts/` 的职责。
+  - raw data category、manifest layer、accession mapping、trait state、v0.1-mini chr1 SNP、Task 1 prototype、baseline prototype 和 design v0.5.5 protocol layer。
+  - 当前可用 benchmark surface：2268 个 A/B high-confidence accessions、9 个 frozen v0.1 traits、42466 个 chr1 SNP、865 个 chr1 windows、16265460 条 Task 1 prototype instances。
+  - v0.5.5 协议层结果：18804 条 mismatched trait-state pair、9 个 traits 全部 usable for main、CROPYEAR 仍为 weak environment proxy。
+- 结果分析、风险解释和下一步工程任务。
+- 本阶段没有修改 raw data，没有新增模型或训练流程，没有构建新 labels，没有执行 phenotype prediction，没有把 weak evidence 写成 causal ground truth，也没有把 unknown_unlabeled 当作 negative。
+
+## 2026-05-17 Phase 08A external knowledge v0.5.5 integration
+
+- 执行 prompt：`.codex/prompts/08a_integrate_external_knowledge_v055.md`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 本阶段整合 RAP-DB、funRiceGenes、MSU / RGAP、Oryzabase、Q-TARO 和 reference annotation files，构建统一 annotation / evidence / gene ID mapping layer。
+- 新增可复现脚本目录：`scripts/external_knowledge/`。
+- 执行命令：`bash scripts/external_knowledge/run_build_external_knowledge_v055.sh` 和 `python -m py_compile scripts/external_knowledge/*.py`。
+- 生成 full local tables：
+  - `data/interim/external_knowledge_v055/annotation/gene_annotation_table.tsv`
+  - `data/interim/external_knowledge_v055/mapping/gene_id_mapping_table.tsv`
+  - `data/interim/external_knowledge_v055/evidence/known_gene_evidence_table.tsv`
+  - `data/interim/external_knowledge_v055/evidence/trait_gene_evidence_table.tsv`
+  - `data/interim/external_knowledge_v055/evidence/qtl_interval_evidence_table.tsv`
+  - `data/interim/external_knowledge_v055/evidence/evidence_coordinate_mapping_table.tsv`
+  - `data/interim/external_knowledge_v055/evidence/evidence_source_manifest.tsv`
+  - `data/interim/external_knowledge_v055/qc_diagnostics/external_knowledge_manual_review_table.tsv`
+  - `data/interim/external_knowledge_v055/qc_diagnostics/external_knowledge_validation.tsv`
+- 生成 tracked report previews / summaries：
+  - `reports/external_knowledge_v055/external_knowledge_integration_report.md`
+  - `reports/external_knowledge_v055/external_knowledge_validation.tsv`
+  - `reports/external_knowledge_v055/evidence_source_manifest.tsv`
+  - `reports/external_knowledge_v055/*.preview.tsv`
+- 表规模：gene annotation 125082 行，gene ID mapping 154144 行，known gene evidence 80635 行，trait-gene evidence 80635 行，QTL interval evidence 1051 行，evidence coordinate mapping 81686 行，source manifest 13 行，manual review 95848 行。
+- gene ID mapping 成功率：funRiceGenes `famInfo` 1.0000，funRiceGenes `geneInfo` 1.0000，Oryzabase 0.9171，RAP-DB 0.8403，Q-TARO 0.0000。Q-TARO 的 mixed QTL/gene 字段保留为 interval-level weak localization evidence 或 manual review，不强行一对一 gene mapping。
+- frozen 9 traits candidate pool：4696 条 exact trait-gene evidence 可进入主评价候选池；2391 条 ambiguous frozen-trait keyword matches 需要 manual review；其余 broader / missing trait evidence 不进入主评价候选池。
+- evidence 层级：gene-level evidence/reference 80635 行，interval-level QTL evidence 1051 行，variant-level evidence 0 行。
+- 坐标映射状态：`mapped_high_confidence` 73776 行，`gene_level_only` 6859 行，`region_level_only` 1033 行，`unmapped` 18 行。
+- 校验结果：`reports/external_knowledge_v055/external_knowledge_validation.tsv` 中 13 项检查全部 `pass`，`validation_failed=0`。
+- 校验覆盖：annotation 坐标有效性、mapping confidence、无 `training_label` usage、QTL 不作为 causal label、source manifest checksum、ambiguous mapping 进入 manual review、coordinate mapping 降级策略、主键唯一性。
+- 当前限制：部分 source 坐标版本仍不一致，trait name normalization 仍有模糊映射，QTL interval 可能过宽，部分 source license / terms 需要继续确认，Q-TARO gene 字段不能可靠映射到统一 gene ID。
+- 本阶段没有修改 raw data，没有训练模型，没有构建 matched decoy，没有冻结 split，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有报告正式 AUROC / AUPRC，没有把任何 evidence 写成 training label 或 causal ground truth。

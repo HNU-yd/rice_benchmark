@@ -1,0 +1,7 @@
+check_name	status	observed	expected	notes
+frozen_traits_have_usability_rows	pass	9	9	NA
+frozen_traits_have_preprocessing_rows	pass	9	9	NA
+negative_pair_rows_match_nonmissing_trait_rows	pass	18804	18804	negative pair means mismatched trait_state pair, not unlabeled variant negative
+no_L4_controls_in_main_negative_pair_table	pass	0	0	L4 controls are diagnostic-only and not generated for main training pairs
+pc_not_used_as_exact_strata	pass	continuous_distance	continuous_distance	NA
+all_main_traits_usable	pass	9	9	warn would mean a frozen trait should be demoted before main training

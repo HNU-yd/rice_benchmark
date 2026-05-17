@@ -1,0 +1,10 @@
+trait_id	trait_name	n_accessions	subgroup_min_size	subgroup_median_size	cropyear_coverage	missing_rate	pc_association_score	source_sheet	usable_for_main	usable_for_challenge	usable_for_case_only	exclusion_reason	notes
+data_lt_2007__spkf	SPKF	2094	70	193	0.2813	0.000954	0.019033	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5
+data_lt_2007__fla_repro	FLA_REPRO	2092	70	193	0.2811	0.001908	0.085947	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5
+data_lt_2007__cult_code_repro	CULT_CODE_REPRO	2075	68	191	0.2742	0.010019	0.194261	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5
+data_lt_2007__llt_code	LLT_CODE	2076	68	192	0.2741	0.009542	0.119637	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5
+data_lt_2007__pex_repro	PEX_REPRO	2095	70	193	0.2811	0.000477	0.021897	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5
+data_lt_2007__lsen	LSEN	2093	70	192	0.2814	0.001431	0.057724	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5
+data_lt_2007__pth	PTH	2092	70	192	0.2806	0.001908	0.147414	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5
+data_lt_2007__cuan_repro	CUAN_REPRO	2094	70	193	0.2813	0.000954	0.04396	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5
+data_lt_2007__cudi_code_repro	CUDI_CODE_REPRO	2093	70	193	0.2809	0.001431	0.061727	Data < 2007	true	false	false	NA	subgroups=9; CROPYEAR is a weak environment proxy only; PC score is max eta^2 for trait_state across PC1-PC5

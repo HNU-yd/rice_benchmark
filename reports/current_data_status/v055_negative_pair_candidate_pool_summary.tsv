@@ -1,0 +1,10 @@
+trait_id	n_positive_rows	median_l1_pool_size	rows_l1_pool_lt_20	rows_l1_pool_lt_10	selected_L1	selected_L2	selected_L3	selected_no_pair	median_selected_pc_distance	notes
+data_lt_2007__cuan_repro	2094	155	0	0	2094	0	0	0	0.001341	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here
+data_lt_2007__cudi_code_repro	2093	108	0	0	2093	0	0	0	0.001646	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here
+data_lt_2007__cult_code_repro	2075	235	0	0	2075	0	0	0	0.00126	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here
+data_lt_2007__fla_repro	2092	200	0	0	2092	0	0	0	0.001316	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here
+data_lt_2007__llt_code	2076	173	0	0	2076	0	0	0	0.001365	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here
+data_lt_2007__lsen	2093	218	0	0	2093	0	0	0	0.001302	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here
+data_lt_2007__pex_repro	2095	153	0	0	2095	0	0	0	0.001357	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here
+data_lt_2007__pth	2092	216	0	0	2092	0	0	0	0.001279	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here
+data_lt_2007__spkf	2094	124	0	0	2094	0	0	0	0.001469	candidate pools require mismatched trait_state within the same trait; L4 controls are not generated here

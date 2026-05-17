@@ -6,6 +6,31 @@ data/raw/accessions/snpseek/3K_list_sra_ids.txt	3K_list_sra_ids.txt	166286	0.159
 data/raw/checksums/GCF_001433935.1_IRGSP-1.0_md5checksums.txt	GCF_001433935.1_IRGSP-1.0_md5checksums.txt	12720	0.012	listing / metadata	.txt	yes	raw data ignored by git
 data/raw/evidence/known_genes/oryzabase/OryzabaseGeneListEn.tsv	OryzabaseGeneListEn.tsv	11281159	10.759	Oryzabase	.tsv	yes	raw data ignored by git
 data/raw/evidence/qtl/qtaro/qtaro_sjis.zip	qtaro_sjis.zip	90649	0.086	Q-TARO	.zip	yes	raw data ignored by git
+data/raw/external_knowledge/funricegenes/famInfo.table.txt	famInfo.table.txt	328118	0.313	other	.txt	yes	raw data ignored by git
+data/raw/external_knowledge/funricegenes/funricegenes_home.html	funricegenes_home.html	15137	0.014	other	.html	yes	raw data ignored by git
+data/raw/external_knowledge/funricegenes/funricegenes_shiny_home.html	funricegenes_shiny_home.html	156745	0.149	other	.html	yes	raw data ignored by git
+data/raw/external_knowledge/funricegenes/geneInfo.table.txt	geneInfo.table.txt	168335	0.161	other	.txt	yes	raw data ignored by git
+data/raw/external_knowledge/funricegenes/geneKeyword.table.txt	geneKeyword.table.txt	15189535	14.486	other	.txt	yes	raw data ignored by git
+data/raw/external_knowledge/funricegenes/help.pdf	help.pdf	1474174	1.406	other	.pdf	yes	raw data ignored by git
+data/raw/external_knowledge/funricegenes/net.pdf	net.pdf	944861	0.901	other	.pdf	yes	raw data ignored by git
+data/raw/external_knowledge/funricegenes/reference.table.txt	reference.table.txt	14671997	13.992	other	.txt	yes	raw data ignored by git
+data/raw/external_knowledge/msu_rgAP/download_osa1r7.shtml	download_osa1r7.shtml	12947	0.012	other	.shtml	yes	raw data ignored by git
+data/raw/external_knowledge/msu_rgAP/downloads_gad.shtml	downloads_gad.shtml	8599	0.008	other	.shtml	yes	raw data ignored by git
+data/raw/external_knowledge/msu_rgAP/legacy_annotation_dbs_index.html	legacy_annotation_dbs_index.html	916	0.001	annotation	.html	yes	raw data ignored by git
+data/raw/external_knowledge/msu_rgAP/osa1_r7.all_models.GOSlim.txt.gz	osa1_r7.all_models.GOSlim.txt.gz	922586	0.880	other	.txt.gz	yes	raw data ignored by git
+data/raw/external_knowledge/msu_rgAP/osa1_r7.all_models.functional_annotation.txt.gz	osa1_r7.all_models.functional_annotation.txt.gz	486107	0.464	annotation	.txt.gz	yes	raw data ignored by git
+data/raw/external_knowledge/msu_rgAP/osa1_r7.all_models.gff3.gz	osa1_r7.all_models.gff3.gz	8901387	8.489	other	.gz	yes	raw data ignored by git
+data/raw/external_knowledge/msu_rgAP/osa1_r7.locus_brief_info.txt.gz	osa1_r7.locus_brief_info.txt.gz	1299036	1.239	other	.txt.gz	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/IRGSP-1.0_representative_annotation_2026-02-05.tsv.gz	IRGSP-1.0_representative_annotation_2026-02-05.tsv.gz	3305126	3.152	annotation	.gz	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/IRGSP-1.0_representative_transcript_exon_2026-02-05.gtf.gz	IRGSP-1.0_representative_transcript_exon_2026-02-05.gtf.gz	2049986	1.955	other	.gz	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/IRGSP-1.0_transcript-evidence_2012-04-11.txt.gz	IRGSP-1.0_transcript-evidence_2012-04-11.txt.gz	339560	0.324	other	.txt.gz	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/RAP-MSU_2026-02-05.txt.gz	RAP-MSU_2026-02-05.txt.gz	314930	0.300	other	.txt.gz	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/agri_gene_list.html	agri_gene_list.html	8678	0.008	other	.html	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/agri_genes.json	agri_genes.json	1397267	1.333	other	.json	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/curated_gene_list.html	curated_gene_list.html	8810	0.008	other	.html	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/curated_genes.json	curated_genes.json	7230266	6.895	other	.json	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/download.99861702.js	download.99861702.js	19391	0.018	other	.js	yes	raw data ignored by git
+data/raw/external_knowledge/rapdb/irgsp1_download_page.html	irgsp1_download_page.html	8190	0.008	other	.html	yes	raw data ignored by git
 data/raw/listings/aws_3kricegenome_reduced.txt	aws_3kricegenome_reduced.txt	2011	0.002	listing / metadata	.txt	yes	raw data ignored by git
 data/raw/listings/aws_3kricegenome_reduced_recursive.txt	aws_3kricegenome_reduced_recursive.txt	2299	0.002	listing / metadata	.txt	yes	raw data ignored by git
 data/raw/listings/aws_3kricegenome_root.txt	aws_3kricegenome_root.txt	1801	0.002	listing / metadata	.txt	yes	raw data ignored by git
@@ -64,6 +89,10 @@ data/raw/variants/snp/core_v0.7.bim.gz	core_v0.7.bim.gz	3171530	3.025	SNP genoty
 data/raw/variants/snp/core_v0.7.fam.gz	core_v0.7.fam.gz	16782	0.016	SNP genotype	.fam.gz	yes	raw data ignored by git
 data/raw/variants/snp/index-2017-0321-perChrCoreSnps.html	index-2017-0321-perChrCoreSnps.html	11059	0.011	SNP genotype	.html	yes	raw data ignored by git
 data/raw/variants/snp/pca_pruned_v2.1.eigenvec.var.gz	pca_pruned_v2.1.eigenvec.var.gz	51393517	49.013	pruned SNP	.gz	yes	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/kinship/result.cXX.txt.bz2	result.cXX.txt.bz2	46533413	44.378	pruned SNP	.bz2	yes	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/pca/pca_pruned_v2.1.eigenval	pca_pruned_v2.1.eigenval	95	0.000	pruned SNP	.eigenval	yes	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/pca/pca_pruned_v2.1.eigenvec	pca_pruned_v2.1.eigenvec	483387	0.461	pruned SNP	.eigenvec	yes	raw data ignored by git
+data/raw/variants/snp/pruned_v2.1/pca/pca_pruned_v2.1.log	pca_pruned_v2.1.log	1192	0.001	pruned SNP	.log	yes	raw data ignored by git
 data/raw/variants/snp/pruned_v2.1/pruned_v2.1.bed	pruned_v2.1.bed	764770359	729.342	pruned SNP	.bed	no	raw data ignored by git
 data/raw/variants/snp/pruned_v2.1/pruned_v2.1.bim	pruned_v2.1.bim	26901979	25.656	pruned SNP	.bim	no	raw data ignored by git
 data/raw/variants/snp/pruned_v2.1/pruned_v2.1.fam	pruned_v2.1.fam	102728	0.098	pruned SNP	.fam	no	raw data ignored by git

@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Phase 7A external rice knowledge collection。
+当前阶段：Design v0.5.5 data protocol alignment。
 
-当前目标：补充 RAP-DB、funRiceGenes 和 MSU / Rice Genome Annotation Project 第一批外部水稻知识库，用于后续 annotation layer、known gene evidence layer、gene ID mapping layer 和 candidate gene explanation layer。不构建 Task 1 instances，不构建 matched decoy，不训练模型，不做 `phenotype prediction`。
+当前目标：把 `/home/data2/projects/design` 中 v0.5.5 设计要求落到当前 3K Rice 数据处理协议中，固化 trait usability、trait preprocessing、covariate availability、matching field availability、negative pair protocol 和候选池诊断。不训练模型，不构建 phenotype prediction target，不把 weak evidence 或 unknown/unlabeled 写成 causal ground truth / negative label。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -61,9 +61,31 @@ Phase 6A 已构建 evaluator / baseline prototype：baseline 包括 `random_unif
 
 Phase 7A 已补充第一批外部水稻知识库：RAP-DB 下载 10 个文件，funRiceGenes 下载 8 个文件，MSU / RGAP 下载 7 个文件，失败或 skipped 记录数为 0。报告位于 `reports/external_knowledge/summary/external_knowledge_07a_report.md`，字段审查位于 `reports/external_knowledge/summary/external_knowledge_schema_preview.tsv`，集成计划位于 `reports/external_knowledge/summary/external_knowledge_integration_plan.tsv`。
 
-下一阶段：整理外部知识库为统一 gene annotation / known gene evidence / gene ID mapping layer，然后构建 matched decoy 和 frozen split。
+Population covariate completion 已补齐 pruned v2.1 PCA / kinship 文件，并确认当前环境字段只有 phenotype `CROPYEAR`、passport origin / SUBTAXA 和测序 run metadata proxy。报告位于 `reports/current_data_status/population_covariate_download_report.md`。
 
-当前 Phase 7A 不包含 matched decoy、frozen split、Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer，不能写成 causal ground truth。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+Stratified residualization feasibility review 结论：严格 `subgroup x PC-bin x environment x batch x source` 硬分层不可行；当前可行主硬约束是 `trait_id`、`source_sheet` 和 broad subgroup，PC 只能作为连续距离或 kNN 约束，CROPYEAR/country/SUBTAXA/batch 只进入软约束、协变量、敏感性分析或 balance diagnostics。报告位于 `reports/current_data_status/stratified_residualization_feasibility_report.md`。
+
+Design v0.5.5 data protocol alignment 已生成：
+
+- full local tables：`data/interim/design_v055/metadata/`、`data/interim/design_v055/decoy/`、`data/interim/design_v055/negative_pairs/` 和 `data/interim/design_v055/qc_diagnostics/`。
+- review tables：`reports/current_data_status/v055_trait_usability_table.tsv`、`v055_trait_preprocessing_table.tsv`、`v055_matching_field_availability_table.tsv`、`v055_covariate_field_availability_table.tsv`、`v055_negative_pair_candidate_pool_summary.tsv`、`v055_generated_table_schema.tsv` 和 `v055_data_processing_validation.tsv`。
+- report：`reports/current_data_status/v055_data_processing_report.md`。
+- script：`scripts/trait_state/build_design_v055_tables.py`。
+
+本次处理结果：2268 个 high-confidence accession covariate rows，9 个 frozen traits 全部 usable for main，18804 条 non-missing frozen trait-state rows 均生成 L1 main hard mismatched trait-state pair；校验失败 0、警告 0。CROPYEAR 仍只有 741 / 2268 accession 有已知值，必须继续作为 weak environment proxy。
+
+External knowledge v0.5.5 integration 已生成统一 annotation / evidence / gene ID mapping layer：
+
+- full local tables：`data/interim/external_knowledge_v055/annotation/`、`data/interim/external_knowledge_v055/evidence/`、`data/interim/external_knowledge_v055/mapping/` 和 `data/interim/external_knowledge_v055/qc_diagnostics/`。
+- report previews：`reports/external_knowledge_v055/`。
+- scripts：`scripts/external_knowledge/build_gene_annotation_table.py`、`build_gene_id_mapping_table.py`、`build_known_gene_evidence_table.py`、`build_trait_gene_evidence_table.py`、`build_qtl_interval_evidence_table.py`、`build_evidence_coordinate_mapping_table.py`、`validate_external_knowledge_layer.py` 和 `run_build_external_knowledge_v055.sh`。
+- report：`reports/external_knowledge_v055/external_knowledge_integration_report.md`。
+
+本次处理结果：gene annotation 125082 行，gene ID mapping 154144 行，known gene evidence 80635 行，trait-gene evidence 80635 行，QTL interval evidence 1051 行，evidence coordinate mapping 81686 行，source manifest 13 行，validation 13 项检查全部 pass。可进入 frozen 9 traits 主评价候选池的 exact trait-gene evidence 为 4696 行；2391 行 ambiguous frozen-trait keyword matches 和其余 broader / missing trait evidence 均只进入 broader evidence pool 或 manual review。所有 evidence 的 `allowed_usage` 均限制为 evaluation / explanation / case study / development evidence candidate，不作为 training label。
+
+下一阶段：基于统一 annotation / evidence / mapping 表构建 matched decoy 和后续 frozen split。
+
+当前 Design v0.5.5 data protocol alignment 不包含 matched decoy、frozen split、Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer，不能写成 causal ground truth。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 
@@ -73,7 +95,7 @@ Phase 7A 已补充第一批外部水稻知识库：RAP-DB 下载 10 个文件，
 - `scripts/`：download、inspect 和 utility scripts。
 - `src/ricebench/`：最小 Python package namespace。
 - `tests/`：后续 tests 的占位目录。
-- `.codex/prompts/`：分阶段 Codex prompt 文件。
+- `.codex/prompts/`：仅保留目录占位；历史 prompt markdown 已清理，执行历史以 `status.md` 和 reports 为准。
 
 ## Codex Workflow 说明
 

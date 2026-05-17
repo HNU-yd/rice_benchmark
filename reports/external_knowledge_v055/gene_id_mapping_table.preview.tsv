@@ -1,0 +1,501 @@
+mapping_id	source_gene_id	source_database	target_gene_id	target_database	gene_symbol	mapping_type	mapping_confidence	mapping_method	is_ambiguous	n_candidates	notes
+MAP_00000001	Os01g0100100	RAP-DB	LOC_Os01g01010	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000002	Os01g0100200	RAP-DB	LOC_Os01g01019	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000003	Os01g0100300	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000004	Os01g0100400	RAP-DB	LOC_Os01g01030	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000005	Os01g0100500	RAP-DB	LOC_Os01g01040	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000006	Os01g0100600	RAP-DB	LOC_Os01g01050	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000007	Os01g0100650	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000008	Os01g0100700	RAP-DB	LOC_Os01g01060	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000009	Os01g0100800	RAP-DB	LOC_Os01g01070	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000010	Os01g0100900	RAP-DB	LOC_Os01g01080	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000011	Os01g0101150	RAP-DB	LOC_Os01g01115	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000012	Os01g0101200	RAP-DB	LOC_Os01g01120	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000013	Os01g0101300	RAP-DB	LOC_Os01g01130	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000014	Os01g0101500	RAP-DB	LOC_Os01g01140	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000015	Os01g0101600	RAP-DB	LOC_Os01g01150	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000016	Os01g0101700	RAP-DB	LOC_Os01g01160	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000017	Os01g0101800	RAP-DB	LOC_Os01g01170	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000018	Os01g0101900	RAP-DB	LOC_Os01g01180	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000019	Os01g0102000	RAP-DB	LOC_Os01g01190	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000020	Os01g0102300	RAP-DB	LOC_Os01g01280	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000021	Os01g0102400	RAP-DB	LOC_Os01g01290	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000022	Os01g0102500	RAP-DB	LOC_Os01g01295	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000023	Os01g0102600	RAP-DB	LOC_Os01g01302	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000024	Os01g0102700	RAP-DB	LOC_Os01g01307	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000025	Os01g0102800	RAP-DB	LOC_Os01g01312	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000026	Os01g0102850	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000027	Os01g0102900	RAP-DB	LOC_Os01g01340	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000028	Os01g0103000	RAP-DB	LOC_Os01g01350	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000029	Os01g0103050	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000030	Os01g0103100	RAP-DB	LOC_Os01g01360	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000031	Os01g0103400	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000032	Os01g0103600	RAP-DB	LOC_Os01g01369	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000033	Os01g0103650	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000034	Os01g0103700	RAP-DB	LOC_Os01g01380	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000035	Os01g0103800	RAP-DB	LOC_Os01g01390	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000036	Os01g0103900	RAP-DB	LOC_Os01g01400	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000037	Os01g0104000	RAP-DB	LOC_Os01g01410	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000038	Os01g0104100	RAP-DB	LOC_Os01g01420	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000039	Os01g0104200	RAP-DB	LOC_Os01g01430	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000040	Os01g0104300	RAP-DB	LOC_Os01g01440	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000041	Os01g0104350	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000042	Os01g0104400	RAP-DB	LOC_Os01g01450	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000043	Os01g0104500	RAP-DB	LOC_Os01g01470	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000044	Os01g0104600	RAP-DB	LOC_Os01g01484	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000045	Os01g0104800	RAP-DB	LOC_Os01g01510	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000046	Os01g0104900	RAP-DB	LOC_Os01g01520	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000047	Os01g0105300	RAP-DB	LOC_Os01g01560	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000048	Os01g0105400	RAP-DB	LOC_Os01g01570	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000049	Os01g0105450	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000050	Os01g0105700	RAP-DB	LOC_Os01g01600	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000051	Os01g0105800	RAP-DB	LOC_Os01g01610	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000052	Os01g0105900	RAP-DB	LOC_Os01g01620	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000053	Os01g0106200	RAP-DB	LOC_Os01g01640	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000054	Os01g0106300	RAP-DB	LOC_Os01g01650	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000055	Os01g0106400	RAP-DB	LOC_Os01g01660	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000056	Os01g0106500	RAP-DB	LOC_Os01g01670	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000057	Os01g0106600	RAP-DB	LOC_Os01g01680	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000058	Os01g0106700	RAP-DB	LOC_Os01g01689	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000059	Os01g0106800	RAP-DB	LOC_Os01g01700	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000060	Os01g0106900	RAP-DB	LOC_Os01g01710	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000061	Os01g0107000	RAP-DB	LOC_Os01g01720	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000062	Os01g0107200	RAP-DB	LOC_Os01g01730	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000063	Os01g0107400	RAP-DB	LOC_Os01g01740	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000064	Os01g0107700	RAP-DB	LOC_Os01g01780	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000065	Os01g0107801	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000066	Os01g0107900	RAP-DB	LOC_Os01g01790	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000067	Os01g0108000	RAP-DB	LOC_Os01g01800	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000068	Os01g0108200	RAP-DB	LOC_Os01g01830	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000069	Os01g0108400	RAP-DB	LOC_Os01g01840	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000070	Os01g0108500	RAP-DB	LOC_Os01g01840	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000071	Os01g0108600	RAP-DB	LOC_Os01g01870	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000072	Os01g0108700	RAP-DB	LOC_Os01g01880	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000073	Os01g0108800	RAP-DB	LOC_Os01g01890	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000074	Os01g0109000	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000075	Os01g0109200	RAP-DB	LOC_Os01g01930	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000076	Os01g0109201	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000077	Os01g0109300	RAP-DB	LOC_Os01g01920	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000078	Os01g0109366	RAP-DB	LOC_Os01g01925	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000079	Os01g0109432	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000080	Os01g0109500	RAP-DB	LOC_Os01g01940	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000081	Os01g0109600	RAP-DB	LOC_Os01g01950	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000082	Os01g0109700	RAP-DB	LOC_Os01g01960	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000083	Os01g0109750	RAP-DB	LOC_Os01g01970	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000084	Os01g0109900	RAP-DB	LOC_Os01g01980	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000085	Os01g0110050	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000086	Os01g0110100	RAP-DB	LOC_Os01g02000	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000087	Os01g0110200	RAP-DB	LOC_Os01g02010	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000088	Os01g0110400	RAP-DB	LOC_Os01g02020	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000089	Os01g0110500	RAP-DB	LOC_Os01g02040	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000090	Os01g0110700	RAP-DB	LOC_Os01g02050	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000091	Os01g0110800	RAP-DB	LOC_Os01g02060	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000092	Os01g0110901	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000093	Os01g0111000	RAP-DB	LOC_Os01g02070	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000094	Os01g0111100	RAP-DB	LOC_Os01g02080	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000095	Os01g0111200	RAP-DB	LOC_Os01g02090	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000096	Os01g0111300	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000097	Os01g0111400	RAP-DB	LOC_Os01g02100	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000098	Os01g0111500	RAP-DB	LOC_Os01g02110	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000099	Os01g0111600	RAP-DB	LOC_Os01g02120	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000100	Os01g0111700	RAP-DB	LOC_Os01g02130	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000101	Os01g0111800	RAP-DB	LOC_Os01g02139	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000102	Os01g0111900	RAP-DB	LOC_Os01g02150	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000103	Os01g0112000	RAP-DB	LOC_Os01g02160	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000104	Os01g0112050	RAP-DB	LOC_Os01g02170	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000105	Os01g0112100	RAP-DB	LOC_Os01g02170	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000106	Os01g0112201	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000107	Os01g0112300	RAP-DB	LOC_Os01g02180	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000108	Os01g0112400	RAP-DB	LOC_Os01g02190	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000109	Os01g0112500	RAP-DB	LOC_Os01g02200	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000110	Os01g0112600	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000111	Os01g0112701	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000112	Os01g0112800	RAP-DB	LOC_Os01g02250	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000113	Os01g0113000	RAP-DB	LOC_Os01g02270	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000114	Os01g0113150	RAP-DB	LOC_Os01g02280	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000115	Os01g0113200	RAP-DB	LOC_Os01g02290	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000116	Os01g0113300	RAP-DB	LOC_Os01g02300	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000117	Os01g0113350	RAP-DB	LOC_Os01g02310	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000118	Os01g0113400	RAP-DB	LOC_Os01g02320	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000119	Os01g0113500	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000120	Os01g0113600	RAP-DB	LOC_Os01g02334	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000121	Os01g0113650	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000122	Os01g0113700	RAP-DB	LOC_Os01g02350	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000123	Os01g0113800	RAP-DB	LOC_Os01g02360	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000124	Os01g0113833	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000125	Os01g0113900	RAP-DB	LOC_Os01g02370	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000126	Os01g0114000	RAP-DB	LOC_Os01g02380	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000127	Os01g0114050	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000128	Os01g0114100	RAP-DB	LOC_Os01g02390	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000129	Os01g0114200	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000130	Os01g0114300	RAP-DB	LOC_Os01g02400	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000131	Os01g0114400	RAP-DB	LOC_Os01g02410	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000132	Os01g0114401	RAP-DB	LOC_Os01g02410	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000133	Os01g0114450	RAP-DB	LOC_Os01g02410	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000134	Os01g0114500	RAP-DB	LOC_Os01g02420	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000135	Os01g0114550	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000136	Os01g0114600	RAP-DB	LOC_Os01g02430	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000137	Os01g0114700	RAP-DB	LOC_Os01g02440	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000138	Os01g0114800	RAP-DB	LOC_Os01g02450	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000139	Os01g0114900	RAP-DB	LOC_Os01g02460	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000140	Os01g0115100	RAP-DB	LOC_Os01g02490	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000141	Os01g0115200	RAP-DB	LOC_Os01g02500	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000142	Os01g0115300	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000143	Os01g0115500	RAP-DB	LOC_Os01g02550	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000144	Os01g0115566	RAP-DB	LOC_Os01g02550	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000145	Os01g0115600	RAP-DB	LOC_Os01g02560	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000146	Os01g0115700	RAP-DB	LOC_Os01g02570	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000147	Os01g0115750	RAP-DB	LOC_Os01g02580	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000148	Os01g0115751	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000149	Os01g0115800	RAP-DB	LOC_Os01g02590	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000150	Os01g0115900	RAP-DB	LOC_Os01g02600	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000151	Os01g0116000	RAP-DB	LOC_Os01g02610	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000152	Os01g0116100	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000153	Os01g0116200	RAP-DB	LOC_Os01g02680	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000154	Os01g0116300	RAP-DB	LOC_Os01g02690	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000155	Os01g0116400	RAP-DB	LOC_Os01g02700	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000156	Os01g0116600	RAP-DB	LOC_Os01g02720	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000157	Os01g0116800	RAP-DB	LOC_Os01g02730	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000158	Os01g0116900	RAP-DB	LOC_Os01g02710;LOC_Os01g02750	MSU_RGAP	NA	manual_review_required	medium	RAP-MSU official mapping has multiple target loci	true	2	ambiguous multi-target mapping
+MAP_00000159	Os01g0117000	RAP-DB	LOC_Os01g02760	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000160	Os01g0117050	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000161	Os01g0117100	RAP-DB	LOC_Os01g02770	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000162	Os01g0117200	RAP-DB	LOC_Os01g02780	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000163	Os01g0117266	RAP-DB	LOC_Os01g02790	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000164	Os01g0117300	RAP-DB	LOC_Os01g02790	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000165	Os01g0117400	RAP-DB	LOC_Os01g02800	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000166	Os01g0117500	RAP-DB	LOC_Os01g02810	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000167	Os01g0117600	RAP-DB	LOC_Os01g02830	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000168	Os01g0117700	RAP-DB	LOC_Os01g02840	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000169	Os01g0117800	RAP-DB	LOC_Os01g02860	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000170	Os01g0117900	RAP-DB	LOC_Os01g02870	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000171	Os01g0118000	RAP-DB	LOC_Os01g02880	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000172	Os01g0118033	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000173	Os01g0118066	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000174	Os01g0118100	RAP-DB	LOC_Os01g02884	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000175	Os01g0118300	RAP-DB	LOC_Os01g02890	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000176	Os01g0118350	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000177	Os01g0118400	RAP-DB	LOC_Os01g02900	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000178	Os01g0118600	RAP-DB	LOC_Os01g02910	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000179	Os01g0118700	RAP-DB	LOC_Os01g02920	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000180	Os01g0119000	RAP-DB	LOC_Os01g02930	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000181	Os01g0119050	RAP-DB	LOC_Os01g02940	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000182	Os01g0119100	RAP-DB	LOC_Os01g02940	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000183	Os01g0119301	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000184	Os01g0119500	RAP-DB	LOC_Os01g02960	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000185	Os01g0119700	RAP-DB	LOC_Os01g02980	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000186	Os01g0119800	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000187	Os01g0120300	RAP-DB	LOC_Os01g03020	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000188	Os01g0120400	RAP-DB	LOC_Os01g03030	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000189	Os01g0120500	RAP-DB	LOC_Os01g03040	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000190	Os01g0120600	RAP-DB	LOC_Os01g03050	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000191	Os01g0120700	RAP-DB	LOC_Os01g03060	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000192	Os01g0120800	RAP-DB	LOC_Os01g03070	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000193	Os01g0121000	RAP-DB	LOC_Os01g03080	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000194	Os01g0121100	RAP-DB	LOC_Os01g03090	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000195	Os01g0121200	RAP-DB	LOC_Os01g03100	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000196	Os01g0121300	RAP-DB	LOC_Os01g03110	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000197	Os01g0121500	RAP-DB	LOC_Os01g03130	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000198	Os01g0121600	RAP-DB	LOC_Os01g03144	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000199	Os01g0121700	RAP-DB	LOC_Os01g03144	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000200	Os01g0121800	RAP-DB	LOC_Os01g03160	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000201	Os01g0121900	RAP-DB	LOC_Os01g03170	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000202	Os01g0121925	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000203	Os01g0121950	RAP-DB	LOC_Os01g03170	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000204	Os01g0122000	RAP-DB	LOC_Os01g03180	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000205	Os01g0122200	RAP-DB	LOC_Os01g03190	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000206	Os01g0122367	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000207	Os01g0122534	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000208	Os01g0122701	RAP-DB	LOC_Os01g03210	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000209	Os01g0123100	RAP-DB	LOC_Os01g03220	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000210	Os01g0123200	RAP-DB	LOC_Os01g03260	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000211	Os01g0123500	RAP-DB	LOC_Os01g03270	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000212	Os01g0123700	RAP-DB	LOC_Os01g03290	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000213	Os01g0123800	RAP-DB	LOC_Os01g03300	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000214	Os01g0123900	RAP-DB	LOC_Os01g03310	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000215	Os01g0124000	RAP-DB	LOC_Os01g03320	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000216	Os01g0124100	RAP-DB	LOC_Os01g03330	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000217	Os01g0124200	RAP-DB	LOC_Os01g03340	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000218	Os01g0124401	RAP-DB	LOC_Os01g03360	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000219	Os01g0124500	RAP-DB	LOC_Os01g03370	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000220	Os01g0124600	RAP-DB	LOC_Os01g03380	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000221	Os01g0124650	RAP-DB	LOC_Os01g03390	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000222	Os01g0124700	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000223	Os01g0124900	RAP-DB	LOC_Os01g03400;LOC_Os01g03410	MSU_RGAP	NA	manual_review_required	medium	RAP-MSU official mapping has multiple target loci	true	2	ambiguous multi-target mapping
+MAP_00000224	Os01g0125000	RAP-DB	LOC_Os01g03420	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000225	Os01g0125100	RAP-DB	LOC_Os01g03429	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000226	Os01g0125500	RAP-DB	LOC_Os01g03464	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000227	Os01g0125550	RAP-DB	LOC_Os01g03480	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000228	Os01g0125600	RAP-DB	LOC_Os01g03490	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000229	Os01g0125700	RAP-DB	LOC_Os01g03500	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000230	Os01g0125800	RAP-DB	LOC_Os01g03510	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000231	Os01g0125900	RAP-DB	LOC_Os01g03520	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000232	Os01g0126000	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000233	Os01g0126100	RAP-DB	LOC_Os01g03530	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000234	Os01g0126200	RAP-DB	LOC_Os01g03549	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000235	Os01g0126401	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000236	Os01g0126600	RAP-DB	LOC_Os01g03570	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000237	Os01g0126900	RAP-DB	LOC_Os01g03620	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000238	Os01g0127000	RAP-DB	LOC_Os01g03630	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000239	Os01g0127100	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000240	Os01g0127200	RAP-DB	LOC_Os01g03640	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000241	Os01g0127300	RAP-DB	LOC_Os01g03650	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000242	Os01g0127400	RAP-DB	LOC_Os01g03660	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000243	Os01g0127450	RAP-DB	LOC_Os01g03660	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000244	Os01g0127500	RAP-DB	LOC_Os01g03670	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000245	Os01g0127600	RAP-DB	LOC_Os01g03680	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000246	Os01g0127700	RAP-DB	LOC_Os01g03690	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000247	Os01g0127800	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000248	Os01g0127900	RAP-DB	LOC_Os01g03710	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000249	Os01g0128000	RAP-DB	LOC_Os01g03720	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000250	Os01g0128100	RAP-DB	LOC_Os01g03740	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000251	Os01g0128200	RAP-DB	LOC_Os01g03730	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000252	Os01g0128250	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000253	Os01g0128300	RAP-DB	LOC_Os01g03750	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000254	Os01g0128400	RAP-DB	LOC_Os01g03760	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000255	Os01g0128700	RAP-DB	LOC_Os01g03810	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000256	Os01g0128800	RAP-DB	LOC_Os01g03820	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000257	Os01g0129200	RAP-DB	LOC_Os01g03840	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000258	Os01g0129500	RAP-DB	LOC_Os01g03870	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000259	Os01g0129550	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000260	Os01g0129600	RAP-DB	LOC_Os01g03890	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000261	Os01g0129800	RAP-DB	LOC_Os01g03900	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000262	Os01g0130000	RAP-DB	LOC_Os01g03914	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000263	Os01g0130100	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000264	Os01g0130200	RAP-DB	LOC_Os01g03940	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000265	Os01g0130400	RAP-DB	LOC_Os01g03950	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000266	Os01g0130500	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000267	Os01g0130633	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000268	Os01g0130766	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000269	Os01g0130900	RAP-DB	LOC_Os01g03980	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000270	Os01g0131066	RAP-DB	LOC_Os01g03989	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000271	Os01g0131132	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000272	Os01g0131200	RAP-DB	LOC_Os01g04000	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000273	Os01g0131250	RAP-DB	LOC_Os01g04005	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000274	Os01g0131300	RAP-DB	LOC_Os01g04010	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000275	Os01g0131450	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000276	Os01g0131600	RAP-DB	LOC_Os01g04020	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000277	Os01g0131800	RAP-DB	LOC_Os01g04030	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000278	Os01g0131900	RAP-DB	LOC_Os01g04040	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000279	Os01g0132000	RAP-DB	LOC_Os01g04050	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000280	Os01g0132050	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000281	Os01g0132100	RAP-DB	LOC_Os01g04070	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000282	Os01g0132150	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000283	Os01g0132200	RAP-DB	LOC_Os01g04080	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000284	Os01g0132400	RAP-DB	LOC_Os01g04090	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000285	Os01g0132500	RAP-DB	LOC_Os01g04100	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000286	Os01g0132700	RAP-DB	LOC_Os01g04110	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000287	Os01g0132766	RAP-DB	LOC_Os01g04120	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000288	Os01g0132800	RAP-DB	LOC_Os01g04130	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000289	Os01g0132950	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000290	Os01g0133100	RAP-DB	LOC_Os01g04160	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000291	Os01g0133200	RAP-DB	LOC_Os01g04170	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000292	Os01g0133400	RAP-DB	LOC_Os01g04190	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000293	Os01g0133500	RAP-DB	LOC_Os01g04200	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000294	Os01g0133600	RAP-DB	LOC_Os01g04210	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000295	Os01g0133700	RAP-DB	LOC_Os01g04220	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000296	Os01g0133766	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000297	Os01g0133900	RAP-DB	LOC_Os01g04230	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000298	Os01g0134200	RAP-DB	LOC_Os01g04250	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000299	Os01g0134500	RAP-DB	LOC_Os01g04260	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000300	Os01g0134700	RAP-DB	LOC_Os01g04280	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000301	Os01g0134800	RAP-DB	LOC_Os01g04290	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000302	Os01g0134900	RAP-DB	LOC_Os01g04300	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000303	Os01g0135000	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000304	Os01g0135600	RAP-DB	LOC_Os01g04324	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000305	Os01g0135700	RAP-DB	LOC_Os01g04330	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000306	Os01g0135800	RAP-DB	LOC_Os01g04340	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000307	Os01g0135900	RAP-DB	LOC_Os01g04350	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000308	Os01g0136000	RAP-DB	LOC_Os01g04360	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000309	Os01g0136050	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000310	Os01g0136100	RAP-DB	LOC_Os01g04370	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000311	Os01g0136200	RAP-DB	LOC_Os01g04380	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000312	Os01g0136300	RAP-DB	LOC_Os01g04390	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000313	Os01g0136400	RAP-DB	LOC_Os01g04409	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000314	Os01g0136450	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000315	Os01g0136500	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000316	Os01g0136501	RAP-DB	LOC_Os01g04430	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000317	Os01g0136502	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000318	Os01g0136600	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000319	Os01g0136700	RAP-DB	LOC_Os01g04440	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000320	Os01g0136800	RAP-DB	LOC_Os01g04450	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000321	Os01g0136900	RAP-DB	LOC_Os01g04460	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000322	Os01g0137066	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000323	Os01g0137150	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000324	Os01g0137200	RAP-DB	LOC_Os01g04480	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000325	Os01g0137250	RAP-DB	LOC_Os01g04480	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000326	Os01g0137266	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000327	Os01g0137282	RAP-DB	LOC_Os01g04490	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000328	Os01g0137300	RAP-DB	LOC_Os01g04500	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000329	Os01g0137400	RAP-DB	LOC_Os01g04470;LOC_Os01g04490	MSU_RGAP	NA	manual_review_required	medium	RAP-MSU official mapping has multiple target loci	true	2	ambiguous multi-target mapping
+MAP_00000330	Os01g0137401	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000331	Os01g0137500	RAP-DB	LOC_Os01g04520	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000332	Os01g0137550	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000333	Os01g0137600	RAP-DB	LOC_Os01g04530	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000334	Os01g0137700	RAP-DB	LOC_Os01g04540	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000335	Os01g0137750	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000336	Os01g0137800	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000337	Os01g0137950	RAP-DB	LOC_Os01g04550	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000338	Os01g0138000	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000339	Os01g0138050	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000340	Os01g0138100	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000341	Os01g0138166	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000342	Os01g0138232	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000343	Os01g0138300	RAP-DB	LOC_Os01g04570	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000344	Os01g0138400	RAP-DB	LOC_Os01g04580	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000345	Os01g0138451	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000346	Os01g0138500	RAP-DB	LOC_Os01g04590	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000347	Os01g0138600	RAP-DB	LOC_Os01g04600	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000348	Os01g0138800	RAP-DB	LOC_Os01g04620	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000349	Os01g0138900	RAP-DB	LOC_Os01g04630	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000350	Os01g0139000	RAP-DB	LOC_Os01g04640	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000351	Os01g0139100	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000352	Os01g0139200	RAP-DB	LOC_Os01g04650	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000353	Os01g0139600	RAP-DB	LOC_Os01g04660	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000354	Os01g0139700	RAP-DB	LOC_Os01g04670	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000355	Os01g0139900	RAP-DB	LOC_Os01g04690	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000356	Os01g0140001	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000357	Os01g0140100	RAP-DB	LOC_Os01g04710	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000358	Os01g0140400	RAP-DB	LOC_Os01g04720	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000359	Os01g0140500	RAP-DB	LOC_Os01g04730	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000360	Os01g0140601	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000361	Os01g0140700	RAP-DB	LOC_Os01g04750	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000362	Os01g0141000	RAP-DB	LOC_Os01g04800	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000363	Os01g0141100	RAP-DB	LOC_Os01g04814	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000364	Os01g0141150	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000365	Os01g0141200	RAP-DB	LOC_Os01g04830	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000366	Os01g0141300	RAP-DB	LOC_Os01g04840	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000367	Os01g0141450	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000368	Os01g0141600	RAP-DB	LOC_Os01g04860	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000369	Os01g0141700	RAP-DB	LOC_Os01g04870	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000370	Os01g0141900	RAP-DB	LOC_Os01g04880	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000371	Os01g0142100	RAP-DB	LOC_Os01g04900	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000372	Os01g0142200	RAP-DB	LOC_Os01g04910	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000373	Os01g0142300	RAP-DB	LOC_Os01g04920	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000374	Os01g0142400	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000375	Os01g0142500	RAP-DB	LOC_Os01g04930	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000376	Os01g0142600	RAP-DB	LOC_Os01g04950	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000377	Os01g0142800	RAP-DB	LOC_Os01g04950	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000378	Os01g0142950	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000379	Os01g0143100	RAP-DB	LOC_Os01g04990	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000380	Os01g0143200	RAP-DB	LOC_Os01g05000	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000381	Os01g0143300	RAP-DB	LOC_Os01g05010	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000382	Os01g0143350	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000383	Os01g0143400	RAP-DB	LOC_Os01g05020	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000384	Os01g0143501	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000385	Os01g0143600	RAP-DB	LOC_Os01g05040	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000386	Os01g0143650	RAP-DB	LOC_Os01g05040	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000387	Os01g0143700	RAP-DB	LOC_Os01g05050	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000388	Os01g0143750	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000389	Os01g0143800	RAP-DB	LOC_Os01g05060	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000390	Os01g0143900	RAP-DB	LOC_Os01g05064	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000391	Os01g0144000	RAP-DB	LOC_Os01g05070	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000392	Os01g0144100	RAP-DB	LOC_Os01g05080	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000393	Os01g0144200	RAP-DB	LOC_Os01g05090	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000394	Os01g0144300	RAP-DB	LOC_Os01g05100	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000395	Os01g0144340	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000396	Os01g0144380	RAP-DB	LOC_Os01g05105	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000397	Os01g0144500	RAP-DB	LOC_Os01g05120	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000398	Os01g0144600	RAP-DB	LOC_Os01g05130	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000399	Os01g0144700	RAP-DB	LOC_Os01g05140	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000400	Os01g0144800	RAP-DB	LOC_Os01g05150	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000401	Os01g0144900	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000402	Os01g0145000	RAP-DB	LOC_Os01g05170	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000403	Os01g0145101	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000404	Os01g0145200	RAP-DB	LOC_Os01g05180	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000405	Os01g0145400	RAP-DB	LOC_Os01g05210	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000406	Os01g0145500	RAP-DB	LOC_Os01g05220	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000407	Os01g0145600	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000408	Os01g0145700	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000409	Os01g0145800	RAP-DB	LOC_Os01g05250	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000410	Os01g0145900	RAP-DB	LOC_Os01g05260	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000411	Os01g0146000	RAP-DB	LOC_Os01g05280	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000412	Os01g0146101	RAP-DB	LOC_Os01g05289	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000413	Os01g0146200	RAP-DB	LOC_Os01g05310	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000414	Os01g0146351	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000415	Os01g0146500	RAP-DB	LOC_Os01g05340	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000416	Os01g0146600	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000417	Os01g0146700	RAP-DB	LOC_Os01g05370	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000418	Os01g0146801	RAP-DB	LOC_Os01g05380	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000419	Os01g0146900	RAP-DB	LOC_Os01g05390	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000420	Os01g0147001	RAP-DB	LOC_Os01g05400	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000421	Os01g0147100	RAP-DB	LOC_Os01g05410	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000422	Os01g0147166	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000423	Os01g0147200	RAP-DB	LOC_Os01g05420	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000424	Os01g0147250	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000425	Os01g0147300	RAP-DB	LOC_Os01g05430	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000426	Os01g0147400	RAP-DB	LOC_Os01g05440	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000427	Os01g0147600	RAP-DB	LOC_Os01g05450;LOC_Os01g05460	MSU_RGAP	NA	manual_review_required	medium	RAP-MSU official mapping has multiple target loci	true	2	ambiguous multi-target mapping
+MAP_00000428	Os01g0147650	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000429	Os01g0147700	RAP-DB	LOC_Os01g05470	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000430	Os01g0147800	RAP-DB	LOC_Os01g05480	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000431	Os01g0147850	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000432	Os01g0147900	RAP-DB	LOC_Os01g05490	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000433	Os01g0147950	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000434	Os01g0148050	RAP-DB	LOC_Os01g05500	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000435	Os01g0148075	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000436	Os01g0148100	RAP-DB	LOC_Os01g05510	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000437	Os01g0148200	RAP-DB	LOC_Os01g05520	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000438	Os01g0148300	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000439	Os01g0148400	RAP-DB	LOC_Os01g05530	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000440	Os01g0148500	RAP-DB	LOC_Os01g05540	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000441	Os01g0148600	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000442	Os01g0148700	RAP-DB	LOC_Os01g05560	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000443	Os01g0149200	RAP-DB	LOC_Os01g05585	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000444	Os01g0149300	RAP-DB	LOC_Os01g05590	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000445	Os01g0149350	RAP-DB	LOC_Os01g05600	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000446	Os01g0149400	RAP-DB	LOC_Os01g05610	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000447	Os01g0149500	RAP-DB	LOC_Os01g05620	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000448	Os01g0149600	RAP-DB	LOC_Os01g05630	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000449	Os01g0149700	RAP-DB	LOC_Os01g05640	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000450	Os01g0149800	RAP-DB	LOC_Os01g05650	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000451	Os01g0149900	RAP-DB	LOC_Os01g05660	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000452	Os01g0150000	RAP-DB	LOC_Os01g05670	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000453	Os01g0150100	RAP-DB	LOC_Os01g05680	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000454	Os01g0150200	RAP-DB	LOC_Os01g05694	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000455	Os01g0150301	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000456	Os01g0150400	RAP-DB	LOC_Os01g05710	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000457	Os01g0150500	RAP-DB	LOC_Os01g05720	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000458	Os01g0150700	RAP-DB	LOC_Os01g05730	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000459	Os01g0150750	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000460	Os01g0150800	RAP-DB	LOC_Os01g05744	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000461	Os01g0150900	RAP-DB	LOC_Os01g05760;LOC_Os01g05780	MSU_RGAP	NA	manual_review_required	medium	RAP-MSU official mapping has multiple target loci	true	2	ambiguous multi-target mapping
+MAP_00000462	Os01g0150950	RAP-DB	LOC_Os01g05770	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000463	Os01g0151001	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000464	Os01g0151100	RAP-DB	LOC_Os01g05790	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000465	Os01g0151200	RAP-DB	LOC_Os01g05800	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000466	Os01g0151400	RAP-DB	LOC_Os01g05810	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000467	Os01g0151500	RAP-DB	LOC_Os01g05820	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000468	Os01g0151600	RAP-DB	LOC_Os01g05830	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000469	Os01g0151700	RAP-DB	LOC_Os01g05840	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000470	Os01g0151750	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000471	Os01g0151800	RAP-DB	LOC_Os01g05850	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000472	Os01g0151900	RAP-DB	LOC_Os01g05860	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000473	Os01g0152000	RAP-DB	LOC_Os01g05870	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000474	Os01g0152100	RAP-DB	LOC_Os01g05880	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000475	Os01g0152200	RAP-DB	LOC_Os01g05890	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000476	Os01g0152300	RAP-DB	LOC_Os01g05900	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000477	Os01g0152500	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000478	Os01g0152600	RAP-DB	LOC_Os01g05940	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000479	Os01g0152675	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000480	Os01g0152687	RAP-DB	LOC_Os01g05940	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000481	Os01g0152700	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000482	Os01g0152800	RAP-DB	LOC_Os01g05960	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000483	Os01g0152900	RAP-DB	LOC_Os01g05970	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000484	Os01g0152950	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000485	Os01g0152951	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000486	Os01g0153000	RAP-DB	LOC_Os01g05980	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000487	Os01g0153100	RAP-DB	LOC_Os01g05970	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000488	Os01g0153150	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000489	Os01g0153200	RAP-DB	LOC_Os01g06000	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000490	Os01g0153250	RAP-DB	LOC_Os01g06000	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000491	Os01g0153300	RAP-DB	LOC_Os01g06010	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000492	Os01g0153400	RAP-DB	LOC_Os01g06020	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000493	Os01g0153550	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000494	Os01g0153625	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000495	Os01g0153651	RAP-DB	NA	MSU_RGAP	NA	unmapped	low	RAP-MSU table reports None	true	0	manual review required before use
+MAP_00000496	Os01g0153700	RAP-DB	LOC_Os01g06050	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000497	Os01g0153800	RAP-DB	LOC_Os01g06060	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000498	Os01g0153900	RAP-DB	LOC_Os01g06070	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000499	Os01g0153950	RAP-DB	LOC_Os01g06080	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
+MAP_00000500	Os01g0154000	RAP-DB	LOC_Os01g06080	MSU_RGAP	NA	exact_id_match	high	RAP-MSU official mapping	false	1	NA
