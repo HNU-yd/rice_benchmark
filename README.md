@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Matched decoy v0.5.5 chr1 SNP prototype pre-layer。
+当前阶段：Frozen split v0.5.5 chr1 SNP prototype。
 
-当前目标：在已完成的 v0.5.5 数据协议和 external knowledge annotation / evidence / mapping 层上，构建 chr1 SNP-only prototype 的 matched background candidate pool、matched decoy pair 和 diagnostics。不训练模型，不冻结 split，不构建正式 evaluator，不把 weak evidence、decoy、unknown/unlabeled 写成 causal ground truth / negative label。
+当前目标：在已完成的 v0.5.5 数据协议、external knowledge 层和 matched decoy 前置层上，构建 chr1 SNP-only prototype 的 leakage-aware frozen split。不训练模型，不构建正式 evaluator，不把 weak evidence、decoy、unknown/unlabeled 写成 causal ground truth / negative label。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -92,9 +92,18 @@ Matched decoy v0.5.5 pre-layer 已生成 chr1 SNP-only matched background candid
 
 本次处理结果：matched decoy objects 114998 行，其中 33981 个进入 chr1 主 evaluation candidate pool；candidate pool 1019430 行；matched decoy pair 169905 行；diagnostics 61 行；detectability proxy 和 research-bias proxy 各 114998 行；validation 16 项检查全部 pass。主候选对象按类型为 variant 32590、window 722、gene 623、qtl_interval 46，所有主候选对象均有 candidate pool 和 5 个 matched background decoy。PEX_REPRO exact main-evaluation evidence 仍为 0；Q-TARO 只作为 region-level / interval-level evidence，不强行 gene mapping。
 
-下一阶段：基于 matched decoy diagnostics 设计 frozen split，确保 gene / interval proximity blocking，并继续排除 manual review 和 broader evidence。
+Frozen split v0.5.5 已生成 chr1 SNP-only prototype 的 leakage-aware split：
 
-当前仍不包含 frozen split、Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer；matched decoy 只作为 matched background，不是真阴性。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
+- full local tables：`data/interim/frozen_split_v055/units/`、`blocks/`、`assignments/` 和 `diagnostics/`。
+- report previews：`reports/frozen_split_v055/`。
+- scripts：`scripts/frozen_split/build_split_units_v055.py`、`build_split_blocks_v055.py`、`assign_frozen_splits_v055.py`、`build_split_balance_diagnostics_v055.py`、`check_split_leakage_v055.py`、`validate_frozen_split_v055.py` 和 `run_freeze_chr1_snp_split_v055.sh`。
+- report：`reports/frozen_split_v055/frozen_split_report.md`。
+
+本次处理结果：split units 288045 行，split blocks 117571 行，frozen split assignments 288045 行，balance diagnostics 37 行，leakage checks 9 行，split validation 12 项全部 pass。accession split 为 train 1606、dev 336、test 326；evidence object split 为 dev 22661、prototype_locked 2165、source_disjoint_or_temporal 9155，manual review / broader / no-exact trait mapping 全部排除。`prototype_locked` 明确不是 `final_locked`；PEX_REPRO exact main-evaluation evidence 仍为 0；decoy pair 全部跟随 evidence object split。
+
+下一阶段：基于 frozen split 开始 evaluator scaffold，但仍不训练模型、不报告正式 AUROC / AUPRC。
+
+当前仍不包含 Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer；matched decoy 只作为 matched background，不是真阴性。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 
 ## 目录概览
 

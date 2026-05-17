@@ -271,3 +271,42 @@
 - 校验覆盖：输出非空、object_id 唯一、主候选仅 exact frozen trait mapping、PEX_REPRO 不强行补 evidence、Q-TARO 不强行 gene mapping、broader/manual review 不进主候选、decoy 不写成 true negative、allowed_usage 不含 training_label、主键唯一性。
 - 当前限制：candidate pool 是 bounded prototype，不是全基因组枚举；detectability 和 research bias 只是 proxy；当前没有 MAF / LD / mappability / recombination map / full callability；Q-TARO 坐标未 liftover。
 - 本阶段没有修改 raw data，没有训练模型，没有冻结 split，没有构建正式 evaluator，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有报告正式 AUROC / AUPRC，没有把 evidence 当 causal ground truth，没有把 decoy 或 unknown_unlabeled 当 true negative。
+
+## 2026-05-17 Phase 08C frozen split v0.5.5 chr1 SNP prototype
+
+- 执行 prompt：`.codex/prompts/08C_freeze_chr1_snp_split_v055.md`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 08B 已 commit / push，当前输入 commit hash：`767f3e4`。
+- 本阶段基于 08B matched decoy 前置层和 chr1 SNP-only prototype，构建 leakage-aware prototype split。
+- 新增可复现脚本目录：`scripts/frozen_split/`。
+- 执行命令：
+  - `bash scripts/frozen_split/run_freeze_chr1_snp_split_v055.sh`
+  - `python -m py_compile scripts/frozen_split/*.py`
+- 生成 full local tables：
+  - `data/interim/frozen_split_v055/units/split_unit_table.tsv`
+  - `data/interim/frozen_split_v055/blocks/split_block_table.tsv`
+  - `data/interim/frozen_split_v055/assignments/frozen_split_assignment.tsv`
+  - `data/interim/frozen_split_v055/diagnostics/split_balance_diagnostics.tsv`
+  - `data/interim/frozen_split_v055/diagnostics/split_leakage_check.tsv`
+  - `data/interim/frozen_split_v055/diagnostics/split_validation.tsv`
+  - `data/interim/frozen_split_v055/diagnostics/split_manifest.tsv`
+- 生成 tracked report previews / summaries：
+  - `reports/frozen_split_v055/frozen_split_report.md`
+  - `reports/frozen_split_v055/split_balance_diagnostics.tsv`
+  - `reports/frozen_split_v055/split_leakage_check.tsv`
+  - `reports/frozen_split_v055/split_validation.tsv`
+  - `reports/frozen_split_v055/split_manifest.tsv`
+  - `reports/frozen_split_v055/*.preview.tsv`
+- split unit 表规模：288045 行，其中 accession 2268、trait 9、region 865、evidence_object 114998、decoy_pair 169905。
+- split block 表规模：117571 行，其中 accession_block 2268、trait_block 9、window_neighborhood_block 9、mixed_evidence_block 9、qtl_region_block 4、interval_overlap_block 4、gene_block 270、decoy_set_block 33981、manual_review_exclusion_block 2611、broader_evidence_exclusion_block 74248、excluded_no_exact_trait_mapping_block 4158。
+- accession split：train 1606、dev 336、test 326；使用 broad_subgroup-stratified deterministic hash，random_seed 为 5508，并输出 PC1-PC5 balance summary。
+- evidence object split：dev 22661、prototype_locked 2165、source_disjoint_or_temporal 9155、excluded_broader_evidence 74248、excluded_no_exact_trait_mapping 4158、excluded_manual_review 2611。
+- block rule：非 QTL evidence / gene / window / variant 及其 decoy pair 使用 5 Mb mixed evidence proximity block；QTL interval 使用 overlap / nearby component，max gap 为 1 Mb；decoy pair 跟随 evidence object split。
+- `prototype_locked_not_final=true` 写入所有 assignment；assignment 表不含 `final_locked`。
+- PEX_REPRO main evidence rows after split 为 0，没有强行补 evidence。
+- manual review 和 broader evidence 主评价 split 数量均为 0。
+- decoy pair 和 evidence object split mismatch 为 0。
+- leakage check：9 项全部 pass，blocking leakage 为 0。
+- split validation：12 项全部 pass，validation_failed=0。
+- 当前限制：仍是 chr1 SNP-only prototype，不是 final full benchmark split；region blocking 使用 coarse 5 Mb proximity bin；QTL source coordinates 未 liftover；MAF、LD、mappability、recombination rate 和 full callability 不可用。
+- 本阶段没有修改 raw data，没有训练模型，没有构建正式 evaluator，没有报告 AUROC / AUPRC，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有把 evidence 当训练 label，没有把 matched decoy 或 unknown_unlabeled 当 true negative。

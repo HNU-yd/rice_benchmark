@@ -1,0 +1,13 @@
+check_name	status	n_records	n_failed	details	blocking_issue	notes	split_version
+outputs_exist_and_nonempty	pass	6	0	all required outputs are nonempty	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+split_unit_table_primary_key_unique	pass	288045	0	primary key split_unit_id; missing=0; duplicates=0	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+split_block_table_primary_key_unique	pass	117571	0	primary key split_block_id; missing=0; duplicates=0	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+frozen_split_assignment_primary_key_unique	pass	288045	0	primary key assignment_id; missing=0; duplicates=0	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+split_unit_table_has_required_unit_types	pass	5	0	all required unit types present	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+split_block_table_has_leakage_block_types	pass	5	0	all required block types present	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+frozen_split_assignment_has_no_final_locked	pass	288045	0	assignment rows must not contain final_locked	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+prototype_locked_not_final_flag_present	pass	288045	0	prototype_locked_not_final must be true for all rows	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+manual_review_not_in_main_split	pass	288045	0	manual review rows excluded from main split	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+broader_evidence_not_in_main_split	pass	288045	0	broader rows excluded from main split	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+leakage_check_has_no_blocking_failures	pass	9	0	leakage checks pass or are non-blocking warnings	false	NA	frozen_split_v055_chr1_snp_prototype_v1
+split_manifest_complete	pass	1	0	split manifest records seed, rules, source tables, and limitations	false	NA	frozen_split_v055_chr1_snp_prototype_v1
