@@ -1,0 +1,12 @@
+check_name	status	n_records	n_failed	details	blocking_issue	dry_run_only	notes
+outputs_exist_and_nonempty	pass	7	0	all outputs nonempty	false	true	NA
+dry_run_only_true	pass	815544	0	matched-set and rank rows are dry_run_only=true	false	true	NA
+no_formal_metric_output	pass	0	0	no formal metric field in 09B core outputs	false	true	NA
+no_auroc_auprc_fields	pass	46	0	no AUROC/AUPRC output fields	false	true	NA
+rank_table_not_formal_result	pass	24	0	rank diagnostic fields use dry_run prefix	false	true	NA
+decoy_not_true_negative	pass	679620	0	decoy rows are matched background only	false	true	NA
+unknown_unlabeled_not_negative	pass	679620	0	unknown/unlabeled not used as negative	false	true	NA
+missing_score_has_diagnostics	pass	1	0	missing/partial score diagnostics table is explicit	false	true	NA
+object_score_adapter_covers_all_object_types	pass	4	0	all object types covered	false	true	NA
+gene_qtl_interval_adapter_diagnostic_only	pass	4	0	gene/qtl interval adapters are diagnostic and not formal	false	true	NA
+validation_no_blocking_issue	pass	10	0	dry-run leakage guards have no blocking issue	false	true	NA

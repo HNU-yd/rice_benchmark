@@ -1,0 +1,189 @@
+coverage_id	assigned_split	trait_id	object_type	score_source	score_level_used	n_objects	n_objects_with_evidence_score	n_objects_with_any_decoy_score	n_objects_with_all_decoy_scores	mean_decoys_with_score	median_decoys_with_score	coverage_rate_evidence	coverage_rate_decoy_any	coverage_rate_decoy_all	dry_run_only	notes
+DRCOV_00000001	dev	data_lt_2007__cuan_repro	variant	baseline:genomic_position	variant	706	706	706	706	5	5	1	1	1	true	exact score coverage
+DRCOV_00000002	dev	data_lt_2007__cuan_repro	variant	baseline:random_uniform	variant	706	706	706	706	5	5	1	1	1	true	exact score coverage
+DRCOV_00000003	dev	data_lt_2007__cuan_repro	variant	baseline:shuffled_trait	variant	706	706	706	706	5	5	1	1	1	true	exact score coverage
+DRCOV_00000004	dev	data_lt_2007__cuan_repro	variant	baseline:window_snp_density	variant	706	706	706	706	5	5	1	1	1	true	exact score coverage
+DRCOV_00000005	dev	data_lt_2007__cuan_repro	window	baseline:genomic_position	window	17	17	17	17	5	5	1	1	1	true	exact score coverage
+DRCOV_00000006	dev	data_lt_2007__cuan_repro	window	baseline:random_uniform	window	17	17	17	17	5	5	1	1	1	true	exact score coverage
+DRCOV_00000007	dev	data_lt_2007__cuan_repro	window	baseline:shuffled_trait	window	17	17	17	17	5	5	1	1	1	true	exact score coverage
+DRCOV_00000008	dev	data_lt_2007__cuan_repro	window	baseline:window_snp_density	window	17	17	17	17	5	5	1	1	1	true	exact score coverage
+DRCOV_00000009	dev	data_lt_2007__cudi_code_repro	gene	baseline:genomic_position	window	47	47	47	47	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000010	dev	data_lt_2007__cudi_code_repro	gene	baseline:random_uniform	window	47	47	47	47	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000011	dev	data_lt_2007__cudi_code_repro	gene	baseline:shuffled_trait	window	47	47	47	47	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000012	dev	data_lt_2007__cudi_code_repro	gene	baseline:window_snp_density	window	47	47	47	47	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000013	dev	data_lt_2007__cudi_code_repro	qtl_interval	baseline:genomic_position	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000014	dev	data_lt_2007__cudi_code_repro	qtl_interval	baseline:random_uniform	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000015	dev	data_lt_2007__cudi_code_repro	qtl_interval	baseline:shuffled_trait	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000016	dev	data_lt_2007__cudi_code_repro	qtl_interval	baseline:window_snp_density	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000017	dev	data_lt_2007__cult_code_repro	gene	baseline:genomic_position	window	97	97	97	97	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000018	dev	data_lt_2007__cult_code_repro	gene	baseline:random_uniform	window	97	97	97	97	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000019	dev	data_lt_2007__cult_code_repro	gene	baseline:shuffled_trait	window	97	97	97	97	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000020	dev	data_lt_2007__cult_code_repro	gene	baseline:window_snp_density	window	97	97	97	97	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000021	dev	data_lt_2007__cult_code_repro	qtl_interval	baseline:genomic_position	window	29	29	29	29	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000022	dev	data_lt_2007__cult_code_repro	qtl_interval	baseline:random_uniform	window	29	29	29	29	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000023	dev	data_lt_2007__cult_code_repro	qtl_interval	baseline:shuffled_trait	window	29	29	29	29	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000024	dev	data_lt_2007__cult_code_repro	qtl_interval	baseline:window_snp_density	window	29	29	29	29	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000025	dev	data_lt_2007__cult_code_repro	variant	baseline:genomic_position	variant	10668	10668	10668	10668	5	5	1	1	1	true	exact score coverage
+DRCOV_00000026	dev	data_lt_2007__cult_code_repro	variant	baseline:random_uniform	variant	10668	10668	10668	10668	5	5	1	1	1	true	exact score coverage
+DRCOV_00000027	dev	data_lt_2007__cult_code_repro	variant	baseline:shuffled_trait	variant	10668	10668	10668	10668	5	5	1	1	1	true	exact score coverage
+DRCOV_00000028	dev	data_lt_2007__cult_code_repro	variant	baseline:window_snp_density	variant	10668	10668	10668	10668	5	5	1	1	1	true	exact score coverage
+DRCOV_00000029	dev	data_lt_2007__cult_code_repro	window	baseline:genomic_position	window	219	219	219	219	5	5	1	1	1	true	exact score coverage
+DRCOV_00000030	dev	data_lt_2007__cult_code_repro	window	baseline:random_uniform	window	219	219	219	219	5	5	1	1	1	true	exact score coverage
+DRCOV_00000031	dev	data_lt_2007__cult_code_repro	window	baseline:shuffled_trait	window	219	219	219	219	5	5	1	1	1	true	exact score coverage
+DRCOV_00000032	dev	data_lt_2007__cult_code_repro	window	baseline:window_snp_density	window	219	219	219	219	5	5	1	1	1	true	exact score coverage
+DRCOV_00000033	dev	data_lt_2007__fla_repro	gene	baseline:genomic_position	window	3	3	3	3	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000034	dev	data_lt_2007__fla_repro	gene	baseline:random_uniform	window	3	3	3	3	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000035	dev	data_lt_2007__fla_repro	gene	baseline:shuffled_trait	window	3	3	3	3	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000036	dev	data_lt_2007__fla_repro	gene	baseline:window_snp_density	window	3	3	3	3	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000037	dev	data_lt_2007__fla_repro	qtl_interval	baseline:genomic_position	window	5	5	5	5	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000038	dev	data_lt_2007__fla_repro	qtl_interval	baseline:random_uniform	window	5	5	5	5	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000039	dev	data_lt_2007__fla_repro	qtl_interval	baseline:shuffled_trait	window	5	5	5	5	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000040	dev	data_lt_2007__fla_repro	qtl_interval	baseline:window_snp_density	window	5	5	5	5	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000041	dev	data_lt_2007__fla_repro	variant	baseline:genomic_position	variant	706	706	706	706	5	5	1	1	1	true	exact score coverage
+DRCOV_00000042	dev	data_lt_2007__fla_repro	variant	baseline:random_uniform	variant	706	706	706	706	5	5	1	1	1	true	exact score coverage
+DRCOV_00000043	dev	data_lt_2007__fla_repro	variant	baseline:shuffled_trait	variant	706	706	706	706	5	5	1	1	1	true	exact score coverage
+DRCOV_00000044	dev	data_lt_2007__fla_repro	variant	baseline:window_snp_density	variant	706	706	706	706	5	5	1	1	1	true	exact score coverage
+DRCOV_00000045	dev	data_lt_2007__fla_repro	window	baseline:genomic_position	window	17	17	17	17	5	5	1	1	1	true	exact score coverage
+DRCOV_00000046	dev	data_lt_2007__fla_repro	window	baseline:random_uniform	window	17	17	17	17	5	5	1	1	1	true	exact score coverage
+DRCOV_00000047	dev	data_lt_2007__fla_repro	window	baseline:shuffled_trait	window	17	17	17	17	5	5	1	1	1	true	exact score coverage
+DRCOV_00000048	dev	data_lt_2007__fla_repro	window	baseline:window_snp_density	window	17	17	17	17	5	5	1	1	1	true	exact score coverage
+DRCOV_00000049	dev	data_lt_2007__llt_code	gene	baseline:genomic_position	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000050	dev	data_lt_2007__llt_code	gene	baseline:random_uniform	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000051	dev	data_lt_2007__llt_code	gene	baseline:shuffled_trait	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000052	dev	data_lt_2007__llt_code	gene	baseline:window_snp_density	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000053	dev	data_lt_2007__llt_code	qtl_interval	baseline:genomic_position	window	2	2	2	2	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000054	dev	data_lt_2007__llt_code	qtl_interval	baseline:random_uniform	window	2	2	2	2	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000055	dev	data_lt_2007__llt_code	qtl_interval	baseline:shuffled_trait	window	2	2	2	2	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000056	dev	data_lt_2007__llt_code	qtl_interval	baseline:window_snp_density	window	2	2	2	2	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000057	dev	data_lt_2007__llt_code	variant	baseline:genomic_position	variant	7299	7299	7299	7299	5	5	1	1	1	true	exact score coverage
+DRCOV_00000058	dev	data_lt_2007__llt_code	variant	baseline:random_uniform	variant	7299	7299	7299	7299	5	5	1	1	1	true	exact score coverage
+DRCOV_00000059	dev	data_lt_2007__llt_code	variant	baseline:shuffled_trait	variant	7299	7299	7299	7299	5	5	1	1	1	true	exact score coverage
+DRCOV_00000060	dev	data_lt_2007__llt_code	variant	baseline:window_snp_density	variant	7299	7299	7299	7299	5	5	1	1	1	true	exact score coverage
+DRCOV_00000061	dev	data_lt_2007__llt_code	window	baseline:genomic_position	window	138	138	138	138	5	5	1	1	1	true	exact score coverage
+DRCOV_00000062	dev	data_lt_2007__llt_code	window	baseline:random_uniform	window	138	138	138	138	5	5	1	1	1	true	exact score coverage
+DRCOV_00000063	dev	data_lt_2007__llt_code	window	baseline:shuffled_trait	window	138	138	138	138	5	5	1	1	1	true	exact score coverage
+DRCOV_00000064	dev	data_lt_2007__llt_code	window	baseline:window_snp_density	window	138	138	138	138	5	5	1	1	1	true	exact score coverage
+DRCOV_00000065	dev	data_lt_2007__lsen	gene	baseline:genomic_position	window	38	38	38	38	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000066	dev	data_lt_2007__lsen	gene	baseline:random_uniform	window	38	38	38	38	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000067	dev	data_lt_2007__lsen	gene	baseline:shuffled_trait	window	38	38	38	38	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000068	dev	data_lt_2007__lsen	gene	baseline:window_snp_density	window	38	38	38	38	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000069	dev	data_lt_2007__spkf	gene	baseline:genomic_position	window	201	201	201	201	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000070	dev	data_lt_2007__spkf	gene	baseline:random_uniform	window	201	201	201	201	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000071	dev	data_lt_2007__spkf	gene	baseline:shuffled_trait	window	201	201	201	201	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000072	dev	data_lt_2007__spkf	gene	baseline:window_snp_density	window	201	201	201	201	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000073	dev	data_lt_2007__spkf	qtl_interval	baseline:genomic_position	window	8	8	8	8	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000074	dev	data_lt_2007__spkf	qtl_interval	baseline:random_uniform	window	8	8	8	8	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000075	dev	data_lt_2007__spkf	qtl_interval	baseline:shuffled_trait	window	8	8	8	8	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000076	dev	data_lt_2007__spkf	qtl_interval	baseline:window_snp_density	window	8	8	8	8	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000077	dev	data_lt_2007__spkf	variant	baseline:genomic_position	variant	2429	2429	2429	2429	5	5	1	1	1	true	exact score coverage
+DRCOV_00000078	dev	data_lt_2007__spkf	variant	baseline:random_uniform	variant	2429	2429	2429	2429	5	5	1	1	1	true	exact score coverage
+DRCOV_00000079	dev	data_lt_2007__spkf	variant	baseline:shuffled_trait	variant	2429	2429	2429	2429	5	5	1	1	1	true	exact score coverage
+DRCOV_00000080	dev	data_lt_2007__spkf	variant	baseline:window_snp_density	variant	2429	2429	2429	2429	5	5	1	1	1	true	exact score coverage
+DRCOV_00000081	dev	data_lt_2007__spkf	window	baseline:genomic_position	window	30	30	30	30	5	5	1	1	1	true	exact score coverage
+DRCOV_00000082	dev	data_lt_2007__spkf	window	baseline:random_uniform	window	30	30	30	30	5	5	1	1	1	true	exact score coverage
+DRCOV_00000083	dev	data_lt_2007__spkf	window	baseline:shuffled_trait	window	30	30	30	30	5	5	1	1	1	true	exact score coverage
+DRCOV_00000084	dev	data_lt_2007__spkf	window	baseline:window_snp_density	window	30	30	30	30	5	5	1	1	1	true	exact score coverage
+DRCOV_00000085	prototype_locked	data_lt_2007__cudi_code_repro	gene	baseline:genomic_position	window	16	16	16	16	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000086	prototype_locked	data_lt_2007__cudi_code_repro	gene	baseline:random_uniform	window	16	16	16	16	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000087	prototype_locked	data_lt_2007__cudi_code_repro	gene	baseline:shuffled_trait	window	16	16	16	16	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000088	prototype_locked	data_lt_2007__cudi_code_repro	gene	baseline:window_snp_density	window	16	16	16	16	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000089	prototype_locked	data_lt_2007__cult_code_repro	gene	baseline:genomic_position	window	12	12	12	12	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000090	prototype_locked	data_lt_2007__cult_code_repro	gene	baseline:random_uniform	window	12	12	12	12	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000091	prototype_locked	data_lt_2007__cult_code_repro	gene	baseline:shuffled_trait	window	12	12	12	12	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000092	prototype_locked	data_lt_2007__cult_code_repro	gene	baseline:window_snp_density	window	12	12	12	12	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000093	prototype_locked	data_lt_2007__cult_code_repro	variant	baseline:genomic_position	variant	1	1	1	1	5	5	1	1	1	true	exact score coverage
+DRCOV_00000094	prototype_locked	data_lt_2007__cult_code_repro	variant	baseline:random_uniform	variant	1	1	1	1	5	5	1	1	1	true	exact score coverage
+DRCOV_00000095	prototype_locked	data_lt_2007__cult_code_repro	variant	baseline:shuffled_trait	variant	1	1	1	1	5	5	1	1	1	true	exact score coverage
+DRCOV_00000096	prototype_locked	data_lt_2007__cult_code_repro	variant	baseline:window_snp_density	variant	1	1	1	1	5	5	1	1	1	true	exact score coverage
+DRCOV_00000097	prototype_locked	data_lt_2007__cult_code_repro	window	baseline:genomic_position	window	2	2	2	2	5	5	1	1	1	true	exact score coverage
+DRCOV_00000098	prototype_locked	data_lt_2007__cult_code_repro	window	baseline:random_uniform	window	2	2	2	2	5	5	1	1	1	true	exact score coverage
+DRCOV_00000099	prototype_locked	data_lt_2007__cult_code_repro	window	baseline:shuffled_trait	window	2	2	2	2	5	5	1	1	1	true	exact score coverage
+DRCOV_00000100	prototype_locked	data_lt_2007__cult_code_repro	window	baseline:window_snp_density	window	2	2	2	2	5	5	1	1	1	true	exact score coverage
+DRCOV_00000101	prototype_locked	data_lt_2007__fla_repro	gene	baseline:genomic_position	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000102	prototype_locked	data_lt_2007__fla_repro	gene	baseline:random_uniform	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000103	prototype_locked	data_lt_2007__fla_repro	gene	baseline:shuffled_trait	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000104	prototype_locked	data_lt_2007__fla_repro	gene	baseline:window_snp_density	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000105	prototype_locked	data_lt_2007__llt_code	variant	baseline:genomic_position	variant	1223	1223	1223	1223	5	5	1	1	1	true	exact score coverage
+DRCOV_00000106	prototype_locked	data_lt_2007__llt_code	variant	baseline:random_uniform	variant	1223	1223	1223	1223	5	5	1	1	1	true	exact score coverage
+DRCOV_00000107	prototype_locked	data_lt_2007__llt_code	variant	baseline:shuffled_trait	variant	1223	1223	1223	1223	5	5	1	1	1	true	exact score coverage
+DRCOV_00000108	prototype_locked	data_lt_2007__llt_code	variant	baseline:window_snp_density	variant	1223	1223	1223	1223	5	5	1	1	1	true	exact score coverage
+DRCOV_00000109	prototype_locked	data_lt_2007__llt_code	window	baseline:genomic_position	window	23	23	23	23	5	5	1	1	1	true	exact score coverage
+DRCOV_00000110	prototype_locked	data_lt_2007__llt_code	window	baseline:random_uniform	window	23	23	23	23	5	5	1	1	1	true	exact score coverage
+DRCOV_00000111	prototype_locked	data_lt_2007__llt_code	window	baseline:shuffled_trait	window	23	23	23	23	5	5	1	1	1	true	exact score coverage
+DRCOV_00000112	prototype_locked	data_lt_2007__llt_code	window	baseline:window_snp_density	window	23	23	23	23	5	5	1	1	1	true	exact score coverage
+DRCOV_00000113	prototype_locked	data_lt_2007__lsen	gene	baseline:genomic_position	window	6	6	6	6	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000114	prototype_locked	data_lt_2007__lsen	gene	baseline:random_uniform	window	6	6	6	6	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000115	prototype_locked	data_lt_2007__lsen	gene	baseline:shuffled_trait	window	6	6	6	6	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000116	prototype_locked	data_lt_2007__lsen	gene	baseline:window_snp_density	window	6	6	6	6	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000117	prototype_locked	data_lt_2007__pth	gene	baseline:genomic_position	window	2	2	2	2	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000118	prototype_locked	data_lt_2007__pth	gene	baseline:random_uniform	window	2	2	2	2	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000119	prototype_locked	data_lt_2007__pth	gene	baseline:shuffled_trait	window	2	2	2	2	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000120	prototype_locked	data_lt_2007__pth	gene	baseline:window_snp_density	window	2	2	2	2	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000121	prototype_locked	data_lt_2007__spkf	gene	baseline:genomic_position	window	37	37	37	37	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000122	prototype_locked	data_lt_2007__spkf	gene	baseline:random_uniform	window	37	37	37	37	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000123	prototype_locked	data_lt_2007__spkf	gene	baseline:shuffled_trait	window	37	37	37	37	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000124	prototype_locked	data_lt_2007__spkf	gene	baseline:window_snp_density	window	37	37	37	37	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000125	prototype_locked	data_lt_2007__spkf	variant	baseline:genomic_position	variant	827	827	827	827	5	5	1	1	1	true	exact score coverage
+DRCOV_00000126	prototype_locked	data_lt_2007__spkf	variant	baseline:random_uniform	variant	827	827	827	827	5	5	1	1	1	true	exact score coverage
+DRCOV_00000127	prototype_locked	data_lt_2007__spkf	variant	baseline:shuffled_trait	variant	827	827	827	827	5	5	1	1	1	true	exact score coverage
+DRCOV_00000128	prototype_locked	data_lt_2007__spkf	variant	baseline:window_snp_density	variant	827	827	827	827	5	5	1	1	1	true	exact score coverage
+DRCOV_00000129	prototype_locked	data_lt_2007__spkf	window	baseline:genomic_position	window	15	15	15	15	5	5	1	1	1	true	exact score coverage
+DRCOV_00000130	prototype_locked	data_lt_2007__spkf	window	baseline:random_uniform	window	15	15	15	15	5	5	1	1	1	true	exact score coverage
+DRCOV_00000131	prototype_locked	data_lt_2007__spkf	window	baseline:shuffled_trait	window	15	15	15	15	5	5	1	1	1	true	exact score coverage
+DRCOV_00000132	prototype_locked	data_lt_2007__spkf	window	baseline:window_snp_density	window	15	15	15	15	5	5	1	1	1	true	exact score coverage
+DRCOV_00000133	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	gene	baseline:genomic_position	window	22	22	22	22	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000134	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	gene	baseline:random_uniform	window	22	22	22	22	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000135	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	gene	baseline:shuffled_trait	window	22	22	22	22	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000136	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	gene	baseline:window_snp_density	window	22	22	22	22	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000137	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	variant	baseline:genomic_position	variant	7	7	7	7	5	5	1	1	1	true	exact score coverage
+DRCOV_00000138	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	variant	baseline:random_uniform	variant	7	7	7	7	5	5	1	1	1	true	exact score coverage
+DRCOV_00000139	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	variant	baseline:shuffled_trait	variant	7	7	7	7	5	5	1	1	1	true	exact score coverage
+DRCOV_00000140	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	variant	baseline:window_snp_density	variant	7	7	7	7	5	5	1	1	1	true	exact score coverage
+DRCOV_00000141	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	window	baseline:genomic_position	window	2	2	2	2	5	5	1	1	1	true	exact score coverage
+DRCOV_00000142	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	window	baseline:random_uniform	window	2	2	2	2	5	5	1	1	1	true	exact score coverage
+DRCOV_00000143	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	window	baseline:shuffled_trait	window	2	2	2	2	5	5	1	1	1	true	exact score coverage
+DRCOV_00000144	source_disjoint_or_temporal	data_lt_2007__cudi_code_repro	window	baseline:window_snp_density	window	2	2	2	2	5	5	1	1	1	true	exact score coverage
+DRCOV_00000145	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	gene	baseline:genomic_position	window	41	41	41	41	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000146	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	gene	baseline:random_uniform	window	41	41	41	41	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000147	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	gene	baseline:shuffled_trait	window	41	41	41	41	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000148	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	gene	baseline:window_snp_density	window	41	41	41	41	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000149	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	qtl_interval	baseline:genomic_position	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000150	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	qtl_interval	baseline:random_uniform	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000151	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	qtl_interval	baseline:shuffled_trait	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000152	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	qtl_interval	baseline:window_snp_density	window	1	1	1	1	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000153	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	variant	baseline:genomic_position	variant	2363	2363	2363	2363	5	5	1	1	1	true	exact score coverage
+DRCOV_00000154	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	variant	baseline:random_uniform	variant	2363	2363	2363	2363	5	5	1	1	1	true	exact score coverage
+DRCOV_00000155	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	variant	baseline:shuffled_trait	variant	2363	2363	2363	2363	5	5	1	1	1	true	exact score coverage
+DRCOV_00000156	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	variant	baseline:window_snp_density	variant	2363	2363	2363	2363	5	5	1	1	1	true	exact score coverage
+DRCOV_00000157	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	window	baseline:genomic_position	window	67	67	67	67	5	5	1	1	1	true	exact score coverage
+DRCOV_00000158	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	window	baseline:random_uniform	window	67	67	67	67	5	5	1	1	1	true	exact score coverage
+DRCOV_00000159	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	window	baseline:shuffled_trait	window	67	67	67	67	5	5	1	1	1	true	exact score coverage
+DRCOV_00000160	source_disjoint_or_temporal	data_lt_2007__cult_code_repro	window	baseline:window_snp_density	window	67	67	67	67	5	5	1	1	1	true	exact score coverage
+DRCOV_00000161	source_disjoint_or_temporal	data_lt_2007__fla_repro	gene	baseline:genomic_position	window	3	3	3	3	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000162	source_disjoint_or_temporal	data_lt_2007__fla_repro	gene	baseline:random_uniform	window	3	3	3	3	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000163	source_disjoint_or_temporal	data_lt_2007__fla_repro	gene	baseline:shuffled_trait	window	3	3	3	3	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000164	source_disjoint_or_temporal	data_lt_2007__fla_repro	gene	baseline:window_snp_density	window	3	3	3	3	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000165	source_disjoint_or_temporal	data_lt_2007__llt_code	variant	baseline:genomic_position	variant	3379	3379	3379	3379	5	5	1	1	1	true	exact score coverage
+DRCOV_00000166	source_disjoint_or_temporal	data_lt_2007__llt_code	variant	baseline:random_uniform	variant	3379	3379	3379	3379	5	5	1	1	1	true	exact score coverage
+DRCOV_00000167	source_disjoint_or_temporal	data_lt_2007__llt_code	variant	baseline:shuffled_trait	variant	3379	3379	3379	3379	5	5	1	1	1	true	exact score coverage
+DRCOV_00000168	source_disjoint_or_temporal	data_lt_2007__llt_code	variant	baseline:window_snp_density	variant	3379	3379	3379	3379	5	5	1	1	1	true	exact score coverage
+DRCOV_00000169	source_disjoint_or_temporal	data_lt_2007__llt_code	window	baseline:genomic_position	window	100	100	100	100	5	5	1	1	1	true	exact score coverage
+DRCOV_00000170	source_disjoint_or_temporal	data_lt_2007__llt_code	window	baseline:random_uniform	window	100	100	100	100	5	5	1	1	1	true	exact score coverage
+DRCOV_00000171	source_disjoint_or_temporal	data_lt_2007__llt_code	window	baseline:shuffled_trait	window	100	100	100	100	5	5	1	1	1	true	exact score coverage
+DRCOV_00000172	source_disjoint_or_temporal	data_lt_2007__llt_code	window	baseline:window_snp_density	window	100	100	100	100	5	5	1	1	1	true	exact score coverage
+DRCOV_00000173	source_disjoint_or_temporal	data_lt_2007__lsen	gene	baseline:genomic_position	window	8	8	8	8	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000174	source_disjoint_or_temporal	data_lt_2007__lsen	gene	baseline:random_uniform	window	8	8	8	8	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000175	source_disjoint_or_temporal	data_lt_2007__lsen	gene	baseline:shuffled_trait	window	8	8	8	8	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000176	source_disjoint_or_temporal	data_lt_2007__lsen	gene	baseline:window_snp_density	window	8	8	8	8	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000177	source_disjoint_or_temporal	data_lt_2007__spkf	gene	baseline:genomic_position	window	88	88	88	88	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000178	source_disjoint_or_temporal	data_lt_2007__spkf	gene	baseline:random_uniform	window	88	88	88	88	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000179	source_disjoint_or_temporal	data_lt_2007__spkf	gene	baseline:shuffled_trait	window	88	88	88	88	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000180	source_disjoint_or_temporal	data_lt_2007__spkf	gene	baseline:window_snp_density	window	88	88	88	88	5	5	1	1	1	true	coverage depends on overlapping-window dry-run adapter aggregation; diagnostic only
+DRCOV_00000181	source_disjoint_or_temporal	data_lt_2007__spkf	variant	baseline:genomic_position	variant	2982	2982	2982	2982	5	5	1	1	1	true	exact score coverage
+DRCOV_00000182	source_disjoint_or_temporal	data_lt_2007__spkf	variant	baseline:random_uniform	variant	2982	2982	2982	2982	5	5	1	1	1	true	exact score coverage
+DRCOV_00000183	source_disjoint_or_temporal	data_lt_2007__spkf	variant	baseline:shuffled_trait	variant	2982	2982	2982	2982	5	5	1	1	1	true	exact score coverage
+DRCOV_00000184	source_disjoint_or_temporal	data_lt_2007__spkf	variant	baseline:window_snp_density	variant	2982	2982	2982	2982	5	5	1	1	1	true	exact score coverage
+DRCOV_00000185	source_disjoint_or_temporal	data_lt_2007__spkf	window	baseline:genomic_position	window	92	92	92	92	5	5	1	1	1	true	exact score coverage
+DRCOV_00000186	source_disjoint_or_temporal	data_lt_2007__spkf	window	baseline:random_uniform	window	92	92	92	92	5	5	1	1	1	true	exact score coverage
+DRCOV_00000187	source_disjoint_or_temporal	data_lt_2007__spkf	window	baseline:shuffled_trait	window	92	92	92	92	5	5	1	1	1	true	exact score coverage
+DRCOV_00000188	source_disjoint_or_temporal	data_lt_2007__spkf	window	baseline:window_snp_density	window	92	92	92	92	5	5	1	1	1	true	exact score coverage

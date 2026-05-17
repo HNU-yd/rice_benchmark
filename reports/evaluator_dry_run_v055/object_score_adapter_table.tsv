@@ -1,0 +1,5 @@
+adapter_id	object_type	preferred_score_level	fallback_score_level	aggregation_method	score_source	allowed_for_dry_run	allowed_for_formal_eval	requires_exact_variant_match	requires_exact_window_match	requires_interval_overlap	dry_run_only	notes
+ADAPT_VARIANT_EXACT_V1	variant	variant	window	exact_variant_score	baseline	true	false	true	false	false	true	variant objects use exact variant-level baseline score in this dry-run; formal evaluator still undefined
+ADAPT_WINDOW_EXACT_V1	window	window	variant	exact_window_score	baseline	true	false	false	true	false	true	window objects use exact window-level baseline score in this dry-run; formal evaluator still undefined
+ADAPT_GENE_WINDOW_MEAN_V1	gene	window	nearest_window	mean_overlapping_window_score	baseline	true	false	false	false	true	true	gene objects are scored by overlapping-window aggregation for adapter diagnostics only; not a formal metric
+ADAPT_QTL_INTERVAL_WINDOW_MEAN_V1	qtl_interval	window	nearest_window	mean_overlapping_window_score	baseline	true	false	false	false	true	true	QTL interval objects are scored by overlapping-window aggregation for adapter diagnostics only; not a formal metric

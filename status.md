@@ -354,3 +354,51 @@
 - scaffold validation 8 项全部 pass，validation_failed=0。
 - 当前限制：仍是 chr1 SNP-only prototype scaffold；只定义输入、schema、任务 manifest、dry-run join 和 leakage guard；gene / QTL region score source 只在 schema 层定义，当前没有对应 score table；baseline score 只用于 dry-run，不形成正式主结果。
 - 本阶段没有修改 raw data，没有训练模型，没有构建正式 evaluator，没有报告正式 AUROC / AUPRC，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有把 evidence 当训练 label，没有把 matched decoy 或 unknown_unlabeled 当 true negative。
+
+## 2026-05-17 Phase 09B matched-ranking dry-run v0.5.5
+
+- 执行 prompt：`.codex/prompts/09B_run_matched_ranking_dry_run_v055`。
+- 当前工作目录：`/home/data2/projects/rice_benchmark`。
+- 09A 已 commit / push，当前输入 commit hash：`e1639ac`。
+- 本阶段基于 09A split-aware evaluator scaffold 和现有 chr1 SNP baseline score 表，执行 matched-ranking dry-run / evaluator adapter smoke test。
+- 新增可复现脚本目录：`scripts/evaluator_dry_run/`。
+- 执行命令：
+  - `bash scripts/evaluator_dry_run/run_matched_ranking_dry_run_v055.sh`
+  - `python -m py_compile scripts/evaluator_dry_run/*.py`
+- 生成 full local tables：
+  - `data/interim/evaluator_dry_run_v055/adapter/object_score_adapter_table.tsv`
+  - `data/interim/evaluator_dry_run_v055/matched_sets/dry_run_matched_set_score_table.tsv`
+  - `data/interim/evaluator_dry_run_v055/ranks/dry_run_rank_position_table.tsv`
+  - `data/interim/evaluator_dry_run_v055/coverage/dry_run_score_coverage_table.tsv`
+  - `data/interim/evaluator_dry_run_v055/diagnostics/dry_run_missing_score_diagnostics.tsv`
+  - `data/interim/evaluator_dry_run_v055/diagnostics/dry_run_evaluator_adapter_contract.tsv`
+  - `data/interim/evaluator_dry_run_v055/diagnostics/dry_run_leakage_guard.tsv`
+  - `data/interim/evaluator_dry_run_v055/diagnostics/dry_run_validation.tsv`
+- 生成 tracked report previews / summaries：
+  - `reports/evaluator_dry_run_v055/matched_ranking_dry_run_report.md`
+  - `reports/evaluator_dry_run_v055/object_score_adapter_table.tsv`
+  - `reports/evaluator_dry_run_v055/dry_run_score_coverage_table.tsv`
+  - `reports/evaluator_dry_run_v055/dry_run_evaluator_adapter_contract.tsv`
+  - `reports/evaluator_dry_run_v055/dry_run_leakage_guard.tsv`
+  - `reports/evaluator_dry_run_v055/dry_run_validation.tsv`
+  - `reports/evaluator_dry_run_v055/dry_run_matched_set_score_table.preview.tsv`
+  - `reports/evaluator_dry_run_v055/dry_run_rank_position_table.preview.tsv`
+  - `reports/evaluator_dry_run_v055/dry_run_missing_score_diagnostics.preview.tsv`
+- 表规模：object score adapter 4 行，dry-run matched set score 679620 行，dry-run rank position 135924 行，score coverage 188 行，missing-score diagnostics 1 行，adapter contract 7 行，leakage guard 10 行，validation 11 行。
+- 使用 baseline score：`random_uniform`、`window_snp_density`、`genomic_position` 和 `shuffled_trait`，在 dry-run 输出中记录为 `baseline:<baseline_name>`。
+- adapter 规则：
+  - variant：`ADAPT_VARIANT_EXACT_V1`，exact variant-level score。
+  - window：`ADAPT_WINDOW_EXACT_V1`，exact window-level score。
+  - gene：`ADAPT_GENE_WINDOW_MEAN_V1`，overlapping-window mean，仅 dry-run diagnostic。
+  - qtl_interval：`ADAPT_QTL_INTERVAL_WINDOW_MEAN_V1`，overlapping-window mean，仅 dry-run diagnostic。
+- rank diagnostic 行数：variant 130360、window 2888、gene 2492、qtl_interval 184。
+- split-level rank diagnostic 行数：dev 90644、prototype_locked 8660、source_disjoint_or_temporal 36620。
+- 可 rank object/source rows：135924 / 135924；因缺失 score 不能 rank 的 object/source rows：0。
+- score coverage：dev、prototype_locked 和 source_disjoint_or_temporal 的 rankable coverage 与 all-decoy score coverage 均为 1.0。
+- manual review / broader evidence 进入 matched-ranking 的数量为 0。
+- decoy rows 写成 true negative 的数量为 0；`uses_true_negative=false` 且 `decoy_semantics=matched_background`。
+- unknown / unlabeled 写成 negative 的数量为 0；`uses_unknown_as_negative=false`。
+- `accession_id` 没有作为 09B score input/output 字段。
+- validation 11 项全部 pass，blocking issue 为 0；leakage guard 10 项全部 pass。
+- 当前限制：仍是 chr1 SNP-only dry-run；rank / percentile / top1 / top5 字段只作为流程诊断，不是正式 top-k hit rate；gene / qtl_interval 的 adapter 聚合规则尚未 formalize；没有跨 trait / split / object_type 的正式 metric 聚合。
+- 本阶段没有修改 raw data，没有训练模型，没有构建正式 evaluator，没有报告正式 AUROC / AUPRC，没有构建 final locked evaluation，没有扩展 whole-genome SNP+indel，没有引入 SV / PAV / pan-reference，没有把 evidence 当训练 label，没有把 matched decoy 或 unknown_unlabeled 当 true negative。

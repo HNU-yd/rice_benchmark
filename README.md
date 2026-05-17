@@ -39,9 +39,9 @@ Phase 12: 执行 ablation、negative controls 与 Task 2 supplementary demo
 
 ## 当前仓库状态
 
-当前阶段：Evaluator scaffold v0.5.5 chr1 SNP prototype。
+当前阶段：Matched-ranking dry-run v0.5.5 chr1 SNP prototype。
 
-当前目标：在已完成的 v0.5.5 数据协议、external knowledge 层、matched decoy 前置层和 leakage-aware frozen split 上，构建 chr1 SNP-only prototype 的 split-aware evaluator scaffold。该层只定义 evaluator 输入、score schema、任务 manifest、dry-run join check 和 leakage guard；不训练模型，不构建正式 evaluator，不报告正式 AUROC / AUPRC，不把 weak evidence、decoy、unknown/unlabeled 写成 causal ground truth / negative label。
+当前目标：在已完成的 v0.5.5 数据协议、external knowledge 层、matched decoy 前置层、leakage-aware frozen split 和 split-aware evaluator scaffold 上，执行 chr1 SNP-only prototype 的 matched-ranking dry-run / evaluator adapter smoke test。该层只验证 score adapter、matched set score join、rank diagnostic、coverage 和 leakage guard 是否可运行；不训练模型，不构建正式 evaluator，不报告正式 AUROC / AUPRC，不把 weak evidence、decoy、unknown/unlabeled 写成 causal ground truth / negative label。
 
 当前产物包括 `reports/accession_mapping/accession_mapping_summary.md`、`reports/accession_mapping/accession_mapping_source_summary.tsv`、`reports/accession_mapping/genotype_mapping_coverage.tsv`、`reports/accession_mapping/phenotype_mapping_coverage.tsv`、`reports/accession_mapping/mapping_confidence_summary.tsv` 和 `reports/accession_mapping/manual_review_candidates_preview.tsv`。
 
@@ -110,7 +110,16 @@ Evaluator scaffold v0.5.5 已生成 chr1 SNP-only prototype 的 split-aware eval
 
 本次处理结果：evaluator object input 33981 行，evaluator decoy input 169905 行，score input schema 16 行，future output schema 17 行，task manifest 84 行，baseline score dry-run input 1559916 行，join check 7 行，leakage guard 10 行，validation 8 项全部 pass。对象类型为 variant 32590、window 722、gene 623、qtl_interval 46；split 为 dev 22661、source_disjoint_or_temporal 9155、prototype_locked 2165。baseline dry-run join 覆盖 window 5560 / 31140、variant 131036 / 1528776；该 join 只用于 schema 和 linkage 校验，不产生正式 benchmark 指标。
 
-下一阶段：基于 evaluator scaffold 做 chr1 SNP matched-ranking dry-run 或 evaluator adapter scaffold，但仍不训练模型、不报告正式 AUROC / AUPRC。
+Matched-ranking dry-run v0.5.5 已生成 chr1 SNP-only prototype 的 evaluator adapter smoke test：
+
+- full local tables：`data/interim/evaluator_dry_run_v055/adapter/`、`matched_sets/`、`ranks/`、`coverage/` 和 `diagnostics/`。
+- report previews / summaries：`reports/evaluator_dry_run_v055/`。
+- scripts：`scripts/evaluator_dry_run/build_object_score_adapter_v055.py`、`build_dry_run_matched_set_scores_v055.py`、`compute_dry_run_rank_positions_v055.py`、`summarize_dry_run_score_coverage_v055.py`、`validate_evaluator_dry_run_v055.py` 和 `run_matched_ranking_dry_run_v055.sh`。
+- report：`reports/evaluator_dry_run_v055/matched_ranking_dry_run_report.md`。
+
+本次处理结果：object score adapter 4 行，dry-run matched set score 679620 行，dry-run rank position 135924 行，score coverage 188 行，missing-score diagnostics 1 行，adapter contract 7 行，leakage guard 10 行，validation 11 项全部 pass。rank diagnostic 对象来源为 variant 130360、window 2888、gene 2492、qtl_interval 184；split 为 dev 90644、source_disjoint_or_temporal 36620、prototype_locked 8660。所有 135924 个 object/source row 均可 rank；manual review / broader evidence 没有进入 matched-ranking；decoy 均为 matched background，不是真阴性；gene 和 qtl_interval 只使用 overlapping-window mean adapter 作为 diagnostic，不是正式指标。
+
+下一阶段：进入 09C evaluator scaffold hardening 或 candidate gene explanation adapter，但仍不训练模型、不报告正式 AUROC / AUPRC。
 
 当前仍不包含 Task 1 instance 重建、model implementation、formal AUROC / AUPRC、GWAS 或 Evo2 相关实现。外部数据库只作为 evidence / annotation / explanation layer；matched decoy 只作为 matched background，不是真阴性。`data/raw/` 和 `data/interim/` 已被 `.gitignore` 排除，不进入 git。
 

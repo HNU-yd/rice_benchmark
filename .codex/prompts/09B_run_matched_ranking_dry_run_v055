@@ -1,0 +1,392 @@
+你现在在 /home/data2/projects/rice_benchmark 仓库中工作。
+
+当前项目是三千水稻无位点标签训练的性状条件 SNP/indel 定位评测体系。请严格遵守 v0.5.5 设计边界：
+
+1. 当前仍是 chr1 SNP-only prototype。
+2. 不训练模型。
+3. 不构建正式 evaluator。
+4. 不报告正式 AUROC / AUPRC。
+5. 不扩展 whole-genome SNP+indel。
+6. 不引入 SV / PAV / 泛基因组。
+7. 不把 evidence 当训练 label。
+8. 不把 matched decoy 当 true negative。
+9. 不把 unknown / unlabeled variant 或 window 当 true negative。
+10. accession_id 只能作为索引，不能作为模型输入。
+11. 本轮任务只做 matched-ranking dry-run / evaluator adapter smoke test。
+12. 所有结果必须标记 dry_run_only=true，不得作为正式 benchmark 指标。
+
+本轮任务名称：
+
+09B_run_matched_ranking_dry_run_v055
+
+目标：
+
+基于 09A split-aware evaluator scaffold 和现有 baseline score 表，跑通：
+
+score 输入
+→ evidence object / matched decoy join
+→ object score adapter
+→ matched set score table
+→ dry-run rank diagnostic
+→ validation report
+
+本轮只验证评价器适配器和排序流程是否可运行，不输出正式评价结果。
+
+请先确认 09A 已经 commit / push，并记录当前 commit hash。
+
+请阅读以下文件：
+
+- reports/evaluator_scaffold_v055/evaluator_scaffold_report.md
+- data/interim/evaluator_scaffold_v055/inputs/evaluator_object_input_table.tsv
+- data/interim/evaluator_scaffold_v055/inputs/evaluator_decoy_input_table.tsv
+- data/interim/evaluator_scaffold_v055/outputs_schema/evaluator_score_input_schema.tsv
+- data/interim/evaluator_scaffold_v055/tasks/evaluator_task_manifest.tsv
+- data/interim/evaluator_scaffold_v055/dry_run/baseline_score_dry_run_input.tsv
+- data/interim/evaluator_scaffold_v055/diagnostics/evaluator_dry_run_join_check.tsv
+- data/interim/evaluator_scaffold_v055/diagnostics/evaluator_leakage_guard.tsv
+- data/interim/evaluator_scaffold_v055/diagnostics/evaluator_scaffold_validation.tsv
+
+- data/interim/baselines_chr1_snp/window_baseline_scores.tsv
+- data/interim/baselines_chr1_snp/variant_baseline_scores.tsv
+- data/interim/frozen_split_v055/assignments/frozen_split_assignment.tsv
+- data/interim/matched_decoy_v055/pairs/matched_decoy_pair_table.tsv
+
+请生成目录：
+
+data/interim/evaluator_dry_run_v055/
+data/interim/evaluator_dry_run_v055/adapter/
+data/interim/evaluator_dry_run_v055/matched_sets/
+data/interim/evaluator_dry_run_v055/ranks/
+data/interim/evaluator_dry_run_v055/coverage/
+data/interim/evaluator_dry_run_v055/diagnostics/
+
+reports/evaluator_dry_run_v055/
+
+scripts/evaluator_dry_run/
+
+需要输出以下表。
+
+一、object_score_adapter_table.tsv
+
+用途：
+定义不同 object_type 如何从 baseline/model score 表中获得可比较得分。
+
+字段至少包括：
+
+adapter_id
+object_type
+preferred_score_level
+fallback_score_level
+aggregation_method
+score_source
+allowed_for_dry_run
+allowed_for_formal_eval
+requires_exact_variant_match
+requires_exact_window_match
+requires_interval_overlap
+notes
+
+要求：
+
+- variant object 优先使用 variant-level score。
+- window object 优先使用 window-level score。
+- gene object 只能通过 overlapping / nearest window 或 variant 聚合得到 dry-run score。
+- qtl_interval object 只能通过 interval-overlap windows / variants 聚合得到 dry-run score。
+- gene 和 qtl_interval 的 adapter 结果只能标记为 dry-run diagnostic，不得作为 formal metric。
+- 必须记录 allowed_for_formal_eval=false，除非未来正式定义。
+
+二、dry_run_matched_set_score_table.tsv
+
+用途：
+为每个 evidence object 和 matched decoy set 汇总 baseline score。
+
+字段至少包括：
+
+matched_set_id
+object_id
+decoy_object_id
+trait_id
+object_type
+assigned_split
+prototype_locked_not_final
+score_source
+score_version
+score_level_used
+adapter_id
+evidence_score
+decoy_score
+score_available_evidence
+score_available_decoy
+n_decoys_expected
+n_decoys_with_score
+decoy_semantics
+uses_true_negative
+uses_unknown_as_negative
+dry_run_only
+notes
+
+要求：
+
+- decoy_semantics 必须为 matched_background。
+- uses_true_negative=false。
+- uses_unknown_as_negative=false。
+- dry_run_only=true。
+- 如果 evidence 或 decoy score 缺失，不能静默丢弃，必须保留或进入 missing diagnostics。
+- 不计算 AUROC/AUPRC。
+
+三、dry_run_rank_position_table.tsv
+
+用途：
+在 matched set 内计算 evidence score 相对于 decoy score 的 dry-run rank。
+
+字段至少包括：
+
+rank_record_id
+object_id
+trait_id
+object_type
+assigned_split
+prototype_locked_not_final
+score_source
+score_version
+score_level_used
+adapter_id
+n_decoys_expected
+n_decoys_with_score
+n_decoys_rankable
+evidence_score
+dry_run_rank
+dry_run_rank_percentile
+dry_run_top1_indicator
+dry_run_top5_indicator
+evidence_vs_decoy_mean_delta
+evidence_vs_decoy_median_delta
+can_rank
+rank_failure_reason
+dry_run_only
+notes
+
+要求：
+
+- 字段名必须使用 dry_run 前缀。
+- can_rank=false 的对象必须给出原因。
+- 不得把 dry_run_top1 / top5 写成正式 top-k hit rate。
+- 不输出 AUROC/AUPRC。
+
+四、dry_run_score_coverage_table.tsv
+
+用途：
+按 split / trait / object_type / score_source 汇总 score coverage。
+
+字段至少包括：
+
+coverage_id
+assigned_split
+trait_id
+object_type
+score_source
+score_level_used
+n_objects
+n_objects_with_evidence_score
+n_objects_with_any_decoy_score
+n_objects_with_all_decoy_scores
+mean_decoys_with_score
+median_decoys_with_score
+coverage_rate_evidence
+coverage_rate_decoy_any
+coverage_rate_decoy_all
+notes
+
+要求：
+
+- 必须按 development / prototype_locked / source_disjoint_or_temporal 分层。
+- 必须按 object_type 分层。
+- 必须指出 gene / qtl_interval 是否主要依赖 adapter 聚合。
+
+五、dry_run_missing_score_diagnostics.tsv
+
+用途：
+记录无法评分或无法排序的 object。
+
+字段至少包括：
+
+diagnostic_id
+object_id
+trait_id
+object_type
+assigned_split
+score_source
+score_level_expected
+missing_evidence_score
+n_decoys_expected
+n_decoys_with_score
+can_rank
+failure_reason
+notes
+
+要求：
+
+- 不允许静默过滤缺失 score 的 evidence object。
+- 缺失对象必须进入该表。
+
+六、dry_run_evaluator_adapter_contract.tsv
+
+用途：
+定义未来正式 evaluator 需要满足的 adapter contract。
+
+字段至少包括：
+
+contract_item
+requirement
+current_status
+blocking_for_formal_eval
+notes
+
+至少包括：
+
+- score table must provide trait-level score
+- accession-level score must be aggregated before formal evaluation
+- decoy must be matched_background
+- unknown/unlabeled cannot be negative
+- object_type-specific score adapters must be declared
+- prototype_locked is not final_locked
+- gene/qtl interval scoring requires formal aggregation rule before formal metric
+
+七、dry_run_leakage_guard.tsv
+
+用途：
+记录干运行中的泄漏防护。
+
+字段至少包括：
+
+guard_id
+guard_name
+status
+n_checked
+n_failed
+details
+blocking_issue
+notes
+
+至少检查：
+
+- evidence allowed_usage 不含 training_label。
+- decoy uses_true_negative=false。
+- unknown_as_negative=false。
+- manual review 不进入 matched ranking。
+- broader evidence 不进入 matched ranking。
+- prototype_locked_not_final=true。
+- 没有 final_locked 字段。
+- accession_id 不是 score 输入字段。
+- accession-level score 没有直接进入 formal evaluation。
+- split leakage check 来源通过。
+
+八、dry_run_validation.tsv
+
+用途：
+记录本轮 dry-run 验证。
+
+字段至少包括：
+
+check_name
+status
+n_records
+n_failed
+details
+blocking_issue
+notes
+
+至少检查：
+
+- 所有输出表存在且非空。
+- dry_run_only=true。
+- 没有输出正式 metric。
+- 没有 AUROC/AUPRC 字段。
+- dry_run_rank_position_table 没有被命名为 formal result。
+- decoy 没有被写成 true_negative。
+- unknown/unlabeled 没有被写成 negative。
+- missing score 有 diagnostics。
+- object_score_adapter_table 覆盖所有 object_type。
+- gene/qtl_interval adapter 标记为 diagnostic。
+- validation 没有 blocking issue。
+
+九、报告
+
+生成：
+
+reports/evaluator_dry_run_v055/matched_ranking_dry_run_report.md
+
+报告必须说明：
+
+1. 当前仍是 chr1 SNP-only prototype。
+2. 本轮是 matched-ranking dry-run / evaluator adapter smoke test，不是正式 evaluator。
+3. 本轮没有训练模型。
+4. 本轮没有报告正式 AUROC/AUPRC。
+5. 本轮没有构建 final locked evaluation。
+6. 使用了哪些 baseline score。
+7. 每种 object_type 使用了什么 score adapter。
+8. evidence object 和 decoy 的 score coverage。
+9. development / prototype_locked / source_disjoint_or_temporal 各 split coverage。
+10. dry-run rank 结果只能作为流程诊断。
+11. gene 和 qtl_interval 的 rank 是 adapter diagnostic，不是正式指标。
+12. 是否有 manual review / broader evidence 进入 dry-run ranking。
+13. 是否有 decoy 被写成 true_negative。
+14. 是否有 unknown/unlabeled 被写成 negative。
+15. 是否有 accession_id 被要求作为 score 输入。
+16. 当前限制。
+17. 是否可以进入 09C evaluator scaffold hardening 或 candidate gene explanation adapter。
+
+十、脚本要求
+
+请把脚本放到：
+
+scripts/evaluator_dry_run/
+
+建议脚本：
+
+1. build_object_score_adapter_v055.py
+2. build_dry_run_matched_set_scores_v055.py
+3. compute_dry_run_rank_positions_v055.py
+4. summarize_dry_run_score_coverage_v055.py
+5. validate_evaluator_dry_run_v055.py
+
+脚本要求：
+
+- 可重复运行。
+- 有命令行参数。
+- 不修改 raw data。
+- 不硬编码绝对路径。
+- 不计算正式指标。
+- 不输出 AUROC/AUPRC。
+- 对缺失 score 给出 diagnostics，不要静默过滤。
+- 所有输出表必须包含 dry_run_only=true 或可通过报告明确追踪。
+
+完成后请总结：
+
+1. 当前 commit hash。
+2. 生成了哪些文件。
+3. 每个文件多少行。
+4. 各 object_type 使用了什么 adapter。
+5. 各 split / trait / object_type 的 score coverage。
+6. 有多少 object 可以 rank。
+7. 有多少 object 因缺失 score 不能 rank。
+8. dry-run rank 是否只作为诊断。
+9. 是否有 manual review / broader evidence 错误进入 ranking。
+10. 是否有 decoy 被写成 true_negative。
+11. 是否有 unknown/unlabeled 被写成 negative。
+12. 是否有 accession_id 被要求作为 score 输入。
+13. 是否没有 AUROC/AUPRC 或正式 metric。
+14. 当前限制。
+15. 是否可以进入 09C evaluator scaffold hardening。
+
+注意：
+
+- 执行完prompt需要push
+- 不训练模型。
+- 不构建正式 evaluator。
+- 不报告 AUROC/AUPRC。
+- 不扩展 whole-genome SNP+indel。
+- 不引入 SV/PAV/pan-reference。
+- 不把 evidence 当训练 label。
+- 不把 decoy 当 true negative。
+- 不把 unknown/unlabeled 当 negative。

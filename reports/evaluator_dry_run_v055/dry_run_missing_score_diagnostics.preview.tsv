@@ -1,0 +1,2 @@
+diagnostic_id	object_id	trait_id	object_type	assigned_split	score_source	score_level_expected	missing_evidence_score	n_decoys_expected	n_decoys_with_score	can_rank	failure_reason	dry_run_only	notes
+DRMISS_000000001	NA	NA	NA	NA	NA	NA	false	0	0	true	no_missing_or_unrankable_objects_detected	true	summary row retained so diagnostics table is explicit and nonempty

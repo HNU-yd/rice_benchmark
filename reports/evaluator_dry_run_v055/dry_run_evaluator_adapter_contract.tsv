@@ -1,0 +1,8 @@
+contract_item	requirement	current_status	blocking_for_formal_eval	dry_run_only	notes
+score_table_must_provide_trait_level_score	Formal evaluator score input must be trait-conditioned.	dry-run baseline scores provide trait_id.	false	true	Current dry-run uses existing trait-level baseline maps.
+accession_level_score_must_be_aggregated	Accession-level scores must be aggregated before formal evidence evaluation.	accession_id is not accepted in 09B dry-run outputs.	true	true	Formal model adapters need a declared aggregation recipe.
+decoy_must_be_matched_background	Decoy records must be treated as matched_background only.	dry_run_matched_set_score_table sets decoy_semantics=matched_background.	false	true	Decoys are not true negatives.
+unknown_unlabeled_cannot_be_negative	Unknown or unlabeled variants/windows cannot be negatives.	uses_unknown_as_negative=false in matched-set rows.	false	true	Genome-wide unknowns are outside this dry-run matched set.
+object_type_specific_adapters_declared	Each object_type must have an explicit score adapter.	adapter table covers variant, window, gene, and qtl_interval.	false	true	Gene and QTL adapters are diagnostic only.
+prototype_locked_is_not_final_locked	Prototype locked split is non-final.	prototype_locked_not_final is retained and true.	false	true	No final full benchmark split is created.
+gene_qtl_interval_need_formal_aggregation_rule	Gene/QTL interval scoring needs formal aggregation before formal metrics.	current aggregation is overlapping-window mean for dry-run diagnostic.	true	true	Do not interpret gene/QTL rank rows as formal metrics.

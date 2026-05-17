@@ -1,0 +1,11 @@
+guard_id	guard_name	status	n_checked	n_failed	details	blocking_issue	dry_run_only	notes
+DRGUARD_00000001	evidence_allowed_usage_not_training_label	pass	33981	0	evaluator objects do not use training_label	false	true	NA
+DRGUARD_00000002	decoy_uses_true_negative_false	pass	679620	0	decoy rows are matched_background and uses_true_negative=false	false	true	NA
+DRGUARD_00000003	unknown_as_negative_false	pass	679620	0	uses_unknown_as_negative=false	false	true	NA
+DRGUARD_00000004	manual_review_not_in_matched_ranking	pass	33981	0	manual review excluded upstream	false	true	NA
+DRGUARD_00000005	broader_evidence_not_in_matched_ranking	pass	33981	0	broader evidence excluded upstream	false	true	NA
+DRGUARD_00000006	prototype_locked_not_final_true	pass	679620	0	prototype_locked_not_final=true in matched rows	false	true	NA
+DRGUARD_00000007	final_locked_field_absent	pass	54	0	no final_locked field name in 09B outputs	false	true	NA
+DRGUARD_00000008	accession_id_not_score_input_field	pass	54	0	accession_id is not a 09B output score field	false	true	NA
+DRGUARD_00000009	accession_level_score_not_direct_formal_evaluation	pass	4	0	adapter table does not define accession-level direct evaluation	false	true	NA
+DRGUARD_00000010	split_leakage_guard_source_passed	pass	10	0	inherits 09A evaluator leakage guard	false	true	NA
